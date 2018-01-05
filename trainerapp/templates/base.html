@@ -1,0 +1,137 @@
+{% load staticfiles %}
+
+{# Load the tag library #}
+{% load bootstrap4 %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+{% load compress %}
+
+{% block bootstrap4_extra_head %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Nunito:400,300,700" rel="stylesheet" type="text/css">
+
+    {% compress css %}
+    <!-- Custom CSS -->
+    <link href="{% static 'base/css/custom.css' %}" rel="stylesheet" type="text/css">
+    {% endcompress %}
+
+    <!-- Bootstrap CSS
+    <link href="{% static 'base/css/bootstrap.css' %}" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <!-- Icons -->
+    <!-- <link href="{% static 'base/css/open-iconic.css' %}" rel="stylesheet" type="text/css"> -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
+
+{% endblock %}
+
+<title>
+    {% block title %}
+        Dashboard - Keepertrainer
+    {% endblock %}
+</title>
+
+{% block bootstrap4_content %}
+
+{% block navigation %}
+<!--  Start Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark primary-blue">
+    <div class="container">
+        <a href="#" class="navbar-brand">Keepertrainer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#keepertrainer-navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        {% if user.is_authenticated %}
+        <div class="collapse navbar-collapse" id="keepertrainer-navbar">
+            <div class="dropdown">
+                <button class="btn light-grey-1 dropdown-toggle" id="dropdownTeamList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Teams</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownTeamList">
+                    <a class="dropdown-item" href="#">Team 1</a>
+                    <a class="dropdown-item" href="#">Team 1</a>
+                    <a class="dropdown-item" href="#">Team 1</a>
+                    <ul>
+                        <li>Torhüter</li>
+                        <li>Training</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="profile-navbar">
+            <div class="navbar-nav">
+                <div class="navbar-item">
+                    <a href="#" class="nav-link">
+                        <img class="icon-sm" src="{% static 'base/icon/person.svg' %}" alt="Person">
+                        {{ user.username }} <a href="{% url 'auth_logout' %}">Logout</a>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</nav>
+
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    {% if user.is_authenticated %}
+    {% for team in teams %}
+    <div class="row">
+        <div class="col-lg-12 primary-title">
+            <h2>
+                {{ team.name }}
+                <a href="{% url 'edit_team' team_pk=team.pk %}"><img class="icon-sm" src="{% static 'base/icon/pencil.svg' %}" alt="Schreiber"></a>
+            </h2>
+        </div>
+    </div>
+    {% for user_package in team.userpackage_set.all %}
+    <div class="row">
+        <div class="col-lg-3 col-md-6">
+            <a href="#" class="dashboard-link">
+                <div class="dashboard-card light-grey-1">
+                    <a href="{% url 'select_package' team_pk=user_package.team.id package_pk=user_package.package.id %}">
+                    <span class="dashboard-text dark-grey-text-1">{{ user_package.pk }} {{ user_package.package }}</span>
+                    </a>
+                </div>
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+    {% endfor %}
+    <a href="{% url 'new_team' %}">Neues Team erstellen</a>
+    {% else %}
+    <div class="row">
+        <div class="col-lg-8 col-md-8 mx-auto primary-title">
+            <h2>
+                Willkommen unbekannter Trainer
+            </h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-md-8 mx-auto">
+            Du bist nicht angemeldet <br />
+            <a href="{% url 'auth_login' %}">Zur Anmeldung</a>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+
+
+
+{% endblock %}
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<!-- <script src="{% static 'base/js/bootstrap.js' %}" type="text/javascript"></script> -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+
+{% endblock %}

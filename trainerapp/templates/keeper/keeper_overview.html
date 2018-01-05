@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<a href="{% url 'index' %}">Zurück</a>
+
+{% for keeper in keepers %}
+
+<a href="{% url 'keeper_detail' keeper_pk=keeper.pk team_pk=team.pk package_pk=package.pk %}">Detail</a>
+<img src="{{ MEDIA_URL }}{{ keeper.avatar_image }}">
+<div class="chip">{{ keeper.last_name }}</div>
+{{ keeper.first_name }}
+{{ keeper.club }}
+{{ keeper.level }}
+
+
+{% endfor %}
+
+<a href="{% url 'new_keeper' team_pk=team.pk %}">Neuer Torhüter</a>
+
+{% endblock %}

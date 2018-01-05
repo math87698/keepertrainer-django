@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% load bootstrap4 %}
+
+{% block title %}
+Erstelle dein Keepertrainer Konto
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="mx-auto primary-title">
+            <h2>Keepertrainer Konto erstellen</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-5 mx-auto">
+            <form method="post" action=".">
+                {% csrf_token %}
+                {{ form|crispy }}
+                {% bootstrap_button "Konto erstellen" button_type="submit" button_class="teal-green btn-block" %}
+                <input type="hidden" name="next" value="{{ next }}" />
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-5 mx-auto">
+            Hast du bereits ein Konto? <a href="#">Hier anmelden</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

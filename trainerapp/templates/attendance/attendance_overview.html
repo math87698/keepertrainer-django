@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+{% for attedance in attendance %}
+<a href="{% url 'attendance_detail' attendance_pk=attendance.pk %}">Detail</a>
+<div class="chip">{{ attendance.session }}</div>
+{{ attendance.keeper }}
+{{ attendance.present }}
+{{ attendance.absent }}
+{{ attendance.absence_reason }}
+
+{% endfor %}
+
+<a href="{% url 'new_attendance' team_pk=team.pk %}">Abwesenheiten erfassen</a>
+
+{% endblock %}

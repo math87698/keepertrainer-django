@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<a href="{% url 'select_package' team_pk=team.pk package_pk=package.pk %}">Zurück</a>
+
+{{ session.topic }}
+{{ session.date }}
+{{ session.time }}
+{{ session.duration }}
+{{ session.coordination1 }}
+{{ session.coordination2 }}
+{{ session.type }}
+<!-- divider -->
+{{ session.goal }}
+{{ session.technique }}
+{{ session.tactic }}
+{{ session.stamina }}
+{{ session.mental }}
+<!-- divider -->
+{{ session.equipment }}
+{{ session.intensity }}
+
+<a href="{% url 'edit_session' session_pk=session.pk %}">Training ändern</a>
+<a href="{% url 'delete_session' session_pk=session.pk %}">Löschen</a>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% load bootstrap3 %}
+
+{% block body %}
+<div class="container">
+    <img src="{{ MEDIA_URL }}{{ keeper.avatar_image }}">
+    <form method="post" action="." enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form|crispy }}
+        {% bootstrap_button "Torhüter ändern" button_type="submit" button_class="teal-green btn-block" %}
+    </form>
+</div>
+
+{% endblock %}

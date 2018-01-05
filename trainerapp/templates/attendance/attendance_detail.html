@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="chip">{{ attendance.session }}</div>
+{{ attendance.keeper }}
+{{ attendance.present }}
+{{ attendance.absent }}
+{{ attendance.absence_reason }}
+
+<a href="{% url 'edit_attendance' attendance_pk=attendance.pk %}">Anwesenheit editieren</a>
+<a href="{% url 'delete_attendance' attendance_pk=attendance.pk %}">Anwesenheit löschen</a>
+
+
+{% endblock %}

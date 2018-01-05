@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+{{ keeper.pk }}
+team pk{{ team.pk }}
+package pk {{ package.pk }}
+
+<a href="{% url 'select_package' team_pk=team.pk package_pk=package.pk %}">Zurück</a>
+
+
+<img src="{{ MEDIA_URL }}{{ keeper.avatar_image }}">
+{{ keeper.last_name }}
+{{ keeper.first_name }}
+{{ keeper.birthdate }}
+{{ keeper.club }}
+{{ keeper.level }}
+<!-- divider -->
+{{ keeper.street }}
+{{ keeper.zip_city }}
+{{ keeper.phone }}
+{{ keeper.email }}
+<!-- divider -->
+{{ keeper.nationality }}
+{{ keeper.occupation }}
+{{ keeper.shirtnumber }}
+{{ keeper.foot }}
+{{ keeper.height }}
+{{ keeper.weight }}
+{{ keeper.notes }}
+
+<a href="{% url 'edit_keeper' keeper_pk=keeper.pk %}">Torhüter editieren</a>
+<a href="{% url 'delete_keeper' keeper_pk=keeper.pk %}">Torhüter löschen</a>
+
+{% endblock %}

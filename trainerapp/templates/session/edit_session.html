@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% load bootstrap3 %}
+
+{% block body %}
+<div class="container">
+    <form method="post" action=".">
+        {% csrf_token %}
+        {{ form|crispy }}
+        {% bootstrap_button "Training ändern" button_type="submit" button_class="teal-green btn-block" %}
+    </form>
+</div>
+
+{% endblock %}

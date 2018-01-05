@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<a href="{% url 'index' %}">Zurück</a>
+
+{% for session in sessions %}
+
+<a href="{% url 'session_detail' session_pk=session.pk team_pk=team.pk package_pk=package.pk %}">Detail</a>
+{{ session.topic }}
+{{ session.date }}
+{{ session.time }}
+{{ session.duration }}
+{{ session.coordination1 }}
+{{ session.coordination2 }}
+{{ session.type }}
+
+{% endfor %}
+
+<a href="{% url 'new_session' team_pk=team.pk %}">Training planen</a>
+
+{% endblock %}
