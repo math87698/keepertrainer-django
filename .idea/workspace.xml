@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85a260c2-6e9d-4b49-97eb-92a341a68ae4" name="Default" comment="" />
+    <list default="true" id="85a260c2-6e9d-4b49-97eb-92a341a68ae4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keepertrainer-django.git/objects/pack/pack-b159cdf750d2011097240653a95d6b9e022b71a9.idx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keepertrainer-django.git/objects/pack/pack-b159cdf750d2011097240653a95d6b9e022b71a9.pack" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keepertrainer-django.git/HEAD" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keepertrainer-django.git/config" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keepertrainer-django.git/description" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keepertrainer-django.git/hooks/applypatch-msg.sample" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keepertrainer-django.git/hooks/commit-msg.sample" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keepertrainer-django.git/hooks/post-update.sample" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keepertrainer-django.git/hooks/pre-applypatch.sample" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keepertrainer-django.git/hooks/pre-commit.sample" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keepertrainer-django.git/hooks/pre-push.sample" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keepertrainer-django.git/hooks/pre-rebase.sample" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keepertrainer-django.git/hooks/pre-receive.sample" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keepertrainer-django.git/hooks/prepare-commit-msg.sample" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keepertrainer-django.git/hooks/update.sample" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keepertrainer-django.git/info/exclude" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keepertrainer-django.git/packed-refs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,31 +34,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/keepertrainer_app/settings.py">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="877">
-              <caret line="171" column="60" lean-forward="true" selection-start-line="171" selection-start-column="60" selection-end-line="171" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registration_form.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trainerapp/templates/registration/registration_form.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/trainerapp/templates/registration/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="54" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+            <state relative-caret-position="45">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -81,7 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/trainerapp/templates/registration/activation_complete.html" />
         <option value="$PROJECT_DIR$/trainerapp/static/base/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/trainerapp/templates/forms.py" />
         <option value="$PROJECT_DIR$/trainerapp/templates/team/edit_team.html" />
@@ -132,6 +130,7 @@
         <option value="$PROJECT_DIR$/trainerapp/templates/registration/registration_complete.html" />
         <option value="$PROJECT_DIR$/trainerapp/templates/registration/logout.html" />
         <option value="$PROJECT_DIR$/keepertrainer_app/settings.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -461,13 +460,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/trainerapp/templates/session/delete_session.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trainerapp/migrations/0006_auto_20171122_2142.py" />
     <entry file="file://$PROJECT_DIR$/trainerapp/migrations/0008_presence_team.py" />
     <entry file="file://$PROJECT_DIR$/trainerapp/migrations/0009_auto_20171127_2310.py" />
@@ -702,10 +694,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/keepertrainer_app/settings.py">
+    <entry file="file://$PROJECT_DIR$/trainerapp/templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="877">
-          <caret line="171" column="60" lean-forward="true" selection-start-line="171" selection-start-column="60" selection-end-line="171" selection-end-column="60" />
+        <state relative-caret-position="360">
+          <caret line="24" column="54" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -718,10 +710,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trainerapp/templates/registration/login.html">
+    <entry file="file://$PROJECT_DIR$/keepertrainer_app/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="54" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+        <state relative-caret-position="877">
+          <caret line="171" column="60" lean-forward="true" selection-start-line="171" selection-start-column="60" selection-end-line="171" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
