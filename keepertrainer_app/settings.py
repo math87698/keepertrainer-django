@@ -37,17 +37,17 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 # Application definition
 
 INSTALLED_APPS = [
+    # My Apps
+    'trainerapp',
+
     # Django Apps
     'django.contrib.admin',
-    'trainerapp',
     'registration',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    # My Apps
 
     # Third party Apps
     'bootstrap4',
