@@ -20,7 +20,7 @@ Erstelle dein Keepertrainer Konto
         <div class="col-lg-4 col-md-5 mx-auto">
             <form method="post" action=".">
                 {% csrf_token %}
-                {{ form|crispy }}
+                {% bootstrap_form form error_types=non_field_errors show_help=false %}
                 {% bootstrap_button "Konto erstellen" button_type="submit" button_class="teal-green btn-block" %}
                 <input type="hidden" name="next" value="{{ next }}" />
             </form>
