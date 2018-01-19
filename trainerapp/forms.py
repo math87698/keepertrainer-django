@@ -1,8 +1,21 @@
 # -*- coding: utf-8 -*-
 
 from django import forms
-from .models import Team, UserPackage, Keeper, Session, Attendance
 from django.contrib.admin.widgets import AdminDateWidget
+from django.contrib.auth.models import User
+
+from .models import Team, UserPackage, Keeper, Session, Attendance
+
+
+class UserChangeForm(forms.ModelForm):
+    username = forms.CharField(required=True)
+    email = forms.EmailField(required=True)
+    first_name = forms.CharField(required=False)
+    last_name = forms.CharField(required=False)
+
+    class Meta:
+        model = User
+        fields = ('username','email','first_name','last_name')
 
 
 class AddTeam(forms.ModelForm):

@@ -7,8 +7,11 @@ from . import views
 urlpatterns = [
     # url for successful heroku domain (otherwise we get 404)
     url(r'^$', views.heroku, name='heroku'),
+    # Account URLs
+    url(r'^accounts/settings/$', views.account_settings, name='account_settings'),
+    url(r'^accounts/account/edit/$', views.edit_account, name='edit_account'),
     # Team and Dashboard URLs
-    url(r'^dashboard/$', views.index, name="index"),
+    url(r'^dashboard/$', views.index, name='index'),
     url(r'^team/new/$', views.new_team, name='new_team'),
     url(r'^team/(?P<team_pk>\d+)/edit/$', views.edit_team, name='edit_team'),
     url(r'^team/(?P<team_pk>\d+)/delete/$', views.delete_team, name='delete_team'),

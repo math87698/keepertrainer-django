@@ -22,6 +22,6 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'', include('trainerapp.urls')),
     url(r'^accounts/', include('registration.backends.default.urls')),
-    url(r'^auth/', include('django.contrib.auth.urls')),
+    url(r'^', include('django.contrib.auth.urls')),
     url(r'^admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

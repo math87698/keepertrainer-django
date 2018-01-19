@@ -7,7 +7,6 @@ from datetime import timedelta
 from django.contrib.auth.models import User
 from django_countries.fields import CountryField
 
-
 class Team(models.Model):
     trainer = models.ForeignKey(User)
     name = models.CharField(max_length=70)

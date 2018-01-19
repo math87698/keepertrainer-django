@@ -67,6 +67,7 @@
             <div class="navbar-nav">
                 <div class="navbar-item">
                     <a href="#" class="nav-link">
+                        <a class="light-grey-text-1" href="#"><i class="fas fa-user-circle fa-2x"></i> {{ user.username }}</a>
                         <img class="icon-sm" src="{% static 'base/icon/person.svg' %}" alt="Person">
                         {{ user.username }} <a href="{% url 'auth_logout' %}">Logout</a>
                         <a href="{% url 'auth_password_change' %}">Passwort ändern</a>

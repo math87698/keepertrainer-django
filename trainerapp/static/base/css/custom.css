@@ -27,6 +27,11 @@
     background-color: #1de9b6;
 }
 
+.primary-grey-text {
+    color: #858585;
+    font-size: 90%;
+}
+
 .blue-text {
     color: #0277bd;
 }
@@ -37,10 +42,6 @@
 
 .light-grey-text-1 {
     color: #EFEFEF;
-}
-
-.light-grey-text-2 {
-    color: #e0e0e0;
 }
 
 .dark-grey-text-1 {
@@ -79,6 +80,12 @@ btn-primary-blue {
 .icon-lg {
     height: 36px;
     width: 36px;
+}
+
+/* Table styles */
+th, td {
+    padding: 5px;
+    text-align: left;
 }
 
 /* Dropdown Menu styles */

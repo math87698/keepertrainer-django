@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-lg-12 mx-auto primary-title">
+            <h4>Kontoeinstellungen</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-2">
+            Username
+        </div>
+        <div class="col-12 col-lg-10">
+            <p class="primary-grey-text">{{ user.username }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-2">
+            E-Mail
+        </div>
+        <div class="col-12 col-lg-10">
+            <p class="primary-grey-text">{{ user.email }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-2">
+            Name
+        </div>
+        <div class="col-12 col-lg-10">
+            {% if user.first_name and user.last_name %}
+            <p class="primary-grey-text">{{ user.first_name }} {{ user.last_name }}</p>
+            {% else %}
+            <td><a href="#">Name erfassen</a></td>
+            {% endif %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-2">
+            Letztes Login
+        </div>
+        <div class="col-12 col-lg-10">
+            <p class="primary-grey-text">{{ user.last_login }}</p>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-12 mx-auto">
+            <a href="{% url 'auth_password_change' %}">Passwort ändern</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mx-auto">
+            <a href="{% url 'edit_account' %}">Konto editieren</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}

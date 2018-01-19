@@ -6,11 +6,12 @@ from django.http import HttpResponse
 from django.core.urlresolvers import reverse
 from django.utils import timezone
 from django.contrib import messages
+from django.contrib.auth import get_user_model
 from django.core.files.storage import FileSystemStorage
 
 from .models import Team, UserPackage, Keeper, Session, Attendance
 
-from .forms import AddTeam, DeleteTeam, AddPackage, AddKeeper, EditKeeper, DeleteKeeper
+from .forms import UserChangeForm, AddTeam, DeleteTeam, AddPackage, AddKeeper, EditKeeper, DeleteKeeper
 from .forms import AddSession, EditSession, DeleteSession, AddAttendance, EditAttendance, DeleteAttendance
 
 
@@ -25,6 +26,24 @@ def index(request):
         'packages': packages,
     }
     return render(request, 'base.html', context)
+
+
+def account_settings(request):
+    model = get_user_model()
+    return render(request, 'account/account_detail.html', {'model': model})
+
+
+def edit_account(request):
+    if request.method == "POST":
+        form = UserChangeForm(request.POST, instance=request.user)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Deine Kontoeinstellungen wurden erfolgreich gespeichert!')
+            return redirect('index')
+    else:
+        form = UserChangeForm(instance=request.user)
+    return render(request, 'account/edit_account.html', {'form': form})
+
 
 
 def new_team(request):
