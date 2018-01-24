@@ -1,9 +1,27 @@
 {% extends 'base.html' %}
 
+{% load crispy_forms_tags %}
+
+{% load bootstrap4 %}
+
 {% block title %}
-Bis bald bei Keepertrainer
+Keepertrainer - Alles für deine Torhüter
 {% endblock %}
 
 {% block body %}
-bis bald!
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-lg-8 mx-auto primary-title">
+            <h2>Danke, dass du Keepertrainer nutzt</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-8 mx-auto primary-title">
+            <p>Du bist vollständig ausgeloggt. Wir freuen uns auf deinen nächsten Besuch</p> <hr />
+            <a href="http://www.keepertrainer.ch">Zurück zur Startseite</a>
+        </div>
+    </div>
+</div>
+
 {% endblock %}

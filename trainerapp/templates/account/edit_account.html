@@ -21,7 +21,7 @@ Bearbeite dein Keepertrainer Konto
             <form method="post" action=".">
                 {% csrf_token %}
                 {% bootstrap_form form error_types=non_field_errors show_help=false %}
-                {% bootstrap_button "Konto erstellen" button_type="submit" button_class="teal-green btn-block" %}
+                {% bootstrap_button "Änderungen speichern" button_type="submit" button_class="teal-green btn-block" %}
                 <input type="hidden" name="next" value="{{ next }}" />
             </form>
         </div>

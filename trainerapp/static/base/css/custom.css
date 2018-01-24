@@ -1,85 +1,173 @@
 /* Color Scheme */
+
+/* Blue Colors - Use blue text only with links! */
 .primary-blue {
-    background-color: #0277bd;
+    background-color: #2196f3;
 }
 
-.alternate-blue {
-    background-color: #01579b;
+.primary-blue:hover {
+    color: #2196f3;
+    text-decoration: none;
+}
+
+primary-blue a {
+    text-decoration: none;
+}
+
+.alternate-blue-text {
+    color: #0d47a1;
+}
+
+/* Grey Colors - Are Primaries for Text and Secondary for buttons, cards and content background */
+.primary-dark-grey-text {
+    color: 424242;
+}
+
+.primary-light-grey-text {
+    color: #eeeeee;
+}
+
+.primary-light-grey-text:hover {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+.primary-light-grey-text a {
+    text-decoration: none;
+}
+
+.alternate-grey-text {
+    color: #bdbdbd;
 }
 
 .light-grey-1 {
-    background-color: #EFEFEF;
+    background-color: #eeeeee;
 }
 
 .light-grey-2 {
-    background-color: #e0e0e0;
+    background-color: #fafafa;
 }
 
 .dark-grey-1 {
     background-color: #424242;
 }
 
-.dark-grey-2 {
-    background-color: #616161;
-}
 
+/* Teal Colors */
 .teal-green {
     background-color: #1de9b6;
 }
 
-.primary-grey-text {
-    color: #858585;
+/* Red Color for Alerting Purposes */
+.alterting-red-text {
+    color: f44336;
+}
+
+.alterting-red {
+    background-color: f44336;
+}
+
+.data-text {
+    color: #bdbdbd;
     font-size: 90%;
 }
-
-.blue-text {
-    color: #0277bd;
-}
-
-.alternate-blue-text {
-    color: #01579b;
-}
-
-.light-grey-text-1 {
-    color: #EFEFEF;
-}
-
-.dark-grey-text-1 {
-    color: #424242;
-}
-
-.dark-grey-text-2 {
-    color: #616161;
-}
-
-.teal-green-text {
-    color: #1de9b6;
-}
-
-
-
 
 /* Hide Asterisk for Required Fields since I believe in simplicity, that means no non sense fields */
 span.asteriskField {
   display: none;
 }
 
-/* Button Color */
-btn-primary-blue {
-    background-color: black;
-    padding: 50px;
+/* Buttons */
+.primary-btn {
+  color: #424242;
+  background-color: #1de9b6;
+}
+
+.primary-btn:hover {
+  color: #424242;
+  background-color: #64ffda;
+}
+
+.primary-btn:focus, .primary-btn.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.primary-btn.disabled, .primary-btn:disabled {
+  background-color: #64ffda;
+}
+
+.primary-btn:not([disabled]):not(.disabled):active, .primary-btn:not([disabled]):not(.disabled).active,
+.show > .primary-btn.dropdown-toggle {
+  color: #424242;
+  background-color: #64ffda;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.secondary-btn {
+  color: #424242;
+  background-color: #e0e0e0;
+}
+
+.secondary-btn:hover {
+  color: #424242;
+  background-color: #fafafa;
+}
+
+.secondary-btn:focus, .secondary-btn.focus {
+  box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
+}
+
+.secondary-btn.disabled, .secondary-btn:disabled {
+  background-color: #e0e0e0;
+}
+
+.secondary-btn:not([disabled]):not(.disabled):active, .secondary-btn:not([disabled]):not(.disabled).active,
+.show > .secondary-btn.dropdown-toggle {
+  color: #424242;
+  background-color: #e0e0e0;
+  box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
+}
+
+.alternate-btn {
+  color: #424242;
+  background-color: #eeeeee;
+}
+
+.alternate-btn:hover {
+  color: #424242;
+  background-color: #fafafa;
+}
+
+.alternate-btn:focus, .alternate-btn.focus {
+  box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
+}
+
+.alternate-btn.disabled, .alternate-btn:disabled {
+  background-color: #e0e0e0;
+}
+
+.alternate-btn:not([disabled]):not(.disabled):active, .alternate-btn:not([disabled]):not(.disabled).active,
+.show > .alternate-btn.dropdown-toggle {
+  color: #424242;
+  background-color: #eeeeee;
+  box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
 }
 
 /* Header Styles */
-.icon-sm {
-    height: 22px;
-    width: 22px;
-    fill: green;
+.nav-account {
+    color: #eeeeee;
 }
 
-.icon-lg {
-    height: 36px;
-    width: 36px;
+.nav-account:hover {
+    color: #fafafa;
+}
+
+.account-dropdown {
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: auto;
+    bottom: 100%;
 }
 
 /* Table styles */
@@ -98,6 +186,24 @@ th, td {
     padding-top: 20px;
     margin-bottom: 24px;
 }
+
+/* General Body Styles, especially for sticky footers */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 12rem;
+}
+
+.content {
+    padding: 2em 2em 6em; /* 70px = footer height + expected padding */
+    margin-bottom: -4em;  /* brings the footer into the padding gap */
+    min-height: 100%;
+    flex: 1 0 auto;
+}
+
 
 /* Chips */
 .chip {
@@ -199,3 +305,18 @@ th, td {
     padding-bottom: 24px;
 }
 
+
+/* Footer Styles */
+
+.footer {
+    background: #f9f9f9;
+    position: absolute;
+    height: 10rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.footer .index {
+    padding-top: 3rem;
+}

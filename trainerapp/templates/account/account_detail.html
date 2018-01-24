@@ -13,7 +13,7 @@
             Username
         </div>
         <div class="col-12 col-lg-10">
-            <p class="primary-grey-text">{{ user.username }}</p>
+            <p class="data-text">{{ user.username }}</p>
         </div>
     </div>
     <div class="row">
@@ -21,7 +21,7 @@
             E-Mail
         </div>
         <div class="col-12 col-lg-10">
-            <p class="primary-grey-text">{{ user.email }}</p>
+            <p class="data-text">{{ user.email }}</p>
         </div>
     </div>
     <div class="row">
@@ -30,9 +30,9 @@
         </div>
         <div class="col-12 col-lg-10">
             {% if user.first_name and user.last_name %}
-            <p class="primary-grey-text">{{ user.first_name }} {{ user.last_name }}</p>
+            <p class="data-text">{{ user.first_name }} {{ user.last_name }}</p>
             {% else %}
-            <td><a href="#">Name erfassen</a></td>
+            <p><a href="#">Name erfassen</a></p>
             {% endif %}
         </div>
     </div>
@@ -41,7 +41,7 @@
             Letztes Login
         </div>
         <div class="col-12 col-lg-10">
-            <p class="primary-grey-text">{{ user.last_login }}</p>
+            <p class="data-text">{{ user.last_login }}</p>
         </div>
     </div>
     <hr />
