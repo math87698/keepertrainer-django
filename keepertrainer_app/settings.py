@@ -164,9 +164,9 @@ REGISTRAION_EMAIL_HTML = True
 # Email settings
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 #EMAIL_HOST = "msscript1.webland.ch"
-EMAIL_HOST = os.environ.get('EMAIL_HOST','ms10smtp.webland.ch')
-EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER','info@keepertrainer.ch')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', '5QsRK#Y8P$AhB6^q$Ee6dgr%*RKS!e@n%S^tR#X9')
-EMAIL_PORT = os.environ.get('EMAIL_PORT','587')
+EMAIL_HOST = os.environ.get('EMAIL_HOST','')
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER','')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', '')
+EMAIL_PORT = os.environ.get('EMAIL_PORT','')
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL','registration@keepertrainer.ch')
+DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL','')
