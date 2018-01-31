@@ -18,8 +18,9 @@ from .forms import AddSession, EditSession, DeleteSession, AddAttendance, EditAt
 def heroku(request):
     return HttpResponse('Successful Heroku deploy')
 
+
 def index(request):
-    teams = Team.objects.all()
+    teams = Team.objects.filter(trainer=request.user)
     packages = UserPackage.objects.all()
     context = {
         'teams': teams,
@@ -49,24 +50,18 @@ def edit_account(request):
 def new_team(request):
     if request.method == "POST":
         team_form = AddTeam(request.POST)
-        package_form = AddPackage()
         if team_form.is_valid():
             team = team_form.save(commit=False)
-            package = package_form.save(commit=False)
             team.trainer = request.user
             team.edited_date = timezone.now()
-            # package.trainer = request.user
-            # package.team = team.pk
-            # list_of_packages = [1,2,3]
-            # for package.package_id in list_of_packages:
-            #     package.active = True
-            # print "package validation passed"
             team.save()
+            for package_id in range (1,4):
+                package = UserPackage(trainer=request.user,team_id=team.pk,package_id=package_id,active=True)
+                package.save()
             messages.success(request, 'Bravo, das Team wurde erstellt, nun kannst du Torhüter hinzufügen!')
             return redirect('index')
     else:
         team_form = AddTeam()
-        #package_form = AddPackage()
     return render(request, 'team/new_team.html', {'team_form': team_form})
 
 
