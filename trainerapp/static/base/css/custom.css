@@ -14,13 +14,17 @@ primary-blue a {
     text-decoration: none;
 }
 
+.primary-blue-text {
+    color: #2196f3;
+}
+
 .alternate-blue-text {
     color: #0d47a1;
 }
 
 /* Grey Colors - Are Primaries for Text and Secondary for buttons, cards and content background */
 .primary-dark-grey-text {
-    color: 424242;
+    color: #424242;
 }
 
 .primary-light-grey-text {
@@ -218,23 +222,20 @@ body {
 
 /* Dashboard Styles */
 .dashboard-card {
+    background-color: #2196f3;
     position: relative;
-    min-height: 100px;
+    min-height: 7rem;
     margin: 0.5rem 0 1rem 0;
     transition: box-shadow .25s;
-    border-radius: 2px;
-}
-
-.dashboard-card .dashboard-text {
-    display: block;
-    position: relative;
+    border-radius: 5px;
+    color: #eeeeee;
     font-size: 24px;
-    margin-left: 12px;
-    text-decoration: none;
+    padding-left: 12px;
 }
 
 .dashboard-card:hover {
-    background: #e0e0e0;
+    background-color: #0d47a1;
+    text-decoration: none;
 }
 
 

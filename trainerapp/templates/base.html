@@ -80,66 +80,6 @@
     </div>
 </nav>
 
-<!--
-
-<nav class="navbar navbar-expand-lg navbar-dark primary-blue">
-    <div class="container">
-        <a href="{% url 'index' %}" class="navbar-brand justify-content-center">
-            Keepertrainer
-        </a>
-        {% if user.is_authenticated %}
-        <div class="navbar-nav" id="keepertrainer-navbar">
-            <div class="dropdown">
-                <button class="btn light-grey-1 dropdown-toggle" id="dropdownTeamList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Teams</button>
-                <div class="dropdown-menu" aria-labelledby="dropdownTeamList">
-                    <a class="dropdown-item" href="#">Team 1</a>
-                    <a class="dropdown-item" href="#">Team 1</a>
-                    <a class="dropdown-item" href="#">Team 1</a>
-                    <ul>
-                        <li>Torhüter</li>
-                        <li>Training</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="navbar-nav">
-            <div class="dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarAccount" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarAccount">
-                    <a class="dropdown-item" href="#">Action</a>
-                </div>
-            </div>
-        </div>
-        <div class="nav-item dropdown d-none d-sm-block">
-            <a class="nav-link nav-account dropdown-toggle" href="#" id="navbarAccount" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-user-circle fa-2x"></i> {{ user.username }}
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarAccount">
-                <a class="dropdown-item" href="{% url 'account_settings' %}">Einstellungen</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="{% url 'auth_logout' %}">Logout</a>
-            </div>
-        </div>
-
-        <div class="nav-item dropdown d-block d-sm-none">
-            <a class="nav-link dropdown-toggle nav-account" href="#" id="navbarAccount" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-user-circle fa-2x"></i>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarAccount">
-                <a class="dropdown-item" href="{% url 'account_settings' %}">Einstellungen</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="{% url 'auth_logout' %}">Logout</a>
-            </div>
-        </div>
-        {% else %}
-        {% endif %}
-    </div>
-</nav>
-
--->
-
 {% endblock %}
 
 {% block body %}
@@ -149,26 +89,24 @@
     <div class="row">
         <div class="col-lg-12 primary-title">
             <h2>
-                {{ team.id }} {{ team.name }}
-                <a href="{% url 'edit_team' team_pk=team.pk %}"><img class="icon-sm" src="{% static 'base/icon/pencil.svg' %}" alt="Schreiber"></a>
+                {{ team.name }}
+                <a class="btn secondary-btn" href="{% url 'edit_team' team_pk=team.pk %}"><i class="fas fa-pencil-alt fa-xs"></i> Bearbeiten</a>
             </h2>
         </div>
     </div>
-    {% for user_package in team.userpackage_set.all %}
+
     <div class="row">
-        <div class="col-lg-3 col-md-6">
-            <a href="#" class="dashboard-link">
-                <div class="dashboard-card light-grey-1">
-                    <a href="{% url 'select_package' team_pk=user_package.team.id package_pk=user_package.package.id %}">
-                    <span class="dashboard-text dark-grey-text-1">{{ user_package.pk }} {{ user_package.package }}</span>
-                    </a>
-                </div>
+        {% for user_package in team.userpackage_set.all %}
+        <div class="col-12 col-lg-4 col-md-6">
+            <a href="{% url 'select_package' team_pk=user_package.team.id package_pk=user_package.package.id %}">
+                <div class="dashboard-card">{{ user_package.package }}</div>
             </a>
         </div>
+        {% endfor %}
     </div>
+
     {% endfor %}
-    {% endfor %}
-    <a href="{% url 'new_team' %}">Neues Team erstellen</a>
+    <a class="primary-blue-text" href="{% url 'new_team' %}">Neues Team erstellen</a>
     {% else %}
     <div class="row">
         <div class="col-lg-8 col-md-8 mx-auto primary-title">

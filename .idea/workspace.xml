@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="85a260c2-6e9d-4b49-97eb-92a341a68ae4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainerapp/static/base/css/custom.css" afterPath="$PROJECT_DIR$/trainerapp/static/base/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainerapp/templates/base.html" afterPath="$PROJECT_DIR$/trainerapp/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainerapp/views.py" afterPath="$PROJECT_DIR$/trainerapp/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,11 +19,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trainerapp/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="152" column="42" lean-forward="false" selection-start-line="152" selection-start-column="42" selection-end-line="152" selection-end-column="42" />
+            <state relative-caret-position="479">
+              <caret line="108" column="31" lean-forward="false" selection-start-line="108" selection-start-column="31" selection-end-line="108" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -44,7 +42,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trainerapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="-165">
               <caret line="64" column="74" lean-forward="false" selection-start-line="64" selection-start-column="74" selection-end-line="64" selection-end-column="74" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
@@ -53,14 +51,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trainerapp/models.py">
+      <file leaf-file-name="keeper_overview.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/trainerapp/templates/keeper/keeper_overview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-              <folding>
-                <element signature="e#24#63#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trainerapp/static/base/css/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -102,6 +108,7 @@
       <find>dropdown-menu-right</find>
       <find>footer</find>
       <find>self</find>
+      <find>dashboard-li</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,11 +163,11 @@
         <option value="$PROJECT_DIR$/trainerapp/templates/account/account_detail.html" />
         <option value="$PROJECT_DIR$/trainerapp/templates/registration/logout.html" />
         <option value="$PROJECT_DIR$/keepertrainer_app/settings.py" />
-        <option value="$PROJECT_DIR$/trainerapp/static/base/css/custom.css" />
         <option value="$PROJECT_DIR$/trainerapp/forms.py" />
         <option value="$PROJECT_DIR$/trainerapp/views.py" />
-        <option value="$PROJECT_DIR$/trainerapp/templates/base.html" />
         <option value="$PROJECT_DIR$/trainerapp/urls.py" />
+        <option value="$PROJECT_DIR$/trainerapp/static/base/css/custom.css" />
+        <option value="$PROJECT_DIR$/trainerapp/templates/base.html" />
       </list>
     </option>
   </component>
@@ -262,6 +269,76 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="trainerapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="keeper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="keepertrainer_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="keepertrainer_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trainerapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="keepertrainer_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="keepertrainer_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trainerapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="keepertrainer_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="keepertrainer_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="keepertrainer_app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -278,15 +355,15 @@
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/trainerapp/templates/team" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/trainerapp/static/base/img" />
       <recent name="$PROJECT_DIR$/trainerapp/static/base/css/emails" />
       <recent name="$PROJECT_DIR$/media/keepers" />
       <recent name="$PROJECT_DIR$/trainerapp/static/base/icon" />
       <recent name="$PROJECT_DIR$/trainerapp/static/base/css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/trainerapp/templates/team" />
     </key>
   </component>
   <component name="RunManager">
@@ -633,24 +710,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trainerapp/templates/keeper/keeper_overview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trainerapp/templates/registration/password_change_done.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trainerapp/templates/registration/registration_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -724,13 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trainerapp/static/base/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="321" column="25" lean-forward="false" selection-start-line="321" selection-start-column="25" selection-end-line="321" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/keepertrainer_app/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="922">
@@ -753,16 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trainerapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/keepertrainer_app/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -771,13 +817,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trainerapp/views.py">
+    <entry file="file://$PROJECT_DIR$/trainerapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="64" column="74" lean-forward="false" selection-start-line="64" selection-start-column="74" selection-end-line="64" selection-end-column="74" />
+        <state relative-caret-position="495">
+          <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
           <folding>
-            <element signature="e#24#63#0" expanded="true" />
+            <element signature="e#24#63#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainerapp/templates/registration/registration_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainerapp/static/base/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -791,8 +853,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/trainerapp/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="152" column="42" lean-forward="false" selection-start-line="152" selection-start-column="42" selection-end-line="152" selection-end-column="42" />
+        <state relative-caret-position="479">
+          <caret line="108" column="31" lean-forward="false" selection-start-line="108" selection-start-column="31" selection-end-line="108" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainerapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-165">
+          <caret line="64" column="74" lean-forward="false" selection-start-line="64" selection-start-column="74" selection-end-line="64" selection-end-column="74" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainerapp/templates/keeper/keeper_overview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
