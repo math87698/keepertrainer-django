@@ -41,6 +41,10 @@ class UserPackage(models.Model):
     deinstalled_date = models.DateTimeField(default=timezone.now)
 
 
+    def __unicode__(self):
+        return "%s" % (self.package)
+
+
 # Keeper Model
 def keeper_upload_path(instance, filename):
     return '/'.join(['keepers', str(instance.id), filename])
