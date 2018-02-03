@@ -99,10 +99,6 @@ def delete_team(request, team_pk):
 def select_package(request, team_pk, package_pk):
     package = get_object_or_404(UserPackage, package_id=package_pk, team_id=team_pk)
     team = get_object_or_404(Team, id=team_pk)
-    print package.package.pk
-    print package_pk
-    print team_pk
-    print team.pk
     if package.package.pk == 1:
         print package_pk
         keepers = Keeper.objects.filter(team=team, status=1)
