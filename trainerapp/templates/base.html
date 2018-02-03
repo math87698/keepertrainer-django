@@ -21,8 +21,7 @@
     <link href="{% static 'base/css/custom.css' %}" rel="stylesheet" type="text/css">
     {% endcompress %}
 
-    <!-- Bootstrap CSS
-    <link href="{% static 'base/css/bootstrap.css' %}" rel="stylesheet" type="text/css"> -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
     <!-- Icons -->
@@ -42,19 +41,20 @@
 
 {% block navigation %}
 <!--  Start Navbar -->
-<nav class="navbar navbar-expand primary-blue">
-    <div class="container-fluid">
+<div class="navbar navbar-expand primary-blue">
         <div class="nav navbar-nav">
            <div class="nav-item dropdown">
-                <button class="nav-link dropdown-toggle btn secondary-btn" data-toggle="dropdown" href="#" id="teamsDropdown" aria-haspopup="true" aria-expanded="false">Teams</button>
-                <ul class="dropdown-menu" aria-labelledby="teamDropdown">
-                    {% for team in teams %}
-                    <li class="dropdown-header">{{ team.name }}</li>
-                    {% for user_package in team.userpackage_set.all %}
-                    <li><a class="dropdown-item" href="#">{{ user_package.package }}</a></li>
-                    {% endfor %}
-                    {% endfor %}
-                </ul>
+               <button class="nav-link dropdown-toggle btn secondary-btn" data-toggle="dropdown" href="#" id="teamsDropdown" aria-haspopup="true" aria-expanded="false">Teams</button>
+               <ul class="dropdown-menu" aria-labelledby="teamDropdown">
+                   {% for team in teams %}
+                   <li class="dropdown-header">{{ team.name }}</li>
+                   {% for user_package in team.userpackage_set.all %}
+                   <li><a class="dropdown-item" href="#">{{ user_package.package }}</a></li>
+                   {% endfor %}
+                   {% endfor %}
+                   <div class="dropdown-divider"></div>
+                   <li><a class="dropdown-item" href="{% url 'new_team' %}">Neues Team erstellen</a></li>
+               </ul>
            </div>
         </div>
         <div class="navbar-header mx-auto">
@@ -77,8 +77,7 @@
                 </ul>
             </div>
         </div>
-    </div>
-</nav>
+</div>
 
 {% endblock %}
 
@@ -94,19 +93,21 @@
             </h2>
         </div>
     </div>
-
     <div class="row">
         {% for user_package in team.userpackage_set.all %}
         <div class="col-12 col-lg-4 col-md-6">
             <a href="{% url 'select_package' team_pk=user_package.team.id package_pk=user_package.package.id %}">
-                <div class="dashboard-card">{{ user_package.package.id }} {{ user_package.package }}</div>
+                <div class="dashboard-card">{{ user_package.package }}</div>
             </a>
         </div>
         {% endfor %}
     </div>
-
     {% endfor %}
-    <a class="primary-blue-text" href="{% url 'new_team' %}">Neues Team erstellen</a>
+    <div class="row">
+        <div class="col-12 new-team">
+            <a class="primary-blue-text" href="{% url 'new_team' %}">Neues Team erstellen</a>
+        </div>
+    </div>
     {% else %}
     <div class="row">
         <div class="col-lg-8 col-md-8 mx-auto primary-title">
@@ -126,8 +127,9 @@
 
 {% endblock %}
 
+
 <footer class="footer">
-    <div class="index">
+    <div class="container-fluid index">
         <div class="row">
             <div class="col-12 col-lg-8 text-center text-lg-left">
                 v 1.00

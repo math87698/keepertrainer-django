@@ -46,7 +46,6 @@ def edit_account(request):
     return render(request, 'account/edit_account.html', {'form': form})
 
 
-
 def new_team(request):
     if request.method == "POST":
         team_form = AddTeam(request.POST)
@@ -97,10 +96,15 @@ def delete_team(request, team_pk):
 
 
 # Here are all Keeper Views, Overview, Detail, Add Form, Edit Form, Delete Form
-def select_package(request, package_pk, team_pk):
-    package = get_object_or_404(UserPackage, id=package_pk)
+def select_package(request, team_pk, package_pk):
+    package = get_object_or_404(UserPackage, package_id=package_pk, team_id=team_pk)
     team = get_object_or_404(Team, id=team_pk)
-    if package.package_id == 1:
+    print package.package.pk
+    print package_pk
+    print team_pk
+    print team.pk
+    if package.package.pk == 1:
+        print package_pk
         keepers = Keeper.objects.filter(team=team, status=1)
         context = {
             'team': team,
@@ -108,7 +112,7 @@ def select_package(request, package_pk, team_pk):
             'keepers': keepers,
         }
         return render(request, 'keeper/keeper_overview.html', context)
-    elif package.package_id == 2:
+    elif package.package.pk == 2:
         sessions = Session.objects.filter(team=team, status=1)
         context = {
             'team': team,
@@ -116,10 +120,11 @@ def select_package(request, package_pk, team_pk):
             'sessions': sessions,
         }
         return render(request, 'session/session_overview.html', context)
-    elif package.package_id == 3:
+    elif package.package.pk == 3:
         attendance = Attendance.objects.filter(team=team)
         context = {
             'team': team,
+            'package': package,
             'attendance': attendance,
         }
         return render(request, 'attendance/attendance_overview.html', context)

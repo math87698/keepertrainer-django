@@ -187,8 +187,8 @@ th, td {
 
 /* Primary Title */
 .primary-title {
-    padding-top: 20px;
-    margin-bottom: 24px;
+    padding-top: 2em;
+    margin-bottom: 1em;
 }
 
 /* General Body Styles, especially for sticky footers */
@@ -236,6 +236,10 @@ body {
 .dashboard-card:hover {
     background-color: #0d47a1;
     text-decoration: none;
+}
+
+.new-team {
+    margin-top: 3em;
 }
 
 

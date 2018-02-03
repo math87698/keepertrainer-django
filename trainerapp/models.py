@@ -40,12 +40,6 @@ class UserPackage(models.Model):
     installed_date = models.DateTimeField(default=timezone.now)
     deinstalled_date = models.DateTimeField(default=timezone.now)
 
-    def __unicode__(self):
-        return "%s" % (self.team)
-
-    def __unicode__(self):
-        return "%s" % (self.package)
-
 
 # Keeper Model
 def keeper_upload_path(instance, filename):

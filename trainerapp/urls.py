@@ -16,7 +16,7 @@ urlpatterns = [
     url(r'^team/(?P<team_pk>\d+)/edit/$', views.edit_team, name='edit_team'),
     url(r'^team/(?P<team_pk>\d+)/delete/$', views.delete_team, name='delete_team'),
     # Dashboard Packages link to Keeper, Session
-    url(r'^(?P<team_pk>\d+)/(?P<package_pk>\d+)/$', views.select_package, name='select_package'),
+    url(r'^(?P<package_pk>\d+)/(?P<team_pk>\d+)/$', views.select_package, name='select_package'),
     # Keeper URLs
     url(r'^keeper/(?P<keeper_pk>\d+)/(?P<team_pk>\d+)/(?P<package_pk>\d+)/$', views.keeper_detail, name='keeper_detail'),
     url(r'^keeper/new/(?P<team_pk>\d+)/$', views.new_keeper, name='new_keeper'),
