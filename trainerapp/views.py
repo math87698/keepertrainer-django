@@ -100,7 +100,6 @@ def select_package(request, team_pk, package_pk):
     package = get_object_or_404(UserPackage, package_id=package_pk, team_id=team_pk)
     team = get_object_or_404(Team, id=team_pk)
     if package.package.pk == 1:
-        print package_pk
         keepers = Keeper.objects.filter(team=team, status=1)
         context = {
             'team': team,
