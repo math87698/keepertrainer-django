@@ -86,6 +86,9 @@ class Keeper(models.Model):
     def __unicode__(self):
         return "%s" % (self.last_name)
 
+    def __unicode__(self):
+        return "%s" % (self.first_name)
+
     @property
     def lifespan(self):
         return '%s - present' % self.birthdate.strftime('%d.m%.%Y')

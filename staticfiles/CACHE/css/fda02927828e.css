@@ -1,0 +1,198 @@
+/* Color Scheme */
+.primary-blue {
+    background-color: #0277bd;
+}
+
+.alternate-blue {
+    background-color: #01579b;
+}
+
+.light-grey-1 {
+    background-color: #EFEFEF;
+}
+
+.light-grey-2 {
+    background-color: #e0e0e0;
+}
+
+.dark-grey-1 {
+    background-color: #424242;
+}
+
+.dark-grey-2 {
+    background-color: #616161;
+}
+
+.teal-green {
+    background-color: #1de9b6;
+}
+
+.primary-grey-text {
+    color: #858585;
+    font-size: 90%;
+}
+
+.blue-text {
+    color: #0277bd;
+}
+
+.alternate-blue-text {
+    color: #01579b;
+}
+
+.light-grey-text-1 {
+    color: #EFEFEF;
+}
+
+.dark-grey-text-1 {
+    color: #424242;
+}
+
+.dark-grey-text-2 {
+    color: #616161;
+}
+
+.teal-green-text {
+    color: #1de9b6;
+}
+
+
+
+
+/* Hide Asterisk for Required Fields since I believe in simplicity, that means no non sense fields */
+span.asteriskField {
+  display: none;
+}
+
+/* Button Color */
+btn-primary-blue {
+    background-color: black;
+    padding: 50px;
+}
+
+/* Header Styles */
+.nav-account {
+    color: #EFEFEF;
+}
+
+.nav-account:hover {
+    color: #424242;
+}
+
+/* Table styles */
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+/* Dropdown Menu styles */
+.dropdown-menu ul {
+    text-decoration: none;
+}
+
+/* Primary Title */
+.primary-title {
+    padding-top: 20px;
+    margin-bottom: 24px;
+}
+
+/* Chips */
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 38px;
+    font-size: 16px;
+    line-height: 38px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+
+/* Dashboard Styles */
+.dashboard-card {
+    position: relative;
+    min-height: 100px;
+    margin: 0.5rem 0 1rem 0;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+}
+
+.dashboard-card .dashboard-text {
+    display: block;
+    position: relative;
+    font-size: 24px;
+    margin-left: 12px;
+    text-decoration: none;
+}
+
+.dashboard-card:hover {
+    background: #e0e0e0;
+}
+
+
+/* Detail Information Page Layout */
+.detail {
+    margin: 0.5rem 0 1rem 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+}
+
+.detail .detail-content {
+    background-color: #fff;
+    line-height: 1.5rem;
+    padding: 10px 20px px;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.detail .detail-content.card {
+    min-height: 84px;
+    position: relative;
+}
+
+.detail .detail-content.card .image-circle {
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+    overflow: hidden;
+    left: 27px;
+    top: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.detail .detail-content.card .icon-circle {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+    left: 64px;
+    top: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%
+}
+
+.detail .detail-content.card i.icon-circle {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #fff;
+    background-color: #999;
+    text-align: center;
+}
+
+.detail .detail-content.card .title {
+    font-size: 24px;
+    padding-top: 25px;
+    padding-left: 27px;
+}
+
+.detail .detail-content.card .content {
+    min-height: 10rem;
+    padding-left: 27px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
