@@ -9,12 +9,12 @@ https://docs.djangoproject.com/en/1.10/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.10/ref/settings/
 """
-
+from __future__ import unicode_literals
 # This Python file uses the following encoding: utf-8
 
 # -*- coding: utf-8 -*-
 
-from __future__ import unicode_literals
+
 import os
 
 
