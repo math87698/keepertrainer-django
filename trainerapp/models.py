@@ -17,6 +17,9 @@ class Team(models.Model):
     class Meta:
         ordering = ('name',)
 
+    def __unicode__(self):
+        return "%s" % (self.name)
+
     def __str__(self):
         return "%s" % (self.name)
 
@@ -28,6 +31,9 @@ class Package(models.Model):
     edited_date = models.DateTimeField(default=timezone.now)
 
     def __unicode__(self):
+        return "%s" % (self.name)
+
+    def __str__(self):
         return "%s" % (self.name)
 
 
@@ -89,6 +95,12 @@ class Keeper(models.Model):
     def __unicode__(self):
         return "%s" % (self.first_name)
 
+    def __str__(self):
+        return "%s" % (self.last_name)
+
+    def __str__(self):
+        return "%s" % (self.first_name)
+
     @property
     def lifespan(self):
         return '%s - present' % self.birthdate.strftime('%d.m%.%Y')
@@ -140,6 +152,9 @@ class Session(models.Model):
         ordering = ('date', 'time',)
 
     def __unicode__(self):
+        return "%s" % (self.topic)
+
+    def __str__(self):
         return "%s" % (self.topic)
 
     @property
