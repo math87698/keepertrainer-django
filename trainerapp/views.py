@@ -20,7 +20,7 @@ def heroku(request):
 
 
 def index(request):
-    teams = Team.objects.filter(trainer=request.user)
+    teams = Team.objects.filter(trainer=request.user, status=1)
     packages = UserPackage.objects.all()
     context = {
         'teams': teams,
@@ -128,7 +128,7 @@ def select_package(request, team_pk, package_pk):
 def keeper_detail(request, keeper_pk, team_pk, package_pk):
     keeper = get_object_or_404(Keeper, pk=keeper_pk)
     team = get_object_or_404(Team, pk=team_pk)
-    package = get_object_or_404(UserPackage, pk=package_pk)
+    package = UserPackage(pk=package_pk)
     context = {
         'keeper': keeper,
         'team': team,
@@ -137,7 +137,7 @@ def keeper_detail(request, keeper_pk, team_pk, package_pk):
     return render(request, 'keeper/keeper_detail.html', context)
 
 
-def new_keeper(request, team_pk):
+def new_keeper(request, team_pk, package_pk):
     if request.method == "POST":
         form = AddKeeper(request.POST, request.FILES)
         if form.is_valid():
@@ -147,7 +147,7 @@ def new_keeper(request, team_pk):
             keeper.created_date = timezone.now()
             keeper.save()
             messages.success(request, 'Klasse, dein Torhüter wurde erfolgreich erfasst!')
-            return redirect(reverse('keeper_detail', args=[keeper.pk]))
+            return redirect(reverse('keeper_detail', args=[keeper.pk, team_pk, package_pk]))
     else:
         form = AddKeeper()
     return render(request, 'keeper/new_keeper.html', {'form': form})

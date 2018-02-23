@@ -5,9 +5,28 @@
 {% load bootstrap4 %}
 
 {% block body %}
-<form method="post" action=".">
-    {% csrf_token %}
-    {{ form|crispy }}
-    {% bootstrap_button "Team ändern" button_type="submit" button_class="teal-green btn-block" %}
-</form>
+
+<div class="container">
+    <div class="row">
+        <div class="mx-auto primary-title">
+            <h2>Team ändern</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-5 mx-auto">
+            <form method="post" action=".">
+                {% csrf_token %}
+                {% bootstrap_form form error_types=non_field_errors show_help=false %}
+                {% bootstrap_button "Team ändern" button_type="submit" button_class="teal-green btn-block" %}
+                <input type="hidden" name="next" value="{{ next }}" />
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 mx-auto">
+            <hr />
+        </div>
+    </div>
+</div>
+
 {% endblock %}

@@ -8,12 +8,17 @@
 
 <div class="container">
     <div class="row">
+        <div class="mx-auto primary-title">
+            <h2>Team definitiv löschen</h2>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-lg-4 mx-auto">
             <form method="POST" action=".">
                 {% csrf_token %}
                 {{ form.errors }}
-                <h5>Möchtest du den Torhüter {{ keeper.first_name }} {{ keeper.last_name }} wirklich löschen?</h5><br>
-                {% bootstrap_button "Torhüter löschen" button_type="submit" button_class="teal-green btn-block" %}
+                <h5>Möchtest du das Team {{ team.name }} wirklich löschen?</h5><br>
+                {% bootstrap_button "Team löschen" button_type="submit" button_class="red-btn btn-block" %}
             </form>
         </div>
     </div>

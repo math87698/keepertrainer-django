@@ -2,14 +2,45 @@
 
 {% block body %}
 
-{{ keeper.pk }}
-team pk{{ team.pk }}
-package pk {{ package.pk }}
+<div class="container">
+    <div class="row">
+        <div class="col-12 top-navigation">
+            <a href="{% url 'select_package' team_pk=team.pk package_pk=package.pk %}">
+                <i class="fas fa-chevron-left"></i>
+                Zurück zu den Torhüter
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mx-auto">
+            <ul class="detail">
+                <li class="detail-top">
+                    <img src="{{ MEDIA_URL }}{{ keeper.avatar_image }}">
+                    <span class="title">Berndt Schuster</span><br>
+                    <span class="value-text">2. Liga Interregional</span><br/>
+                    <span class="value-text">03. März 2001</span>
+                </li>
+                <li class="detail-content">
+                    <div class="title">Adresse</div>
+                    <span class="value-text">Bernstrasse 1</span><br/>
+                    <span class="value-text">3030 Münchenbuchsee</span><br/>
+                    <span class="value-text">millerben.gafsteiner@weblandschweiz.ch</span><br/>
+                    <span class="value-text">079 691 87 29</span><br/>
+                </li>
+                <hr />
+                <li>
+                    <div class="title">Weitere Angaben</div>
+                    <span class="value-text">Bernstrasse 1</span><br/>
+                    <span class="value-text">3030 Münchenbuchsee</span><br/>
+                    <span class="value-text">millerben.gafsteiner@weblandschweiz.ch</span><br/>
+                    <span class="value-text">079 691 87 29</span><br/>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-<a href="{% url 'select_package' team_pk=team.pk package_pk=package.pk %}">Zurück</a>
 
-
-<img src="{{ MEDIA_URL }}{{ keeper.avatar_image }}">
 {{ keeper.last_name }}
 {{ keeper.first_name }}
 {{ keeper.birthdate }}
