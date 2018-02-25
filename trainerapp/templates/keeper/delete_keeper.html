@@ -12,8 +12,8 @@
             <form method="POST" action=".">
                 {% csrf_token %}
                 {{ form.errors }}
-                <h5>Möchtest du den Torhüter {{ keeper.first_name }} {{ keeper.last_name }} wirklich löschen?</h5><br>
-                {% bootstrap_button "Torhüter löschen" button_type="submit" button_class="teal-green btn-block" %}
+                <p>Möchtest du den Torhüter {{ keeper.first_name }} {{ keeper.last_name }} wirklich löschen?</p><br>
+                {% bootstrap_button "Torhüter löschen" button_type="submit" button_class="red-btn btn-block" %}
             </form>
         </div>
     </div>

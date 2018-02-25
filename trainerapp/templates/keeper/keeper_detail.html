@@ -16,51 +16,48 @@
             <ul class="detail">
                 <li class="detail-top">
                     <img src="{{ MEDIA_URL }}{{ keeper.avatar_image }}">
-                    <span class="title">Berndt Schuster</span><br>
-                    <span class="value-text">2. Liga Interregional</span><br/>
-                    <span class="value-text">03. März 2001</span>
+                    <span class="title">{{ keeper.first_name }} {{ keeper.last_name }}</span><br>
+                    <span class="value-text">{{ keeper.level }}</span><br/>
+                    {% if keeper.birthdate %}<span class="value-text">{{ keeper.birthdate }}</span>{% endif %}
                 </li>
                 <li class="detail-content">
                     <div class="title">Adresse</div>
-                    <span class="value-text">Bernstrasse 1</span><br/>
-                    <span class="value-text">3030 Münchenbuchsee</span><br/>
-                    <span class="value-text">millerben.gafsteiner@weblandschweiz.ch</span><br/>
-                    <span class="value-text">079 691 87 29</span><br/>
+                    {% if keeper.street or keeper.zipcity or keeper.email or keeper.phone %}
+                    <span class="value-text">{{ keeper.street }}</span><br/>
+                    <span class="value-text">{{ keeper.zipcity }}</span><br>
+                    <span class="value-text">{{ keeper.email }}</span><br>
+                    <span class="value-text">{{ keeper.phone }}</span>
+                    {% else %}
+                    <span class="value-text">Erfasse eine Adresse, E-Mail oder Telefonnummer für eine rasche Kontaktaufnahme</span>
+                    {% endif %}
                 </li>
-                <hr />
-                <li>
+                <li class="detail-content">
                     <div class="title">Weitere Angaben</div>
-                    <span class="value-text">Bernstrasse 1</span><br/>
-                    <span class="value-text">3030 Münchenbuchsee</span><br/>
-                    <span class="value-text">millerben.gafsteiner@weblandschweiz.ch</span><br/>
-                    <span class="value-text">079 691 87 29</span><br/>
+                    <div class="group">
+                        <span class="label-text">Nationalität</span>
+                        {% if keeper.nationality %}<p class="value-text">{{ keeper.nationality }}</p>{% else %}<p class="value-text">keine Angabe</p>{% endif %}
+                        <span class="label-text">Tätigkeit</span>
+                        {% if keeper.occupation %}<p class="value-text">{{ keeper.occupation }}</p>{% else %}<p class="value-text">keine Angabe</p>{% endif %}
+                    </div>
+                    <div class="group">
+                        <span class="label-text">Trikotnummer</span>
+                        {% if keeper.shirtnumber %}<p class="value-text">{{ keeper.shirtnumber }}</p>{% else %}<p class="value-text">keine Angabe</p>{% endif %}
+                        <span class="label-text">Starker Fuss</span>
+                        {% if keeper.foot %}<p class="value-text">{{ keeper.foot }}</p>{% else %}<p class="value-text">keine Angabe</p>{% endif %}
+                    </div>
+                    <div class="group">
+                        <span class="label-text">Grösse</span>
+                        {% if keeper.height %}<p class="value-text">{{ keeper.height }} cm</p>{% else %}<p class="value-text">keine Angabe</p>{% endif %}
+                        <span class="label-text">Gewicht</span>
+                        {% if keeper.weight %}<p class="value-text">{{ keeper.weight }} kg</p>{% else %}<p class="value-text">keine Angabe</p>{% endif %}
+                    </div>
                 </li>
             </ul>
+            <a class="btn primary-btn" href="{% url 'edit_keeper' keeper_pk=keeper.pk team_pk=team.pk package_pk=package.pk %}">Torhüter editieren</a>
+            <a class="btn red-btn" href="{% url 'delete_keeper' keeper_pk=keeper.pk team_pk=team.pk package_pk=package.pk %}">Torhüter löschen</a>
         </div>
     </div>
 </div>
 
-
-{{ keeper.last_name }}
-{{ keeper.first_name }}
-{{ keeper.birthdate }}
-{{ keeper.club }}
-{{ keeper.level }}
-<!-- divider -->
-{{ keeper.street }}
-{{ keeper.zip_city }}
-{{ keeper.phone }}
-{{ keeper.email }}
-<!-- divider -->
-{{ keeper.nationality }}
-{{ keeper.occupation }}
-{{ keeper.shirtnumber }}
-{{ keeper.foot }}
-{{ keeper.height }}
-{{ keeper.weight }}
-{{ keeper.notes }}
-
-<a href="{% url 'edit_keeper' keeper_pk=keeper.pk %}">Torhüter editieren</a>
-<a href="{% url 'delete_keeper' keeper_pk=keeper.pk %}">Torhüter löschen</a>
 
 {% endblock %}

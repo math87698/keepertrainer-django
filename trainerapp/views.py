@@ -147,7 +147,7 @@ def new_keeper(request, team_pk, package_pk):
             keeper.created_date = timezone.now()
             keeper.save()
             messages.success(request, 'Klasse, dein Torhüter wurde erfolgreich erfasst!')
-            return redirect(reverse('keeper_detail', args=[keeper.pk, team_pk, package_pk]))
+            return redirect(reverse('keeper_detail', args=[package_pk, team_pk, keeper.pk]))
     else:
         form = AddKeeper()
     return render(request, 'keeper/new_keeper.html', {'form': form})
@@ -166,7 +166,7 @@ def upload_avatar(request):
     return render(request, 'keeper/new_keeper.html')
 
 
-def edit_keeper(request, keeper_pk):
+def edit_keeper(request, keeper_pk, team_pk, package_pk):
     keeper = get_object_or_404(Keeper, pk=keeper_pk)
     if request.method == "POST":
         form = EditKeeper(request.POST, request.FILES, instance=keeper)
@@ -175,7 +175,7 @@ def edit_keeper(request, keeper_pk):
             keeper.edited_date = timezone.now()
             keeper.save()
             messages.success(request, 'Die Änderungen am Torhüter wurden gespeichert!')
-            return redirect(reverse('keeper_detail', args=[keeper_pk]))
+            return redirect(reverse('keeper_detail', args=[package_pk, team_pk, keeper_pk]))
     else:
         form = EditKeeper(instance=keeper)
     context = {
@@ -185,7 +185,7 @@ def edit_keeper(request, keeper_pk):
     return render(request, 'keeper/edit_keeper.html', context)
 
 
-def delete_keeper(request, keeper_pk):
+def delete_keeper(request, keeper_pk, team_pk, package_pk):
     keeper = get_object_or_404(Keeper, pk=keeper_pk)
     if request.method == "POST":
         form = DeleteKeeper(request.POST, instance=keeper)
@@ -195,7 +195,7 @@ def delete_keeper(request, keeper_pk):
             keeper.status = 0
             keeper.save()
             messages.success(request, 'Der Torhüter wurde erfolgreich gelöscht!')
-            return redirect('index')
+            return redirect(reverse('select_package', args=[package_pk, team_pk]))
     else:
         form = DeleteKeeper(instance=keeper)
     context = {

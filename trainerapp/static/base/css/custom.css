@@ -77,13 +77,22 @@ p {
     color: #424242;
 }
 
-.label-text {
+.value-text {
     color: #424242;
 }
 
-.value-text {
+.label-text {
     color: #bdbdbd;
     font-size: 90%;
+}
+
+@media screen and (max-device-width: 576px) {
+    .value-text {
+        font-size: 80%;
+    }
+    .label-text {
+        font-size: 70%;
+    }
 }
 
 /* Hide Asterisk for Required Fields since I believe in simplicity, that means no non sense fields */
@@ -120,8 +129,12 @@ body {
 
 /*--------------------------------------------------------- Buttons ------------------------------------------------*/
 .primary-btn {
+  position: relative;
+  display: inline-block;
+  margin: 4px 0 4px 0;
   color: #424242;
   background-color: #1de9b6;
+  width: 100%;
 }
 
 .primary-btn:hover {
@@ -145,8 +158,16 @@ body {
 }
 
 .secondary-btn {
+  position: relative;
+  display: inline-block;
+  margin: 4px 0 4px 0;
   color: #424242;
   background-color: #e0e0e0;
+  width: 100%;
+}
+
+.secondary-btn .secondary-btn-nav {
+    width: 100%;
 }
 
 .secondary-btn:hover {
@@ -170,8 +191,12 @@ body {
 }
 
 .alternate-btn {
+  position: relative;
+  display: inline-block;
+  margin: 4px 0 4px 0;
   color: #424242;
   background-color: #eeeeee;
+  width: 100%;
 }
 
 .alternate-btn:hover {
@@ -195,8 +220,12 @@ body {
 }
 
 .red-btn {
+    position: relative;
+    display: inline-block;
+    margin: 4px 0 4px 0;
     color: #eeeeee;
     background-color: f44336;
+    width: 100%;
 }
 
 .red-btn:hover {
@@ -217,6 +246,21 @@ body {
   color: #eeeeee;
   background-color: #f44336;
   box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
+}
+
+@media screen and (min-device-width: 576px) {
+    .primary-btn {
+        width: 48%;
+    }
+    .secondary-btn {
+        width: 48%;
+    }
+    .alternate-btn {
+        width: 48%;
+    }
+    .red-btn {
+        width: 48%;
+    }
 }
 
 /*--------------------------------------------------------- END Buttons ------------------------------------------------*/
@@ -309,6 +353,7 @@ body {
     flex-direction: column;
     border: 1px solid #eeeeee;
     border-bottom: none;
+    border-radius: 4px;
 }
 
 .collection a:hover {
@@ -391,22 +436,23 @@ body {
 
 .detail-top {
     position: relative;
-    padding: 80px 16px 0 190px;
-    background-color: #eeeeee;
+    padding: 32px 0 32px 0;
+    /* background-color: #eeeeee; */
     border-radius: 4px;
     min-height: 224px;
+    text-align: center;
 }
 
 .detail-top img {
-    position: absolute;
-    display: inline-block;
+    position: relative;
+    display: block;
     border-radius: 50%;
     width: 144px;
     height: 144px;
     overflow: hidden;
-    vertical-align: middle;
-    left: 16px;
-    top: 40px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .detail-top .title {
@@ -417,8 +463,9 @@ body {
 
 .detail-content {
     position: relative;
-    padding: 56px 16px 0 24px;
-    min-height: 224px;
+    padding: 56px 16px 16px 24px;
+    min-height: 160px;
+    border-top: solid 1px #eeeeee;
 }
 
 .detail-content .title {
@@ -429,7 +476,47 @@ body {
     top: 16px;
     margin-bottom: 24px;
     color: #424242;
-    font-size: 24px;
+    font-size: 20px;
+}
+
+.detail-content .group {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+@media screen and (min-device-width: 576px) {
+    .detail-top {
+        position: relative;
+        padding: 80px 16px 0 190px;
+        border-radius: 4px;
+        min-height: 224px;
+        text-align: left;
+    }
+
+    .detail-top img {
+        position: absolute;
+        display: inline-block;
+        border-radius: 50%;
+        width: 144px;
+        height: 144px;
+        overflow: hidden;
+        vertical-align: middle;
+        left: 16px;
+        top: 40px;
+    }
+
+    .detail-top .title {
+        color: #424242;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .detail-content .group {
+        width: 30%;
+    }
+    .detail-content .title {
+
+    }
 }
 
 /*--------------------------------------------------------- END Detail Styles ------------------------------------------------*/

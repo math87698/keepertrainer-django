@@ -23,7 +23,7 @@
                     </li>
                 </a>
                 {% endfor %}
-                <a href="{% url 'new_keeper' team_pk=team.pk %}">
+                <a href="{% url 'new_keeper' team_pk=team.pk package_pk=package.package_id %}">
                     <li class="collection-item">
                         <div class="icon"><i class="fas fa-plus-circle fa-lg"></i></div>
                         Torhüter erfassen
