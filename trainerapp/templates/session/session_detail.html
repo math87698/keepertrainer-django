@@ -21,7 +21,7 @@
 {{ session.equipment }}
 {{ session.intensity }}
 
-<a href="{% url 'edit_session' session_pk=session.pk %}">Training ändern</a>
-<a href="{% url 'delete_session' session_pk=session.pk %}">Löschen</a>
+<a href="{% url 'edit_session' session_pk=session.pk team_pk=team.pk package_pk=package.pk %}">Training ändern</a>
+<a href="{% url 'delete_session' session_pk=session.pk team_pk=team.pk package_pk=package.pk %}">Löschen</a>
 
 {% endblock %}

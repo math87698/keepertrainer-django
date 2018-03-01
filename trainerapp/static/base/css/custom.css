@@ -73,25 +73,51 @@ primary-blue a {
 /*--------------------------------------------------------- END Colors ------------------------------------------------*/
 
 /*--------------------------------------------------------- Standard Selectors such as p, span, body styles, table ------------------------------------------------*/
+.display {
+    color: #424242;
+    font-size: 34px;
+}
+
+.headline {
+    color: #424242;
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+.subheading {
+    color: #424242;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
 p {
     color: #424242;
 }
 
-.value-text {
+.regular-2 {
     color: #424242;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.label-text {
+.regular-1 {
+    color: #424242;
+    font-size: 14px;
+}
+
+.caption {
     color: #bdbdbd;
-    font-size: 90%;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.display:hover, .headline:hover, subheading:hover, p:hover, .regular-2:hover, .regular-1:hover, .caption:hover {
+    text-decoration: none;
 }
 
 @media screen and (max-device-width: 576px) {
-    .value-text {
-        font-size: 80%;
-    }
-    .label-text {
-        font-size: 70%;
+    .regular-2, .regular-1, .caption {
+        font-size: 95%;
     }
 }
 
@@ -360,15 +386,19 @@ body {
     text-decoration: none;
 }
 
-.collection-item {
+.collection .collection-item {
     position: relative;
     min-height: 72px;
     border-bottom: 1px solid #eeeeee;
-    padding: 16px 16px 0 72px;
+    padding: 16px 16px 0 16px;
+}
+
+.collection .collection-item.avatar  {
+    padding-left: 72px;
 }
 
 
-.collection-item img {
+.collection .collection-item.avatar img {
     position: absolute;
     display: inline-block;
     border-radius: 50%;
@@ -379,18 +409,12 @@ body {
     left: 16px;
 }
 
-.collection-item .icon {
+.collection .collection-item.avatar .icon {
     position: absolute;
     display: inline-block;
     overflow: hidden;
     vertical-align: middle;
     left: 24px;
-}
-
-.collection-item .title {
-    color: #424242;
-    font-size: 16px;
-    font-weight: bold;
 }
 
 .collection-item:focus, .collection-item:hover {
@@ -431,19 +455,21 @@ body {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-
 }
 
-.detail-top {
+.detail .detail-top {
     position: relative;
     padding: 32px 0 32px 0;
-    /* background-color: #eeeeee; */
     border-radius: 4px;
     min-height: 224px;
+    border-bottom: solid 1px #eeeeee;
+}
+
+.detail .detail-top.avatar {
     text-align: center;
 }
 
-.detail-top img {
+.detail .detail-top.avatar img {
     position: relative;
     display: block;
     border-radius: 50%;
@@ -455,28 +481,15 @@ body {
     margin-right: auto;
 }
 
-.detail-top .title {
-    color: #424242;
-    font-size: 16px;
-    font-weight: bold;
-}
-
 .detail-content {
     position: relative;
-    padding: 56px 16px 16px 24px;
+    padding: 24px 16px 16px 24px;
     min-height: 160px;
-    border-top: solid 1px #eeeeee;
+    border-bottom: solid 1px #eeeeee;
 }
 
-.detail-content .title {
-    position: absolute;
-    display: inline-block;
-    overflow: hidden;
-    left: 16px;
-    top: 16px;
-    margin-bottom: 24px;
-    color: #424242;
-    font-size: 20px;
+.detail-content:last-child {
+    border-bottom: none;
 }
 
 .detail-content .group {
@@ -486,15 +499,14 @@ body {
 }
 
 @media screen and (min-device-width: 576px) {
-    .detail-top {
+    .detail .detail-top.avatar {
         position: relative;
         padding: 80px 16px 0 190px;
         border-radius: 4px;
         min-height: 224px;
         text-align: left;
     }
-
-    .detail-top img {
+    .detail .detail-top.avatar img {
         position: absolute;
         display: inline-block;
         border-radius: 50%;
@@ -505,17 +517,8 @@ body {
         left: 16px;
         top: 40px;
     }
-
-    .detail-top .title {
-        color: #424242;
-        font-size: 16px;
-        font-weight: bold;
-    }
     .detail-content .group {
         width: 30%;
-    }
-    .detail-content .title {
-
     }
 }
 

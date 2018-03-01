@@ -209,7 +209,7 @@ def delete_keeper(request, keeper_pk, team_pk, package_pk):
 def session_detail(request, session_pk, team_pk, package_pk):
     session = get_object_or_404(Session, pk=session_pk)
     team = get_object_or_404(Team, pk=team_pk)
-    package = get_object_or_404(UserPackage, pk=package_pk)
+    package = UserPackage(pk=package_pk)
     context = {
         'session' : session,
         'team': team,
@@ -218,7 +218,7 @@ def session_detail(request, session_pk, team_pk, package_pk):
     return render(request, 'session/session_detail.html', context)
 
 
-def new_session(request, team_pk):
+def new_session(request, team_pk, package_pk):
     if request.method == "POST":
         form = AddSession(request.POST)
         if form.is_valid():
@@ -227,13 +227,13 @@ def new_session(request, team_pk):
             session.created_date = timezone.now()
             session.save()
             messages.success(request, 'Los gehts, dein Training wurde erfolgreich erstellt!')
-            return redirect(reverse('session_detail', args=[session.pk]))
+            return redirect(reverse('session_detail', args=[package_pk, team_pk, session.pk]))
     else:
         form = AddSession()
     return render(request, 'session/new_session.html', {'form': form})
 
 
-def edit_session(request, session_pk):
+def edit_session(request, session_pk, team_pk, package_pk):
     session = get_object_or_404(Session, pk=session_pk)
     if request.method == "POST":
         form = EditSession(request.POST, instance=session)
@@ -242,13 +242,13 @@ def edit_session(request, session_pk):
             session.edited_date = timezone.now()
             session.save()
             messages.success(request, 'Die Trainigsinformationen wurden aktualisiert')
-            return redirect(reverse('session_detail', args=[session]))
+            return redirect(reverse('session_detail', args=[package_pk, team_pk, session_pk]))
     else:
         form = EditSession(instance=session)
     return render(request, 'session/edit_session.html', {'form': form})
 
 
-def delete_session(request, session_pk):
+def delete_session(request, session_pk, team_pk, package_pk):
     session = get_object_or_404(Session, pk=session_pk)
     if request.method == "POST":
         form = DeleteSession(request.POST, instance=session)
@@ -258,7 +258,7 @@ def delete_session(request, session_pk):
             session.status = 0
             session.save()
             messages.success(request, 'Das Training wurde erfolgreich gelöscht')
-            return redirect('index')
+            return redirect(reverse('select_package', args=[package_pk, team_pk]))
     else:
         form = DeleteSession(instance=session)
     return render(request, 'session/delete_session.html', {'form': form})

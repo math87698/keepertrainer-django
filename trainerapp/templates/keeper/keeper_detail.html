@@ -14,42 +14,42 @@
     <div class="row">
         <div class="col-12 mx-auto">
             <ul class="detail">
-                <li class="detail-top">
+                <li class="detail-top avatar">
                     <img src="{{ MEDIA_URL }}{{ keeper.avatar_image }}">
-                    <span class="title">{{ keeper.first_name }} {{ keeper.last_name }}</span><br>
-                    <span class="value-text">{{ keeper.level }}</span><br/>
-                    {% if keeper.birthdate %}<span class="value-text">{{ keeper.birthdate }}</span>{% endif %}
+                    <span class="display">{{ keeper.first_name }} {{ keeper.last_name }}</span><br>
+                    <span class="regular-1">{{ keeper.level }}</span><br/>
+                    {% if keeper.birthdate %}<span class="regular-1">{{ keeper.birthdate }}</span>{% endif %}
                 </li>
+                <div class="caption">Adresse</div>
                 <li class="detail-content">
-                    <div class="title">Adresse</div>
                     {% if keeper.street or keeper.zipcity or keeper.email or keeper.phone %}
-                    <span class="value-text">{{ keeper.street }}</span><br/>
-                    <span class="value-text">{{ keeper.zipcity }}</span><br>
-                    <span class="value-text">{{ keeper.email }}</span><br>
-                    <span class="value-text">{{ keeper.phone }}</span>
+                    <span class="regular-1">{{ keeper.street }}</span><br/>
+                    <span class="regular-1">{{ keeper.zipcity }}</span><br>
+                    <span class="regular-1">{{ keeper.email }}</span><br>
+                    <span class="regular-1">{{ keeper.phone }}</span>
                     {% else %}
-                    <span class="value-text">Erfasse eine Adresse, E-Mail oder Telefonnummer für eine rasche Kontaktaufnahme</span>
+                    <span class="regular-1">Erfasse eine Adresse, E-Mail oder Telefonnummer für eine rasche Kontaktaufnahme</span>
                     {% endif %}
                 </li>
+                <div class="caption">Weitere Angaben</div>
                 <li class="detail-content">
-                    <div class="title">Weitere Angaben</div>
                     <div class="group">
-                        <span class="label-text">Nationalität</span>
-                        {% if keeper.nationality %}<p class="value-text">{{ keeper.nationality }}</p>{% else %}<p class="value-text">keine Angabe</p>{% endif %}
-                        <span class="label-text">Tätigkeit</span>
-                        {% if keeper.occupation %}<p class="value-text">{{ keeper.occupation }}</p>{% else %}<p class="value-text">keine Angabe</p>{% endif %}
+                        <span class="caption">Nationalität</span>
+                        {% if keeper.nationality %}<p class="regular-1">{{ keeper.nationality }}</p>{% else %}<p class="regular-1">keine Angabe</p>{% endif %}
+                        <span class="caption">Tätigkeit</span>
+                        {% if keeper.occupation %}<p class="regular-1">{{ keeper.occupation }}</p>{% else %}<p class="regular-1">keine Angabe</p>{% endif %}
                     </div>
                     <div class="group">
-                        <span class="label-text">Trikotnummer</span>
-                        {% if keeper.shirtnumber %}<p class="value-text">{{ keeper.shirtnumber }}</p>{% else %}<p class="value-text">keine Angabe</p>{% endif %}
-                        <span class="label-text">Starker Fuss</span>
-                        {% if keeper.foot %}<p class="value-text">{{ keeper.foot }}</p>{% else %}<p class="value-text">keine Angabe</p>{% endif %}
+                        <span class="caption">Trikotnummer</span>
+                        {% if keeper.shirtnumber %}<p class="regular-1">{{ keeper.shirtnumber }}</p>{% else %}<p class="regular-1">keine Angabe</p>{% endif %}
+                        <span class="caption">Starker Fuss</span>
+                        {% if keeper.foot %}<p class="regular-1">{{ keeper.foot }}</p>{% else %}<p class="regular-1">keine Angabe</p>{% endif %}
                     </div>
                     <div class="group">
-                        <span class="label-text">Grösse</span>
-                        {% if keeper.height %}<p class="value-text">{{ keeper.height }} cm</p>{% else %}<p class="value-text">keine Angabe</p>{% endif %}
-                        <span class="label-text">Gewicht</span>
-                        {% if keeper.weight %}<p class="value-text">{{ keeper.weight }} kg</p>{% else %}<p class="value-text">keine Angabe</p>{% endif %}
+                        <span class="caption">Grösse</span>
+                        {% if keeper.height %}<p class="regular-1">{{ keeper.height }} cm</p>{% else %}<p class="regular-1">keine Angabe</p>{% endif %}
+                        <span class="caption">Gewicht</span>
+                        {% if keeper.weight %}<p class="regular-1">{{ keeper.weight }} kg</p>{% else %}<p class="regular-1">keine Angabe</p>{% endif %}
                     </div>
                 </li>
             </ul>

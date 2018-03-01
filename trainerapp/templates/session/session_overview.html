@@ -2,21 +2,35 @@
 
 {% block body %}
 
-<a href="{% url 'index' %}">Zurück</a>
-
-{% for session in sessions %}
-
-<a href="{% url 'session_detail' session_pk=session.pk team_pk=team.pk package_pk=package.pk %}">Detail</a>
-{{ session.topic }}
-{{ session.date }}
-{{ session.time }}
-{{ session.duration }}
-{{ session.coordination1 }}
-{{ session.coordination2 }}
-{{ session.type }}
-
-{% endfor %}
-
-<a href="{% url 'new_session' team_pk=team.pk %}">Training planen</a>
+<div class="container">
+    <div class="row">
+        <div class="col-12 top-navigation">
+            <a href="{% url 'index' %}">
+                <i class="fas fa-chevron-left"></i>
+                Zurück zum Dashboard
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mx-auto">
+            <ul class="collection">
+                {% for session in sessions %}
+                <a href="{% url 'session_detail' session_pk=session.pk team_pk=team.pk package_pk=package.package_id %}">
+                    <li class="collection-item">
+                        <span class="regular-2">{{ session.topic }}</span>
+                        <p>{{ session.date|date:"d.m." }} {{ session.date|date:"l" }} {{ session.time }}</p>
+                    </li>
+                </a>
+                {% endfor %}
+                <a href="{% url 'new_session' team_pk=team.pk package_pk=package.package_id %}">
+                    <li class="collection-item">
+                        <div class="icon"><i class="fas fa-plus-circle fa-lg"></i></div>
+                        Torhüter erfassen
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
