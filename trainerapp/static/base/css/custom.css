@@ -92,6 +92,7 @@ primary-blue a {
 
 p {
     color: #424242;
+    font-size: 14px;
 }
 
 .regular-2 {
@@ -276,16 +277,16 @@ body {
 
 @media screen and (min-device-width: 576px) {
     .primary-btn {
-        width: 48%;
+        width: 32%;
     }
     .secondary-btn {
-        width: 48%;
+        width: 32%;
     }
     .alternate-btn {
-        width: 48%;
+        width: 32%;
     }
     .red-btn {
-        width: 48%;
+        width: 32%;
     }
 }
 
@@ -322,19 +323,6 @@ body {
 }
 
 /*--------------------------------------------------------- END Content Navigation Styles ------------------------------------------------*/
-
-/*--------------------------------------------------------- Chip Styles ------------------------------------------------*/
-.chip {
-    display: inline-block;
-    padding: 0 25px;
-    height: 38px;
-    font-size: 16px;
-    line-height: 38px;
-    border-radius: 25px;
-    background-color: #f1f1f1;
-}
-
-/*--------------------------------------------------------- END Chip Styles ------------------------------------------------*/
 
 /*---------------------------------------------------------- Dashboard Styles - Homepage specific styles ------------------------------------------------*/
 
@@ -459,13 +447,26 @@ body {
 
 .detail .detail-top {
     position: relative;
-    padding: 32px 0 32px 0;
+    padding: 32px 0 32px 24px;
     border-radius: 4px;
     min-height: 224px;
     border-bottom: solid 1px #eeeeee;
 }
 
+.detail .detail-top .chip {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    padding: 6px 24px;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
 .detail .detail-top.avatar {
+    padding: 32px 0 32px 0;
     text-align: center;
 }
 
@@ -481,18 +482,30 @@ body {
     margin-right: auto;
 }
 
-.detail-content {
+.detail .detail-content {
     position: relative;
     padding: 24px 16px 16px 24px;
     min-height: 160px;
     border-bottom: solid 1px #eeeeee;
 }
 
-.detail-content:last-child {
+.detail .detail-content:last-child {
     border-bottom: none;
 }
 
-.detail-content .group {
+.detail .detail-content .group-3 {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.detail .detail-content .group-2 {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.detail .detail-content .group-1 {
     position: relative;
     display: inline-block;
     width: 100%;
@@ -517,8 +530,14 @@ body {
         left: 16px;
         top: 40px;
     }
-    .detail-content .group {
+    .detail .detail-content .group-3 {
         width: 30%;
+    }
+    .detail .detail-content .group-2 {
+        width: 49%;
+    }
+    .detail .detail-content .group {
+        width: 100%;
     }
 }
 

@@ -23,9 +23,11 @@ urlpatterns = [
     url(r'^keeper/edit/(?P<package_pk>\d+)/(?P<team_pk>\d+)/(?P<keeper_pk>\d+)/$', views.edit_keeper, name='edit_keeper'),
     url(r'^keeper/delete/(?P<package_pk>\d+)/(?P<team_pk>\d+)/(?P<keeper_pk>\d+)/$', views.delete_keeper, name='delete_keeper'),
     # Session URLs
+    url(r'^(?P<package_pk>\d+)/(?P<team_pk>\d+)/monat=(?P<month>\d+)/$', views.filter_session, name='filter_session'),
     url(r'^training/(?P<package_pk>\d+)/(?P<team_pk>\d+)/(?P<session_pk>\d+)/$', views.session_detail, name='session_detail'),
     url(r'^training/new/(?P<package_pk>\d+)/(?P<team_pk>\d+)/$', views.new_session, name='new_session'),
     url(r'^training/edit/(?P<package_pk>\d+)/(?P<team_pk>\d+)/(?P<session_pk>\d+)/$', views.edit_session, name='edit_session'),
+    url(r'^training/duplicate/(?P<package_pk>\d+)/(?P<team_pk>\d+)/(?P<session_pk>\d+)/$', views.copy_session, name='copy_session'),
     url(r'^training/delete/(?P<package_pk>\d+)/(?P<team_pk>\d+)/(?P<session_pk>\d+)/$', views.delete_session, name='delete_session'),
     # Presence URLs
     url(r'^anwesenheiten/(?P<attendance_pk>\d+)/$', views.attendance_detail, name='attendance_detail'),

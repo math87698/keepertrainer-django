@@ -12,20 +12,34 @@
         </div>
     </div>
     <div class="row">
+        <div class="col-6 col-lg-12">
+            {{ today.year|add:"-1" }}
+            {{ today|date:"F"|add:"-1" }}
+            <div class="dropdown">
+                <div class="btn secondary-btn dropdown-toggle" id="dropdownMonthFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monat</div>
+                <div class="dropdown-menu" aria-labelledby="dropdownMonthFilter">
+                    <a class="dropdown-item" href="{% url 'filter_session' team_pk=team.pk package_pk=package.package_id month=2 %}">Februar</a>
+                    <a class="dropdown-item" href="{% url 'filter_session' team_pk=team.pk package_pk=package.package_id month=3 %}">März</a>
+                    <a class="dropdown-item" href="{% url 'filter_session' team_pk=team.pk package_pk=package.package_id month=4 %}">April</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-12 mx-auto">
             <ul class="collection">
                 {% for session in sessions %}
                 <a href="{% url 'session_detail' session_pk=session.pk team_pk=team.pk package_pk=package.package_id %}">
                     <li class="collection-item">
                         <span class="regular-2">{{ session.topic }}</span>
-                        <p>{{ session.date|date:"d.m." }} {{ session.date|date:"l" }} {{ session.time }}</p>
+                        <p>{{ session.date|date:"l" }}, {{ session.date|date:"d. F" }} {{ session.time }}</p>
                     </li>
                 </a>
                 {% endfor %}
                 <a href="{% url 'new_session' team_pk=team.pk package_pk=package.package_id %}">
-                    <li class="collection-item">
+                    <li class="collection-item avatar">
                         <div class="icon"><i class="fas fa-plus-circle fa-lg"></i></div>
-                        Torhüter erfassen
+                        Training erstellen
                     </li>
                 </a>
             </ul>

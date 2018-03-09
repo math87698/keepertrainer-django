@@ -8,6 +8,7 @@ from django.utils import timezone
 from django.contrib import messages
 from django.contrib.auth import get_user_model
 from django.core.files.storage import FileSystemStorage
+import datetime
 
 from .models import Team, UserPackage, Keeper, Session, Attendance
 
@@ -96,6 +97,7 @@ def delete_team(request, team_pk):
 
 
 # Here are all Keeper Views, Overview, Detail, Add Form, Edit Form, Delete Form
+
 def select_package(request, team_pk, package_pk):
     package = get_object_or_404(UserPackage, package_id=package_pk, team_id=team_pk)
     team = get_object_or_404(Team, id=team_pk)
@@ -108,11 +110,13 @@ def select_package(request, team_pk, package_pk):
         }
         return render(request, 'keeper/keeper_overview.html', context)
     elif package.package.pk == 2:
-        sessions = Session.objects.filter(team=team, status=1)
+        today = datetime.datetime.today()
+        sessions = Session.objects.filter(team=team, status=1, date__month=today.month)
         context = {
             'team': team,
             'package': package,
             'sessions': sessions,
+            'today': today,
         }
         return render(request, 'session/session_overview.html', context)
     elif package.package.pk == 3:
@@ -218,6 +222,20 @@ def session_detail(request, session_pk, team_pk, package_pk):
     return render(request, 'session/session_detail.html', context)
 
 
+def filter_session(request, team_pk, package_pk, month):
+    package = get_object_or_404(UserPackage, package_id=package_pk, team_id=team_pk)
+    team = get_object_or_404(Team, pk=team_pk)
+    today = datetime.datetime.now()
+    sessions = Session.objects.filter(team=team, status=1, date__month=month)
+    context = {
+        'team': team,
+        'package': package,
+        'sessions': sessions,
+        'today': today,
+    }
+    return render(request, 'session/session_overview.html', context)
+
+
 def new_session(request, team_pk, package_pk):
     if request.method == "POST":
         form = AddSession(request.POST)
@@ -246,6 +264,16 @@ def edit_session(request, session_pk, team_pk, package_pk):
     else:
         form = EditSession(instance=session)
     return render(request, 'session/edit_session.html', {'form': form})
+
+
+def copy_session(request, session_pk, team_pk, package_pk):
+    session = get_object_or_404(Session, pk=session_pk)
+    team = get_object_or_404(Team, pk=team_pk)
+    topic = 'Kopie von ' + session.topic
+    session_copy = Session(team_id=team.pk, topic=topic, date=session.date, time=session.time, coordination1=session.coordination1, coordination2=session.coordination2)
+    session_copy.save()
+    messages.success(request, 'Erledigt, das Training wurde kopiert und kann nun bearbeitet werden!')
+    return redirect(reverse('edit_session', args=[package_pk, team_pk, session_copy.pk]))
 
 
 def delete_session(request, session_pk, team_pk, package_pk):

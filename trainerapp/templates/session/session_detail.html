@@ -2,26 +2,50 @@
 
 {% block body %}
 
-<a href="{% url 'select_package' team_pk=team.pk package_pk=package.pk %}">Zurück</a>
-
-{{ session.topic }}
-{{ session.date }}
-{{ session.time }}
-{{ session.duration }}
-{{ session.coordination1 }}
-{{ session.coordination2 }}
-{{ session.type }}
-<!-- divider -->
-{{ session.goal }}
-{{ session.technique }}
-{{ session.tactic }}
-{{ session.stamina }}
-{{ session.mental }}
-<!-- divider -->
-{{ session.equipment }}
-{{ session.intensity }}
-
-<a href="{% url 'edit_session' session_pk=session.pk team_pk=team.pk package_pk=package.pk %}">Training ändern</a>
-<a href="{% url 'delete_session' session_pk=session.pk team_pk=team.pk package_pk=package.pk %}">Löschen</a>
+<div class="container">
+    <div class="row">
+        <div class="col-12 top-navigation">
+            <a href="{% url 'select_package' team_pk=team.pk package_pk=package.pk %}">
+                <i class="fas fa-chevron-left"></i>
+                Zurück zur Trainingsübersicht
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mx-auto">
+            <ul class="detail">
+                <li class="detail-top">
+                    <span class="display">{{ session.topic }}</span><br>
+                    <span class="regular-1">{{ session.date|date:"d. F y" }}</span><br/>
+                    <span class="regular-1">{{ session.time }}</span>
+                    <span class="chip">Spezial</span>
+                </li>
+                <li class="detail-content">
+                    <div class="group-3">
+                        <span class="caption">Koordinativer Schwerpunkt</span>
+                        {% if session.coordination1 or session.coordination2 %}<p class="regular-1">{{ session.get_coordination1_display }} und {{ session.get_coordination2_display }}</p>{% else %}<p class="regular-1">keine Angabe</p>{% endif %}
+                        <span class="caption">Dauer</span>
+                        {% if session.duration %}<p class="regular-1">{{ session.duration }}</p>{% else %}<p class="regular-1">keine Angabe</p>{% endif %}
+                    </div>
+                    <div class="group-3">
+                        <span class="caption">Intensität</span>
+                        {% if session.intensity %}<p class="regular-1">{{ session.intensity }}</p>{% else %}<p class="regular-1">keine Angabe</p>{% endif %}
+                        <span class="caption">Material</span>
+                        {% if session.equipment %}<p class="regular-1">{{ session.equipment }}</p>{% else %}<p class="regular-1">keine Angabe</p>{% endif %}
+                    </div>
+                </li>
+                <li class="detail-content">
+                    <div class="group-2">
+                        <span class="caption">Trainingsziel</span>
+                        <p>{{ session.goal }}</p>
+                    </div>
+                </li>
+            </ul>
+            <a class="btn primary-btn" href="{% url 'edit_session' session_pk=session.pk team_pk=team.pk package_pk=package.pk %}">Training editieren</a>
+            <a class="btn secondary-btn" href="{% url 'copy_session' session_pk=session.pk team_pk=team.pk package_pk=package.pk %}">Training kopieren</a>
+            <a class="btn red-btn" href="{% url 'delete_session' session_pk=session.pk team_pk=team.pk package_pk=package.pk %}">Training löschen</a>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
