@@ -11,10 +11,17 @@
             </a>
         </div>
     </div>
+    {{ today.year|add:"-1" }}
+    {{ today|date:"F"|add:"-1" }}
+    {{ today.month|add:"-1" }}
+    {% regroup sessions by date|date:"Y" as sessions_per_year %}
+    {% for year_sessions in sessions_per_year %}
+    {{ year_sessions.grouper }}
+    {% regroup year_sessions.list by date|date:"F" as sessions_per_month %}
+    {% for month_sessions in sessions_per_month %}
+    {{ month_sessions.grouper }}
     <div class="row">
         <div class="col-6 col-lg-12">
-            {{ today.year|add:"-1" }}
-            {{ today|date:"F"|add:"-1" }}
             <div class="dropdown">
                 <div class="btn secondary-btn dropdown-toggle" id="dropdownMonthFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monat</div>
                 <div class="dropdown-menu" aria-labelledby="dropdownMonthFilter">
@@ -28,7 +35,7 @@
     <div class="row">
         <div class="col-12 mx-auto">
             <ul class="collection">
-                {% for session in sessions %}
+                {% for session in month_sessions.list %}
                 <a href="{% url 'session_detail' session_pk=session.pk team_pk=team.pk package_pk=package.package_id %}">
                     <li class="collection-item">
                         <span class="regular-2">{{ session.topic }}</span>
@@ -45,6 +52,10 @@
             </ul>
         </div>
     </div>
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+
 </div>
 
 {% endblock %}

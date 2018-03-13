@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from django.core.urlresolvers import reverse
+from django import views
 from django.utils import timezone
 from django.contrib import messages
 from django.contrib.auth import get_user_model
@@ -21,13 +22,16 @@ def heroku(request):
 
 
 def index(request):
-    teams = Team.objects.filter(trainer=request.user, status=1)
-    packages = UserPackage.objects.all()
-    context = {
-        'teams': teams,
-        'packages': packages,
-    }
-    return render(request, 'base.html', context)
+    if request.user.is_authenticated:
+        teams = Team.objects.filter(trainer=request.user, status=1)
+        packages = UserPackage.objects.all()
+        context = {
+            'teams': teams,
+            'packages': packages,
+        }
+        return render(request, 'base.html', context)
+    else:
+        return redirect('auth_login')
 
 
 def account_settings(request):
@@ -111,7 +115,7 @@ def select_package(request, team_pk, package_pk):
         return render(request, 'keeper/keeper_overview.html', context)
     elif package.package.pk == 2:
         today = datetime.datetime.today()
-        sessions = Session.objects.filter(team=team, status=1, date__month=today.month)
+        sessions = Session.objects.filter(team=team, status=1)
         context = {
             'team': team,
             'package': package,
@@ -222,11 +226,11 @@ def session_detail(request, session_pk, team_pk, package_pk):
     return render(request, 'session/session_detail.html', context)
 
 
-def filter_session(request, team_pk, package_pk, month):
+def filter_session(request, team_pk, package_pk):
     package = get_object_or_404(UserPackage, package_id=package_pk, team_id=team_pk)
     team = get_object_or_404(Team, pk=team_pk)
     today = datetime.datetime.now()
-    sessions = Session.objects.filter(team=team, status=1, date__month=month)
+    sessions = Session.objects.filter(team=team, status=1)
     context = {
         'team': team,
         'package': package,
