@@ -11,34 +11,39 @@
             </a>
         </div>
     </div>
-    {{ today.year|add:"-1" }}
-    {{ today|date:"F"|add:"-1" }}
-    {{ today.month|add:"-1" }}
-    {% regroup sessions by date|date:"Y" as sessions_per_year %}
-    {% for year_sessions in sessions_per_year %}
-    {{ year_sessions.grouper }}
-    {% regroup year_sessions.list by date|date:"F" as sessions_per_month %}
-    {% for month_sessions in sessions_per_month %}
-    {{ month_sessions.grouper }}
     <div class="row">
         <div class="col-6 col-lg-12">
-            <div class="dropdown">
-                <div class="btn secondary-btn dropdown-toggle" id="dropdownMonthFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monat</div>
-                <div class="dropdown-menu" aria-labelledby="dropdownMonthFilter">
-                    <a class="dropdown-item" href="{% url 'filter_session' team_pk=team.pk package_pk=package.package_id month=2 %}">Februar</a>
-                    <a class="dropdown-item" href="{% url 'filter_session' team_pk=team.pk package_pk=package.package_id month=3 %}">März</a>
-                    <a class="dropdown-item" href="{% url 'filter_session' team_pk=team.pk package_pk=package.package_id month=4 %}">April</a>
-                </div>
+            <div class="dropdown dropdown-filter">
+                <a class="dropdown-toggle" id="dropdownMonth" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monat
+                    {% for month in month %}
+                    {{ month|date:"F" }}
+                    {% endfor %}
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMonth">
+                    {% regroup monthly_sessions by date|date:"Y" as sessions_per_year %}
+                    {% for year_sessions in sessions_per_year %}
+                    {% regroup year_sessions.list by date|date:"m" as sessions_per_month %}
+                    <li class="dropdown-header">{{ year_sessions.grouper }}</li>
+                    {% for month_sessions in sessions_per_month %}
+                    <li>
+                        <a class="dropdown-item" href="{% url 'filter_session' team_pk=team.pk package_pk=package.package_id month=month_sessions.grouper %}">
+                            {{ month_sessions.grouper|date:"F" }}
+                            <span class="dropdown-item-counter">{{ month_sessions.list|length }}</span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                    {% endfor %}
+                </ul>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-12 mx-auto">
             <ul class="collection">
-                {% for session in month_sessions.list %}
+                {% for session in sessions %}
                 <a href="{% url 'session_detail' session_pk=session.pk team_pk=team.pk package_pk=package.package_id %}">
                     <li class="collection-item">
-                        <span class="regular-2">{{ session.topic }}</span>
+                        <span class="regular-2">{{ session.topic }}</span><a href="{% url 'session_pdf' %}"> PDF</a>
                         <p>{{ session.date|date:"l" }}, {{ session.date|date:"d. F" }} {{ session.time }}</p>
                     </li>
                 </a>
@@ -51,11 +56,7 @@
                 </a>
             </ul>
         </div>
-    </div>
-    {% endfor %}
-    {% endif %}
-    {% endfor %}
-
+    </div
 </div>
 
 {% endblock %}

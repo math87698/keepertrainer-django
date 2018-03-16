@@ -1,0 +1,464 @@
+/*--------------------------------------------------------- Colors ------------------------------------------------*/
+/*--------------------------------------------------------- Blue Colors - Use blue text only with links! ------------------------------------------------*/
+.primary-blue {
+    background-color: #2196f3;
+}
+
+.primary-blue:hover {
+    color: #2196f3;
+    text-decoration: none;
+}
+
+primary-blue a {
+    text-decoration: none;
+}
+
+.primary-blue-text {
+    color: #2196f3;
+}
+
+.alternate-blue-text {
+    color: #0d47a1;
+}
+
+/*--------------------------------------------------------- Grey Colors - Are Primaries for Text and Secondary for buttons, cards and content background ------------------------------------------------*/
+.primary-dark-grey-text {
+    color: #424242;
+}
+
+.primary-light-grey-text {
+    color: #eeeeee;
+}
+
+.primary-light-grey-text:hover {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+.primary-light-grey-text a {
+    text-decoration: none;
+}
+
+.alternate-grey-text {
+    color: #bdbdbd;
+}
+
+.light-grey-1 {
+    background-color: #eeeeee;
+}
+
+.light-grey-2 {
+    background-color: #fafafa;
+}
+
+.dark-grey-1 {
+    background-color: #424242;
+}
+
+
+/*--------------------------------------------------------- Teal Green Color - For Primary Buttons ------------------------------------------------*/
+.teal-green {
+    background-color: #1de9b6;
+}
+
+/*--------------------------------------------------------- Red Colors - For Alerting Purposes ------------------------------------------------*/
+.alterting-red-text {
+    color: #f44336;
+}
+
+.alterting-red {
+    background-color: #f44336;
+}
+
+/*--------------------------------------------------------- END Colors ------------------------------------------------*/
+
+/*--------------------------------------------------------- Standard Selectors such as p, span, body styles, table ------------------------------------------------*/
+p {
+    color: #424242;
+}
+
+.value-text {
+    color: #424242;
+}
+
+.label-text {
+    color: #bdbdbd;
+    font-size: 90%;
+}
+
+@media screen and (max-device-width: 576px) {
+    .value-text {
+        font-size: 80%;
+    }
+    .label-text {
+        font-size: 70%;
+    }
+}
+
+/* Hide Asterisk for Required Fields since I believe in simplicity, that means no non sense fields */
+span.asteriskField {
+  display: none;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+.dropdown-menu ul {
+    text-decoration: none;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    padding-bottom: 96px;
+}
+
+.content {
+    padding: 2em 2em 6em; /* 70px = footer height + expected padding */
+    margin-bottom: -4em;  /* brings the footer into the padding gap */
+    min-height: 100%;
+    flex: 1 0 auto;
+}
+
+/*--------------------------------------------------------- END Standard Selectors such as p, span, body styles, table ------------------------------------------------*/
+
+/*--------------------------------------------------------- Buttons ------------------------------------------------*/
+.primary-btn {
+  color: #424242;
+  background-color: #1de9b6;
+}
+
+.primary-btn:hover {
+  color: #424242;
+  background-color: #64ffda;
+}
+
+.primary-btn:focus, .primary-btn.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.primary-btn.disabled, .primary-btn:disabled {
+  background-color: #64ffda;
+}
+
+.primary-btn:not([disabled]):not(.disabled):active, .primary-btn:not([disabled]):not(.disabled).active,
+.show > .primary-btn.dropdown-toggle {
+  color: #424242;
+  background-color: #64ffda;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.secondary-btn {
+  color: #424242;
+  background-color: #e0e0e0;
+}
+
+.secondary-btn:hover {
+  color: #424242;
+  background-color: #fafafa;
+}
+
+.secondary-btn:focus, .secondary-btn.focus {
+  box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
+}
+
+.secondary-btn.disabled, .secondary-btn:disabled {
+  background-color: #e0e0e0;
+}
+
+.secondary-btn:not([disabled]):not(.disabled):active, .secondary-btn:not([disabled]):not(.disabled).active,
+.show > .secondary-btn.dropdown-toggle {
+  color: #424242;
+  background-color: #e0e0e0;
+  box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
+}
+
+.alternate-btn {
+  color: #424242;
+  background-color: #eeeeee;
+}
+
+.alternate-btn:hover {
+  color: #424242;
+  background-color: #fafafa;
+}
+
+.alternate-btn:focus, .alternate-btn.focus {
+  box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
+}
+
+.alternate-btn.disabled, .alternate-btn:disabled {
+  background-color: #e0e0e0;
+}
+
+.alternate-btn:not([disabled]):not(.disabled):active, .alternate-btn:not([disabled]):not(.disabled).active,
+.show > .alternate-btn.dropdown-toggle {
+  color: #424242;
+  background-color: #eeeeee;
+  box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
+}
+
+.red-btn {
+    color: #eeeeee;
+    background-color: f44336;
+}
+
+.red-btn:hover {
+    color: #eeeeee;
+    background-color: f44336;
+}
+
+.red-btn:focus, .red-btn.focus {
+  box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
+}
+
+.red-btn.disabled, .red-btn:disabled {
+  background-color: #f44336;
+}
+
+.red-btn:not([disabled]):not(.disabled):active, .red-btn:not([disabled]):not(.disabled).active,
+.show > .red-btn.dropdown-toggle {
+  color: #eeeeee;
+  background-color: #f44336;
+  box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
+}
+
+/*--------------------------------------------------------- END Buttons ------------------------------------------------*/
+
+/*--------------------------------------------------------- Header Navigation Styles ------------------------------------------------*/
+.nav-account {
+    color: #eeeeee;
+}
+
+.nav-account:hover {
+    color: #fafafa;
+}
+
+.account-dropdown {
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: auto;
+    bottom: 100%;
+}
+
+/*--------------------------------------------------------- END Header Navigation Styles ------------------------------------------------*/
+
+/*--------------------------------------------------------- Content Navigation Styles - Back Buttons ------------------------------------------------*/
+
+.top-navigation {
+    padding: 16px 0 16px 0;
+    font-size: 90%;
+}
+
+.top-navigation a:hover {
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------- END Content Navigation Styles ------------------------------------------------*/
+
+/*--------------------------------------------------------- Chip Styles ------------------------------------------------*/
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 38px;
+    font-size: 16px;
+    line-height: 38px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+
+/*--------------------------------------------------------- END Chip Styles ------------------------------------------------*/
+
+/*---------------------------------------------------------- Dashboard Styles - Homepage specific styles ------------------------------------------------*/
+
+.primary-title {
+    padding-top: 2em;
+    margin-bottom: 1em;
+}
+.dashboard-card {
+    background-color: #2196f3;
+    position: relative;
+    min-height: 7rem;
+    margin: 0.5rem 0 1rem 0;
+    transition: box-shadow .25s;
+    border-radius: 5px;
+    color: #eeeeee;
+    font-size: 24px;
+    padding-left: 12px;
+}
+
+.dashboard-card:hover {
+    background-color: #0d47a1;
+    text-decoration: none;
+}
+
+.new-team {
+    margin-top: 3em;
+}
+
+/*--------------------------------------------------------- END Dashboard Styles - Homepage specific styles ------------------------------------------------*/
+
+/*--------------------------------------------------------- Collection List Styles ------------------------------------------------*/
+.collection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    list-style: none;
+    flex-direction: column;
+    padding: 0 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border: 1px solid #eeeeee;
+    border-bottom: none;
+}
+
+.collection a:hover {
+    text-decoration: none;
+}
+
+.collection-item {
+    position: relative;
+    min-height: 72px;
+    border-bottom: 1px solid #eeeeee;
+    padding: 16px 16px 0 72px;
+}
+
+
+.collection-item img {
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    vertical-align: middle;
+    left: 16px;
+}
+
+.collection-item .icon {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    left: 24px;
+}
+
+.collection-item .title {
+    color: #424242;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.collection-item:focus, .collection-item:hover {
+  z-index: 1;
+  text-decoration: none;
+}
+
+.collection-item.disabled, .collection-item:disabled {
+  color: #868e96;
+  background-color: #fff;
+}
+
+.collection-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.collection-flush .collection-item {
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+}
+
+/*--------------------------------------------------------- END Collection List Styles ------------------------------------------------*/
+
+/*--------------------------------------------------------- Detail Styles ------------------------------------------------*/
+
+.detail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    list-style: none;
+    flex-direction: column;
+    padding: 0 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+}
+
+.detail-top {
+    position: relative;
+    padding: 80px 16px 0 190px;
+    background-color: #eeeeee;
+    border-radius: 4px;
+    min-height: 224px;
+}
+
+.detail-top img {
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    width: 144px;
+    height: 144px;
+    overflow: hidden;
+    vertical-align: middle;
+    left: 16px;
+    top: 40px;
+}
+
+.detail-top .title {
+    color: #424242;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.detail-content {
+    position: relative;
+    padding: 56px 16px 0 24px;
+    min-height: 160px;
+    border-top: solid 1px #eeeeee;
+}
+
+.detail-content .title {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    left: 16px;
+    top: 16px;
+    margin-bottom: 24px;
+    color: #424242;
+    font-size: 24px;
+}
+
+/*--------------------------------------------------------- END Detail Styles ------------------------------------------------*/
+
+
+/*--------------------------------------------------------- Footer Styles ------------------------------------------------*/
+
+.footer {
+    color: #bdbdbd;
+    position: absolute;
+    height: 3rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.footer .index {
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+/*--------------------------------------------------------- END Footer Styles ------------------------------------------------*/

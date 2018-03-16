@@ -132,10 +132,6 @@ th, td {
     text-align: left;
 }
 
-.dropdown-menu ul {
-    text-decoration: none;
-}
-
 html {
     position: relative;
     min-height: 100%;
@@ -291,6 +287,28 @@ body {
 }
 
 /*--------------------------------------------------------- END Buttons ------------------------------------------------*/
+
+/*---------------------------------------------------------- Dropdown Styles ------------------------------------------------*/
+.dropdown-menu ul {
+    text-decoration: none;
+}
+
+/* Dropddown Filter */
+.dropdown-filter {
+    padding: 8px 0 16px 16px;
+}
+
+.dropdown-item-counter {
+    position: absolute;
+    background-color: #eeeeee;
+    right: 16px;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/*--------------------------------------------------------- END Dropdowns ------------------------------------------------*/
 
 /*--------------------------------------------------------- Header Navigation Styles ------------------------------------------------*/
 .nav-account {

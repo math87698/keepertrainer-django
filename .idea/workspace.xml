@@ -2,9 +2,424 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85a260c2-6e9d-4b49-97eb-92a341a68ae4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/keepers/None/IMG_0223_m6c6Je5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/keepers/None/MH_nmGTAIW.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/00513153ac77.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/01f06be5b98a.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/02cdc869ca0b.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/03c30ff6e0c7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/04285867f63e.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/04517b8ae1fb.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/0467c886d976.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/05aa35bc8b90.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/06809277d533.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/06ef3e3ad949.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/073ea6c96c32.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/077ad1b67ca0.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/07ab559dd1f4.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/07cf248c0fd7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/082147d71112.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/092a8b65db46.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/09fc0afcc0f4.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/0a4f2e71111e.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/0b37454094a3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/0b591efd38b6.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/0b9b2d65ae34.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/0b9e51a9357b.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/0bd5a7cb8b79.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/0c3f1241048a.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/0c5a898995b6.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/0c70d79680ab.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/0da5cf64a017.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/0dd5a2bdeed1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/0deff401bae5.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/0e3ce63ac0d8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/0ed22f852b83.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/0faa5acee8a8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/0fd38a90324a.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/11003aa3972d.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/11542327dda2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/11d64880db54.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/1346edcb8371.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/13ba6e0ea065.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/143c574f4876.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/177aa8905f93.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/18563904cf33.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/19a710ed9e5c.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/19d66a5b2966.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/1b993ba5222d.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/1be35532ced2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/1c3596f82280.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/1c444e13d4fa.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/1c4dca982573.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/1c5590f7fb28.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/1d50dde5534b.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/1d7d739d7cd0.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/1d98774118fa.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/1e59738a2c42.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/1ffba468de21.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/20269909125c.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/2128ef433a31.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/219f7f337164.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/224d829d2669.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/22584251100b.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/22c52f4ff15b.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/22c850d9c631.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/2326906eb6b6.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/23b7779a02a7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/244876c28a82.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/24572ab45bea.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/24d41a8a75e8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/25213d33ae1f.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/2539f671f236.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/255b5c40d234.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/260ce45b08e8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/26467e2346b1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/26a158d28c6d.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/26b16cd2d7ad.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/27330cbfaea7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/275b4d6a8b38.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/27aba8455e11.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/2855f289c9c0.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/28ef7e9f19da.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/28f16ff8edf0.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/29a8a289c386.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/29da584f6f24.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/2a64f4821f38.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/2c28d1139845.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/2cd3a26a8c68.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/2d4ff2ce404c.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/2d7d774fd5a7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/2dbd390bcb4a.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/2debe973da67.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/2e05cc8b56e5.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/2e2511020578.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/30330df03a32.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/30bfe30a5092.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/30efecca7c14.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/3217b9006c0d.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/323caa0a8340.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/32bc98ce7240.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/32e64f774e47.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/331fa22de2e9.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/3336520c4672.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/33a80ebfca89.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/33d30a441d66.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/34106ce65a49.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/351c9b28de97.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/359b30978c3f.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/35cac2c9a81c.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/35f174962c45.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/364e050e5696.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/3660bfcbe415.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/3759f697c5fd.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/375a1c4ecbb1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/39072217e93a.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/3a5bc7bab619.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/3a8f331ae1d8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/3ab49dd415ca.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/3aeb2d8ee9cc.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/3c35d178e0e5.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/3c677cf2cba6.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/3d4398c97cd2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/3dd77c2fc930.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/3e042e65e028.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/3e3576735af5.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/40cb5f68f082.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/40cf3d67fb57.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/41cae5c000df.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/434d619a9a7c.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/447d208a1c04.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/44c5c66b937b.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/461bd3d234c8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/4813a43a56f2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/48972df1e08e.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/48aae728173f.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/48f488c1a174.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/49617c4d2275.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/49936e21a104.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/4b760e399b5e.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/4c4eb107014e.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/4d2505974137.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/4e001821b819.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/50e454c8fff8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/528849a2f98e.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/537241385f0b.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/552fb6c217d8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/553bcab73723.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/55990c30e3d4.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/561802268745.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/570ed1280e54.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/5757ba9ec096.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/57fb84452ab7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/5809ee5e2f06.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/58971a39ef60.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/599f975badd6.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/5a709ac63245.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/5a7c7ec04cc5.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/5ab72f7e81ad.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/5bc124370192.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/5bdef24296b2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/5cb2fedbff64.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/5e3ff7ca0834.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/5efa37365e5c.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/5f5c50bd270c.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/5fc04dc31907.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/619c17819395.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/63914c9d77b2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/649a8bdb0d5c.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/65d8f707138d.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/6979d6b6a13d.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/6a4e27a1470c.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/6aafb9d316ef.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/6acb0132dad6.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/6b0feb3613a4.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/6b3fa4aee996.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/6b7edb366bda.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/6bab0a85aa95.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/6d1de3fb25ac.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/6dcde73a83cb.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/6e2ddb87970f.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/6f8af4184412.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/6fa9f492001d.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/7061515addf0.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/70766fc841a3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/71b15c665289.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/7212de2f3084.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/729de0e6bcc5.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/72eb3fe82b70.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/7357856bf321.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/7490ab7045b8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/7492dab1bc20.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/76793246572a.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/76e8491bbe91.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/77cf0bc55d30.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/78a0e3e4171a.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/78b33069d72d.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/79c27b5cdaac.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/79e1a1211bb2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/7b3949dc0642.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/7c7664daac52.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/7d461dc14312.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/7e3b2f672345.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/7ec9b50dcc26.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/801d6c9d7f18.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/803f90b8ebd1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/814dd7d863d7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/81b4b249ab02.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/821cf4c61bd3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/82ce766c0b15.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/82d7b57958a0.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/83da31f3b07a.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/841a1846ead3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/84a5bf6b1c9a.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/8525cda8b38d.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/854892cea4cb.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/85d5c5a86280.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/8616bc21a342.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/861e8b39ddbe.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/8649121d3aff.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/86892079ae9c.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/869ffcdff588.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/87cfb972a64c.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/87e0c57e021b.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/8a0634c95230.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/8ab58354e694.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/8c2add66d523.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/8c9208ad7daf.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/8c92547e5729.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/8c9398144af7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/8d9379716075.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/8f425f1985ef.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/8fe64a6ef6bb.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/90567c6bfd19.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/91215007a42e.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/916a7d3e9cef.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/9247783da124.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/92c498fcab21.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/93a3955663c4.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/94185cac2bbd.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/942a2d9c0287.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/956de080ba44.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/96ed88b7fee4.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/982c42c505b3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/99860b6bec6e.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/99a1432ef607.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/9a2274bcc00d.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/9a3ca2de49f9.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/9b13c39625ec.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/9b8699353b00.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/9be2babe788e.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/9c8a2facbcb9.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/9c99f2fd1568.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/9d209c0e5494.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/9d3815bc027b.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/9d49765794e4.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/9d6d1b7a9633.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/9ebc562f89fb.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/9f317618ffd1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/a0acc4b78877.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/a0c1deec29fa.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/a1295e11b57d.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/a12b685ef09c.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/a1eb28da4a79.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/a22d81ac311b.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/a2d34dbb03e8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/a32a0041308d.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/a3528a1a50d6.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/a3dce25a5b84.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/a4713f2d9dce.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/a4da8a764b8f.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/a60cbad4eb1e.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/a6578dfd2991.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/a6709097c6e1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/a67b7e79736b.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/a72647586d96.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/a7a66c842879.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/a9226588ece3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/a9fc7f297adc.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/aaa490578118.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/aab0e0b749e0.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/abb578ea1d70.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/abbbb90bca99.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ac1da5052695.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ac513b1bc626.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/acf61c85d9b9.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ad14ea5a07c1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ae783ac682f8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/afc9e88305df.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/b0fc7c701ffd.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/b19a452bf1f9.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/b1cc27df2f18.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/b3a7b8620959.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/b45a8c6c6bcd.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/b51a2d44c67b.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/b51d32b2d070.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/b6dde04ad9d8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/b703d1c21aeb.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/b7359a174a73.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/b74949a7ea40.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/b7b7b78ded81.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/b834235c6e8f.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ba2f1b169aa2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/bd3a887a3f61.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/bd3f62055bea.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/bdcdf3164a9e.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/be247530d138.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/bf3a153fa83b.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/c01351609232.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/c0d33973466d.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/c1bfe7ec9482.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/c213ab95074d.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/c21c317c0571.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/c272cc256071.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/c3b4ea36719d.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/c3d19ec6c850.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/c4ef3b3f02d6.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/c54e9a06ec3a.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/c5b1e296d289.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/c7b206d7eab8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/c7fcf049f635.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/c8151bcfc9a2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/c95e2eedd89b.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/cb1a2406a5fd.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/cb770952e621.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/cb94e22766c3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/cba2d565da87.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/cba303b87ab6.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/cbfc86bda95f.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/cc6430069b3d.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ce1816005874.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ce2dbda69bc1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/d13ab91bafe9.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/d16f92f143f1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/d209172fcec1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/d2402531c609.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/d3c07d606ea2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/d4bca544f220.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/d4dccda37a61.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/d50d45c4f9d1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/d55088ff4893.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/d6314acfa0ca.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/d79042030267.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/d80478625cc7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/d805629e6f4f.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/da10d8fb31b0.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/dace90deb24b.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/db34c3059d51.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/db36e13346d2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/dcc7bc698223.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/de17f2bab5ba.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ded63bffa97c.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/df3e12ea88a8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/df5e842300fd.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/df75f7e653ae.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/df8c24f9816c.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/e02a888c71c8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/e1278ae76bf3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/e17ec252bc4d.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/e38559057faa.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/e3bada08cd32.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/e3faf97c3060.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/e40019de5972.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/e412a0e5edfe.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/e4af399ce8a4.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/e52dea83ee39.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/e5a063376e72.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/e5dc87284d72.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/e828fb314499.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/e97265fb90fc.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/e9d841b4daa7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ea2e6ca6ca8e.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ea3353059727.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/eae0a24fcc97.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/eb08de69d4b5.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/eb6400201b8f.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ebc01ae6dccc.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ebf1af465b07.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ec38a44ba29f.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ec77f3bf87b2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ec9f930b9fc0.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ed4f020e6d34.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/edc227943c39.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ee02640771cb.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ee1a3d7fb58f.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ef0f2a21ae29.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ef43e0486332.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ef5170770cbe.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/f0bd2bd70676.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/f0f9f2881882.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/f38e09e34467.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/f48856f88ca0.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/f53133d6f080.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/f533dcee6618.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/f58e8cc2f93c.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/f6957000e9dd.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/f729079ce9e1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/f7934158f5e7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/f86a94fb5214.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/f8714c131af0.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/f87e015d646c.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/f8acb8f39ad1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/f90ad0280fe2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/f988d9670513.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/fa6d995b600d.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/fa7846b1900e.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/fb387a982102.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/fc87cf4964bb.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/fd9074565f5f.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/fdcb981c4191.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/febf73dc38aa.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/fef9bbbc336e.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staticfiles/CACHE/css/ff7b0eafa5f3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trainerapp/templates/session/session_pdf.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/keepertrainer_app/settings.py" afterPath="$PROJECT_DIR$/keepertrainer_app/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainerapp/static/base/css/custom.css" afterPath="$PROJECT_DIR$/trainerapp/static/base/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainerapp/templates/session/session_overview.html" afterPath="$PROJECT_DIR$/trainerapp/templates/session/session_overview.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainerapp/urls.py" afterPath="$PROJECT_DIR$/trainerapp/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainerapp/views.py" afterPath="$PROJECT_DIR$/trainerapp/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +438,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trainerapp/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="103" column="10" lean-forward="false" selection-start-line="103" selection-start-column="10" selection-end-line="103" selection-end-column="10" />
+            <state relative-caret-position="45">
+              <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="36" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -33,18 +448,20 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trainerapp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="118" />
-              <folding />
+            <state relative-caret-position="345">
+              <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="63" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trainerapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+            <state relative-caret-position="225">
+              <caret line="232" column="34" lean-forward="true" selection-start-line="232" selection-start-column="34" selection-end-line="232" selection-end-column="34" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -52,35 +469,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trainerapp/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding>
-                <element signature="e#25#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="session_overview.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="session_overview.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trainerapp/templates/session/session_overview.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+              <caret line="30" column="103" lean-forward="true" selection-start-line="30" selection-start-column="103" selection-end-line="30" selection-end-column="103" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trainerapp/models.py">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/keepertrainer_app/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+            <state relative-caret-position="177">
+              <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
               <folding>
-                <element signature="e#24#63#0" expanded="true" />
+                <element signature="e#320#359#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,8 +494,8 @@
       <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trainerapp/static/base/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4320">
-              <caret line="288" column="17" lean-forward="false" selection-start-line="288" selection-start-column="17" selection-end-line="288" selection-end-column="17" />
+            <state relative-caret-position="406">
+              <caret line="297" column="29" lean-forward="false" selection-start-line="297" selection-start-column="29" selection-end-line="297" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -108,13 +513,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>staticfiles_dirs</find>
-      <find>WHITENOISE.sto</find>
-      <find>glyphicons</find>
-      <find>glyph</find>
-      <find>gly</find>
-      <find>btn-outline-sec</find>
-      <find>btn-prima</find>
       <find>btn-seco</find>
       <find>dropdown-menu</find>
       <find>account</find>
@@ -138,6 +536,13 @@
       <find>label-text</find>
       <find>body-text</find>
       <find>datetime</find>
+      <find>cairo</find>
+      <find>utf</find>
+      <find>utf-</find>
+      <find>lang</find>
+      <find>today</find>
+      <find>drop</find>
+      <find>month</find>
     </findStrings>
     <replaceStrings>
       <replace>body-text</replace>
@@ -151,7 +556,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/keepertrainer_app/settings/local.py" />
         <option value="$PROJECT_DIR$/keepertrainer_app/settings/base.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/keepertrainer_app/settings/production.py" />
@@ -181,7 +585,6 @@
         <option value="$PROJECT_DIR$/trainerapp/templates/registration/logout.html" />
         <option value="$PROJECT_DIR$/trainerapp/forms.py" />
         <option value="$PROJECT_DIR$/trainerapp/static/base/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/keepertrainer_app/settings.py" />
         <option value="$PROJECT_DIR$/trainerapp/models.py" />
         <option value="$PROJECT_DIR$/trainerapp/templates/team/edit_team.html" />
         <option value="$PROJECT_DIR$/trainerapp/templates/team/delete_team.html" />
@@ -196,20 +599,20 @@
         <option value="$PROJECT_DIR$/trainerapp/templates/keeper/keeper_overview.html" />
         <option value="$PROJECT_DIR$/trainerapp/templates/keeper/keeper_detail.html" />
         <option value="$PROJECT_DIR$/trainerapp/templates/session/session_detail.html" />
-        <option value="$PROJECT_DIR$/trainerapp/static/base/css/custom.css" />
         <option value="$PROJECT_DIR$/trainerapp/templates/base.html" />
         <option value="$PROJECT_DIR$/trainerapp/templates/session/session_filter.html" />
+        <option value="$PROJECT_DIR$/trainerapp/templates/session/session_pdf.html" />
+        <option value="$PROJECT_DIR$/keepertrainer_app/settings.py" />
         <option value="$PROJECT_DIR$/trainerapp/urls.py" />
-        <option value="$PROJECT_DIR$/trainerapp/templates/session/session_overview.html" />
         <option value="$PROJECT_DIR$/trainerapp/views.py" />
+        <option value="$PROJECT_DIR$/trainerapp/static/base/css/custom.css" />
+        <option value="$PROJECT_DIR$/trainerapp/templates/session/session_overview.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-295" />
-    <option name="y" value="-1080" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -226,7 +629,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -380,6 +782,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -387,18 +790,19 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="FullScreen" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="utf-8&#9;FILE&#9;file:///Users/matthiashugli/Virtualenvs/keepertrainer-django/venv/lib/python2.7/site-packages/compressor/tests/static/css/utf-8_with-BOM.css&#10;cairo&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/trainerapp/templates/session" />
-      <recent name="$PROJECT_DIR$/trainerapp/templates/team" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/trainerapp/static/base/img" />
       <recent name="$PROJECT_DIR$/trainerapp/static/base/css/emails" />
       <recent name="$PROJECT_DIR$/media/keepers" />
       <recent name="$PROJECT_DIR$/trainerapp/static/base/icon" />
       <recent name="$PROJECT_DIR$/trainerapp/static/base/css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/trainerapp/templates/session" />
+      <recent name="$PROJECT_DIR$/trainerapp/templates/team" />
     </key>
   </component>
   <component name="RunManager">
@@ -554,13 +958,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-295" y="-1080" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.112164296" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20810167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960506" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -584,27 +988,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trainerapp/templates/registration/registration_complete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="64" lean-forward="false" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trainerapp/templates/registration/password_change_complete.thml.html" />
     <entry file="file://$PROJECT_DIR$/trainerapp/templates/registration/activation_complete.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -759,13 +1142,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/keepertrainer_app/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -860,18 +1237,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trainerapp/templates/session/session_detail.html">
+    <entry file="file://$PROJECT_DIR$/trainerapp/templates/session/session_filter.html" />
+    <entry file="file://$PROJECT_DIR$/trainerapp/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="39" lean-forward="false" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trainerapp/static/base/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4320">
-          <caret line="288" column="17" lean-forward="false" selection-start-line="288" selection-start-column="17" selection-end-line="288" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#49#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -880,26 +1253,85 @@
         <state relative-caret-position="495">
           <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
           <folding>
-            <element signature="e#24#63#0" expanded="true" />
+            <element signature="e#24#63#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trainerapp/templates/session/session_filter.html" />
-    <entry file="file://$PROJECT_DIR$/trainerapp/forms.py">
+    <entry file="file://$PROJECT_DIR$/trainerapp/templates/session/session_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venv/lib/python2.7/site-packages/cairocffi/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="53" column="6" lean-forward="false" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venv/lib/python2.7/site-packages/compressor/tests/static/css/utf-8_with-BOM.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainerapp/templates/session/session_pdf.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keepertrainer_app/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding>
-            <element signature="e#25#49#0" expanded="true" />
+            <element signature="e#320#359#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/trainerapp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="118" />
+        <state relative-caret-position="345">
+          <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainerapp/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="36" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainerapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="232" column="34" lean-forward="true" selection-start-line="232" selection-start-column="34" selection-end-line="232" selection-end-column="34" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainerapp/static/base/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="297" column="29" lean-forward="false" selection-start-line="297" selection-start-column="29" selection-end-line="297" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -907,26 +1339,8 @@
     <entry file="file://$PROJECT_DIR$/trainerapp/templates/session/session_overview.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <caret line="30" column="103" lean-forward="true" selection-start-line="30" selection-start-column="103" selection-end-line="30" selection-end-column="103" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trainerapp/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="103" column="10" lean-forward="false" selection-start-line="103" selection-start-column="10" selection-end-line="103" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trainerapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

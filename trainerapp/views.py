@@ -4,12 +4,15 @@ from __future__ import unicode_literals
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from django.core.urlresolvers import reverse
-from django import views
+from django.db.models import Count
 from django.utils import timezone
 from django.contrib import messages
 from django.contrib.auth import get_user_model
 from django.core.files.storage import FileSystemStorage
+from django.template.loader import render_to_string
+
 import datetime
+from weasyprint import HTML
 
 from .models import Team, UserPackage, Keeper, Session, Attendance
 
@@ -114,13 +117,14 @@ def select_package(request, team_pk, package_pk):
         }
         return render(request, 'keeper/keeper_overview.html', context)
     elif package.package.pk == 2:
-        today = datetime.datetime.today()
-        sessions = Session.objects.filter(team=team, status=1)
+        today = datetime.datetime.now()
+        monthly_sessions = Session.objects.filter(team=team, status=1)
+        sessions = Session.objects.filter(team=team, status=1, date__month=today.month)
         context = {
             'team': team,
             'package': package,
+            'monthly_sessions': monthly_sessions,
             'sessions': sessions,
-            'today': today,
         }
         return render(request, 'session/session_overview.html', context)
     elif package.package.pk == 3:
@@ -226,16 +230,19 @@ def session_detail(request, session_pk, team_pk, package_pk):
     return render(request, 'session/session_detail.html', context)
 
 
-def filter_session(request, team_pk, package_pk):
+def filter_session(request, team_pk, package_pk, month):
     package = get_object_or_404(UserPackage, package_id=package_pk, team_id=team_pk)
     team = get_object_or_404(Team, pk=team_pk)
     today = datetime.datetime.now()
-    sessions = Session.objects.filter(team=team, status=1)
+    monthly_sessions = Session.objects.filter(team=team, status=1)
+    sessions = Session.objects.filter(team=team, status=1, date__month=month)
     context = {
-        'team': team,
         'package': package,
+        'team': team,
+        'monthly_sessions': monthly_sessions,
         'sessions': sessions,
         'today': today,
+        'month': month,
     }
     return render(request, 'session/session_overview.html', context)
 
@@ -349,3 +356,20 @@ def delete_attendance(request, attendance_pk):
     else:
         form = DeleteAttendance(instance=attendance)
     return render(request, 'attendance/delete_attendance.html', {'form': form})
+
+
+# Export and Print Views
+def session_pdf(request):
+    paragraphs = ['first paragraph', 'second paragraph', 'third paragraph']
+    html_string = render_to_string('session/session_pdf.html', {'paragraphs': paragraphs})
+
+    html = HTML(string=html_string)
+    html.write_pdf(target='/tmp/mypdf.pdf');
+
+    fs = FileSystemStorage('/tmp')
+    with fs.open('mypdf.pdf') as pdf:
+        response = HttpResponse(pdf, content_type='application/pdf')
+        response['Content-Disposition'] = 'attachment; filename="mypdf.pdf"'
+        return response
+
+    return response
