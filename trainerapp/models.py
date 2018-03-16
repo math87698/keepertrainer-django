@@ -7,6 +7,8 @@ from datetime import timedelta
 from django.contrib.auth.models import User
 from django_countries.fields import CountryField
 
+from multiselectfield import MultiSelectField
+
 class Team(models.Model):
     trainer = models.ForeignKey(User)
     name = models.CharField(max_length=70)
@@ -67,9 +69,9 @@ class Keeper(models.Model):
     trainer = models.ForeignKey(User)
     last_name = models.CharField(max_length=70)
     first_name = models.CharField(max_length=70)
-    birthdate = models.DateField(blank=True, null=True)
-    club = models.CharField(max_length=70)
     level = models.CharField(max_length=70)
+    birthdate = models.DateField(blank=True, null=True)
+    club = models.CharField(max_length=70, blank=True)
     team = models.ForeignKey(Team)
     email = models.EmailField(max_length=254, blank=True)
     phone = models.CharField(max_length=20, blank=True)
@@ -134,8 +136,7 @@ class Session(models.Model):
     date = models.DateField(default=timezone.now)
     time = models.TimeField(default=timezone.now)
     duration = models.DurationField(default=timedelta(minutes=90))
-    coordination1 = models.CharField(max_length=70, choices=COORDINATION_CHOICES)
-    coordination2 = models.CharField(max_length=70, choices=COORDINATION_CHOICES)
+    coordination = MultiSelectField(max_choices=2, max_length=70, choices=COORDINATION_CHOICES, blank=True)
     type = models.CharField(max_length=70, choices=TYPE_CHOICES, blank=True)
     goal = models.TextField(max_length=70, blank=True)
     technique = models.TextField(max_length=500, blank=True)
@@ -170,12 +171,12 @@ class Attendance(models.Model):
         ('work', 'Beruf'),
         ('education', 'Schule / Ausbildung'),
         ('other', 'Sonstige'),
+        ('not_defined', 'Unentschuldigt'),
     }
     session = models.ForeignKey(Session)
     keeper = models.ForeignKey(Keeper)
     team = models.ForeignKey(Team)
     present = models.BooleanField()
-    absent = models.BooleanField()
     absence_reason = models.CharField(max_length=70, choices=REASON_CHOICES, blank=True)
     created_date = models.DateTimeField(default=timezone.now)
     edited_date = models.DateTimeField(default=timezone.now)

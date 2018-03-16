@@ -47,7 +47,7 @@ class AddKeeper(forms.ModelForm):
                                                                                'max_length':'Die Mannschaftsbezeichnung kann nicht länger als 70 Zeichen sein, und beinhaltet einen Wert wie z.B. Junioren B',})
     class Meta:
         model = Keeper
-        fields = ('avatar_image','last_name','first_name','club', 'level')
+        fields = ('avatar_image','last_name','first_name','level')
         error_messages = {
             'avatar_image' : {
                    'invalid': 'Das Profilbildformat wird nicht unterstützt, lade ein JPEG oder PNG hoch',
@@ -102,12 +102,11 @@ class AddSession(forms.ModelForm):
                                    error_messages={'required': 'Erfasse eine Zeit im Format z.B. 17:30,'})
     class Meta:
         model = Session
-        fields = ('topic','date','time','duration','coordination1','coordination2','type','goal','equipment','intensity')
+        fields = ('topic','date','time','duration','coordination', 'type')
         labels = {
             'topic': ('Thema'),
             'duration': ('Trainingsdauer'),
-            'coordination1': ('Koordinationsthema 1'),
-            'coordination2': ('Koordinationsthema 2'),
+            'coordination': ('Koordinationsthema'),
         }
         error_messages = {
             'topic': {
@@ -116,10 +115,7 @@ class AddSession(forms.ModelForm):
             'duration': {
                 'required': 'Erfasse deine Training im Format z.B. 01:30:00 für 90 min.',
             },
-            'coordination1': {
-                'required': 'Wähle eine Koordinative Fähigkeit aus'
-            },
-            'coordination2': {
+            'coordination': {
                 'required': 'Wähle eine Koordinative Fähigkeit aus'
             },
         }
@@ -135,7 +131,7 @@ class EditSession(forms.ModelForm):
                                    error_messages={'required': 'Erfasse eine Zeit im Format z.B. 17:30,'})
     class Meta:
         model = Session
-        fields = ('topic','date','time','duration','coordination1','coordination2','type','goal','equipment','intensity')
+        fields = ('topic','date','time','duration','coordination', 'type','goal','equipment','intensity')
         labels = {
             'topic': ('Thema'),
             'duration': ('Trainingsdauer'),
@@ -168,13 +164,13 @@ class DeleteSession(forms.ModelForm):
 class AddAttendance(forms.ModelForm):
     class Meta:
         model = Attendance
-        fields = ('session','keeper','present','absent','absence_reason')
+        fields = ('session','keeper','present','absence_reason')
 
 
 class EditAttendance(forms.ModelForm):
     class Meta:
         model = Attendance
-        fields = ('session','keeper','present','absent','absence_reason')
+        fields = ('session','keeper','present','absence_reason')
 
 
 class DeleteAttendance(forms.ModelForm):

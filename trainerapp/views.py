@@ -4,12 +4,12 @@ from __future__ import unicode_literals
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from django.core.urlresolvers import reverse
-from django.db.models import Count
 from django.utils import timezone
 from django.contrib import messages
 from django.contrib.auth import get_user_model
 from django.core.files.storage import FileSystemStorage
 from django.template.loader import render_to_string
+from django.db.models import Count
 
 import datetime
 from weasyprint import HTML
@@ -129,11 +129,20 @@ def select_package(request, team_pk, package_pk):
         }
         return render(request, 'session/session_overview.html', context)
     elif package.package.pk == 3:
-        attendance = Attendance.objects.filter(team=team)
+        attendances = Attendance.objects.filter(team=team)
+        sessions = Session.objects.filter(team=team).filter(attendance__isnull=True)
+        count_keeper = Keeper.objects.filter(team=team, status=1).annotate(attendance_count=Count('attendance',distinct=True)).values('id','attendance_count')
+        count_attendance = Attendance.objects.filter(team=team).annotate(
+            presence_count=Count('present')).values('keeper','presence_count')
+        count_absence = Attendance.objects.filter(team=team, present=True).annotate('keeper_id')
         context = {
             'team': team,
             'package': package,
-            'attendance': attendance,
+            'attendances': attendances,
+            'sessions': sessions,
+            'count_keeper': count_keeper,
+            'count_attendance': count_attendance,
+            'count_absence': count_absence,
         }
         return render(request, 'attendance/attendance_overview.html', context)
 
@@ -333,7 +342,7 @@ def new_attendance(request, team_pk):
             attendance.created_date = timezone.now()
             attendance.save()
             messages.success(request, 'Das war ein Erfolg, die Abwesenheiten sind gespeichert!')
-            return redirect(reverse('session_detail', args=[attendance.pk]))
+            return redirect('index')
     else:
         form = AddAttendance()
     return render(request, 'attendance/new_attendance.html', {'form': form})

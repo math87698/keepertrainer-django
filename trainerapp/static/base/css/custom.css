@@ -4,7 +4,7 @@
     background-color: #2196f3;
 }
 
-.primary-blue:hover {
+.primary-blue.onmouseover {
     color: #2196f3;
     text-decoration: none;
 }
@@ -30,7 +30,7 @@ primary-blue a {
     color: #eeeeee;
 }
 
-.primary-light-grey-text:hover {
+.primary-light-grey-text.onmouseover {
     color: #eeeeee;
     text-decoration: none;
 }
@@ -112,7 +112,7 @@ p {
     margin-top: 8px;
 }
 
-.display:hover, .headline:hover, subheading:hover, p:hover, .regular-2:hover, .regular-1:hover, .caption:hover {
+.display.onmouseover, .headline.onmouseover, subheading.onmouseover, p.onmouseover, .regular-2.onmouseover, .regular-1.onmouseover, .caption.onmouseover {
     text-decoration: none;
 }
 
@@ -160,11 +160,6 @@ body {
   width: 100%;
 }
 
-.primary-btn:hover {
-  color: #424242;
-  background-color: #64ffda;
-}
-
 .primary-btn:focus, .primary-btn.focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
@@ -193,11 +188,6 @@ body {
     width: 100%;
 }
 
-.secondary-btn:hover {
-  color: #424242;
-  background-color: #fafafa;
-}
-
 .secondary-btn:focus, .secondary-btn.focus {
   box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
 }
@@ -222,10 +212,6 @@ body {
   border: 4px solid #424242;
 }
 
-.alternate-btn:hover {
-  color: #424242;
-}
-
 .alternate-btn:focus, .alternate-btn.focus {
   box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
 }
@@ -246,11 +232,6 @@ body {
     color: #eeeeee;
     background-color: f44336;
     width: 100%;
-}
-
-.red-btn:hover {
-    color: #eeeeee;
-    background-color: f44336;
 }
 
 .red-btn:focus, .red-btn.focus {
@@ -310,10 +291,6 @@ body {
 /*--------------------------------------------------------- Header Navigation Styles ------------------------------------------------*/
 .nav-account {
     color: #eeeeee;
-}
-
-.nav-account:hover {
-    color: #fafafa;
 }
 
 .account-dropdown {

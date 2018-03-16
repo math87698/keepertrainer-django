@@ -25,13 +25,13 @@ class KeeperAdmin(admin.ModelAdmin):
 
 
 class SessionAdmin(admin.ModelAdmin):
-    list_display = ('topic','date','time','duration','goal','coordination1','coordination2',
+    list_display = ('topic','date','time','duration','goal','coordination',
                     'team','type','technique','tactic','stamina','mental','equipment','intensity',
                     'status','created_date','edited_date')
 
 
 class AttendanceAdmin(admin.ModelAdmin):
-    list_display = ('session','keeper','present','absent','absence_reason','created_date','edited_date')
+    list_display = ('session','keeper','present','absence_reason','created_date','edited_date')
 
 
 admin.site.register(Team, TeamAdmin)

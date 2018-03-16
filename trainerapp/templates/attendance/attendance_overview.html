@@ -2,6 +2,89 @@
 
 {% block body %}
 
+<div class="container">
+    <div class="row">
+        <div class="col-12 top-navigation">
+            <a href="{% url 'index' %}">
+                <i class="fas fa-chevron-left"></i>
+                Zurück zum Dashboard
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {% for attendance in attendances %}
+            {{ attendance.session_id }}
+            {% endfor %}
+            <br>
+            {% for session in sessions %}
+            {{ session.id }}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ count_keeper }}
+            <br>
+            {{ count_attendance }}
+            {{ count_attendance|length }}
+            <br>
+            {{ count_absence }}
+        </div>
+    </div>
+    Offene nicht erfasste Training
+    Prozentuale Übersicht über TH
+    <div class="row">
+        <div class="col-6 col-lg-4">
+            <div class="dropdown">
+                <a class="btn alternate-btn dropdown-toggle" type="button" id="dropdownMonth" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{ current_month.date|date:"F Y" }}
+                    {{ today.date|date:"F Y" }}
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMonth">
+                    {% regroup monthly_sessions by date|date:"Y" as sessions_per_year %}
+                    {% for year_sessions in sessions_per_year %}
+                    {% regroup year_sessions.list by date|date:"m" as sessions_per_month %}
+                    <li class="dropdown-header">{{ year_sessions.grouper }}</li>
+                    {% for month_sessions in sessions_per_month %}
+                    {% with month_sessions.list|first as first_date %}
+                    <li>
+                        <a class="dropdown-item" href="{% url 'filter_session' team_pk=team.pk package_pk=package.package_id month=month_sessions.grouper %}">
+                            {{ first_date.date|date:'F' }}
+                            <span class="dropdown-item-counter">{{ month_sessions.list|length }}</span>
+                        </a>
+                    </li>
+                    {% endwith %}
+                    {% endfor %}
+                    {% endfor %}
+                    <div class="dropdown-divider"></div>
+                    <li><a class="dropdown-item" href="{% url 'session_archive' team_pk=team.pk package_pk=package.package_id %}">Archiv</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mx-auto">
+            <ul class="collection">
+                {% for session in sessions %}
+                <a href="{% url 'session_detail' session_pk=session.pk team_pk=team.pk package_pk=package.package_id %}">
+                    <li class="collection-item">
+                        <span class="regular-2">{{ session.topic }}</span><a href="{% url 'session_pdf' %}"> PDF</a>
+                        <p>{{ session.date|date:"l" }}, {{ session.date|date:"d. F" }} {{ session.time }}</p>
+                    </li>
+                </a>
+                {% endfor %}
+                <a href="{% url 'new_session' team_pk=team.pk package_pk=package.package_id %}">
+                    <li class="collection-item avatar">
+                        <div class="icon"><i class="fas fa-plus-circle fa-lg"></i></div>
+                        Training erstellen
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</div>
+
 {% for attedance in attendance %}
 <a href="{% url 'attendance_detail' attendance_pk=attendance.pk %}">Detail</a>
 <div class="chip">{{ attendance.session }}</div>
