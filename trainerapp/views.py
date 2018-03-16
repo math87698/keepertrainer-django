@@ -118,13 +118,14 @@ def select_package(request, team_pk, package_pk):
         return render(request, 'keeper/keeper_overview.html', context)
     elif package.package.pk == 2:
         today = datetime.datetime.now()
-        monthly_sessions = Session.objects.filter(team=team, status=1)
+        monthly_sessions = Session.objects.filter(team=team, status=1).order_by("-date")
         sessions = Session.objects.filter(team=team, status=1, date__month=today.month)
         context = {
             'team': team,
             'package': package,
             'monthly_sessions': monthly_sessions,
             'sessions': sessions,
+            'today': today,
         }
         return render(request, 'session/session_overview.html', context)
     elif package.package.pk == 3:
@@ -233,18 +234,29 @@ def session_detail(request, session_pk, team_pk, package_pk):
 def filter_session(request, team_pk, package_pk, month):
     package = get_object_or_404(UserPackage, package_id=package_pk, team_id=team_pk)
     team = get_object_or_404(Team, pk=team_pk)
-    today = datetime.datetime.now()
-    monthly_sessions = Session.objects.filter(team=team, status=1)
+    monthly_sessions = Session.objects.filter(team=team, status=1).order_by("-date")
     sessions = Session.objects.filter(team=team, status=1, date__month=month)
+    current_month = Session.objects.filter(date__month=month).first()
     context = {
         'package': package,
         'team': team,
         'monthly_sessions': monthly_sessions,
         'sessions': sessions,
-        'today': today,
-        'month': month,
+        'current_month': current_month,
     }
     return render(request, 'session/session_overview.html', context)
+
+
+def session_archive(request, team_pk, package_pk):
+    package = get_object_or_404(UserPackage, package_id=package_pk, team_id=team_pk)
+    team = get_object_or_404(Team, pk=team_pk)
+    sessions = Session.objects.filter(team=team, status=1).order_by("-date")
+    context = {
+        'package': package,
+        'team': team,
+        'sessions': sessions,
+    }
+    return render(request, 'session/session_archive.html', context)
 
 
 def new_session(request, team_pk, package_pk):

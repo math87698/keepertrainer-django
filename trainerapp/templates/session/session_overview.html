@@ -12,12 +12,11 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-6 col-lg-12">
-            <div class="dropdown dropdown-filter">
-                <a class="dropdown-toggle" id="dropdownMonth" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monat
-                    {% for month in month %}
-                    {{ month|date:"F" }}
-                    {% endfor %}
+        <div class="col-6 col-lg-4">
+            <div class="dropdown">
+                <a class="btn alternate-btn dropdown-toggle" type="button" id="dropdownMonth" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{ current_month.date|date:"F Y" }}
+                    {{ today.date|date:"F Y" }}
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMonth">
                     {% regroup monthly_sessions by date|date:"Y" as sessions_per_year %}
@@ -25,14 +24,18 @@
                     {% regroup year_sessions.list by date|date:"m" as sessions_per_month %}
                     <li class="dropdown-header">{{ year_sessions.grouper }}</li>
                     {% for month_sessions in sessions_per_month %}
+                    {% with month_sessions.list|first as first_date %}
                     <li>
                         <a class="dropdown-item" href="{% url 'filter_session' team_pk=team.pk package_pk=package.package_id month=month_sessions.grouper %}">
-                            {{ month_sessions.grouper|date:"F" }}
+                            {{ first_date.date|date:'F' }}
                             <span class="dropdown-item-counter">{{ month_sessions.list|length }}</span>
                         </a>
                     </li>
+                    {% endwith %}
                     {% endfor %}
                     {% endfor %}
+                    <div class="dropdown-divider"></div>
+                    <li><a class="dropdown-item" href="{% url 'session_archive' team_pk=team.pk package_pk=package.package_id %}">Archiv</a></li>
                 </ul>
             </div>
         </div>

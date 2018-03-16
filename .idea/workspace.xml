@@ -2,535 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85a260c2-6e9d-4b49-97eb-92a341a68ae4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/CACHE/css/71a3ba6a3647.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/CACHE/css/afcf4a6905cd.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/CACHE/css/ce24aaf6efd2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/CACHE/css/d7e57b9e6edc.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/CACHE/css/f48f7881fd97.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/00513153ac77.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/01f06be5b98a.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/02cdc869ca0b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/03c30ff6e0c7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/04285867f63e.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/04517b8ae1fb.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/0467c886d976.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/05aa35bc8b90.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/05f4fb019b2d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/06809277d533.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/06ef3e3ad949.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/073ea6c96c32.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/077ad1b67ca0.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/07ab559dd1f4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/07cf248c0fd7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/082147d71112.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/092a8b65db46.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/09fc0afcc0f4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/0a4f2e71111e.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/0b37454094a3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/0b591efd38b6.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/0b66a0b21613.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/0b9b2d65ae34.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/0b9e51a9357b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/0bd5a7cb8b79.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/0c3f1241048a.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/0c5a898995b6.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/0c70d79680ab.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/0cb3ee5ae908.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/0da5cf64a017.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/0dd5a2bdeed1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/0deff401bae5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/0e3ce63ac0d8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/0ed22f852b83.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/0faa5acee8a8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/0fd38a90324a.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/11003aa3972d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/114a6540590d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/11542327dda2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/11d64880db54.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/1346edcb8371.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/13ba6e0ea065.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/143c574f4876.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/14e06218679f.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/15e6c78711b9.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/177aa8905f93.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/17f89cedbdfb.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/18563904cf33.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/19a710ed9e5c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/19d66a5b2966.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/1ad0d8ab8522.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/1b0d7682492f.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/1b993ba5222d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/1be35532ced2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/1c3596f82280.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/1c444e13d4fa.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/1c4dca982573.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/1c5590f7fb28.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/1d50dde5534b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/1d7d739d7cd0.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/1d98774118fa.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/1e59738a2c42.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/1ecf3a264fae.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/1ffba468de21.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/20269909125c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/2128ef433a31.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/218bdde6be72.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/219f7f337164.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/224d829d2669.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/22584251100b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/22c52f4ff15b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/22c850d9c631.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/2326906eb6b6.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/23b7779a02a7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/244876c28a82.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/24572ab45bea.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/24b75769cf71.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/24d41a8a75e8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/25213d33ae1f.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/2539f671f236.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/255b5c40d234.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/258946c1bbeb.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/260ce45b08e8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/26467e2346b1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/267ea50e0f8e.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/26a158d28c6d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/26b16cd2d7ad.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/27330cbfaea7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/275b4d6a8b38.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/27aba8455e11.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/2855f289c9c0.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/28ef7e9f19da.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/28f16ff8edf0.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/294cfccfbb80.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/295ea431aa41.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/29a8a289c386.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/29da584f6f24.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/2a64f4821f38.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/2c28d1139845.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/2cd3a26a8c68.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/2d4ff2ce404c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/2d7d774fd5a7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/2dbd390bcb4a.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/2debe973da67.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/2e05cc8b56e5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/2e2511020578.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/30330df03a32.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/30bfe30a5092.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/30efecca7c14.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/3217b9006c0d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/323caa0a8340.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/3291a6f647de.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/32b7adbf1b3e.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/32bc98ce7240.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/32e64f774e47.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/331fa22de2e9.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/3336520c4672.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/33a80ebfca89.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/33d30a441d66.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/34106ce65a49.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/351c9b28de97.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/35469ceb26d5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/359b30978c3f.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/35cac2c9a81c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/35f174962c45.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/363e87a16db8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/364e050e5696.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/3660bfcbe415.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/36610ddc2440.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/3759f697c5fd.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/375a1c4ecbb1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/39072217e93a.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/390c5d80ccf6.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/3a5bc7bab619.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/3a8f331ae1d8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/3ab49dd415ca.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/3aeb2d8ee9cc.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/3c35d178e0e5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/3c677cf2cba6.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/3d4398c97cd2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/3dd77c2fc930.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/3e042e65e028.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/3e3576735af5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/3f52ca7c3a54.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/3f7fa03288c8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/40cb5f68f082.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/40cf3d67fb57.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/41cae5c000df.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/434d619a9a7c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/4420634cfacd.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/447d208a1c04.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/44c5c66b937b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/461bd3d234c8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/467343a31891.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/4813a43a56f2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/486645ba709a.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/48972df1e08e.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/48aae728173f.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/48f488c1a174.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/49617c4d2275.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/49936e21a104.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/4b760e399b5e.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/4b98ba2907f3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/4c4eb107014e.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/4c8d616c24f8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/4d2505974137.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/4e001821b819.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/4e2d54d8eb0f.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/4f3358ae87c5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/5041fbc05df9.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/50e454c8fff8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/528849a2f98e.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/52a63085b797.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/537241385f0b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/53b53f3cfcee.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/54c17f37b566.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/552fb6c217d8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/553bcab73723.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/55990c30e3d4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/55a07086ffbf.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/561802268745.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/570ed1280e54.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/57411d423232.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/574fe74b2181.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/5757ba9ec096.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/57fb84452ab7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/5809ee5e2f06.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/58971a39ef60.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/599f975badd6.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/5a009a5b264a.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/5a0bff4b7b4c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/5a709ac63245.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/5a7c7ec04cc5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/5ab72f7e81ad.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/5adb27ec85a2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/5bc124370192.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/5bdef24296b2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/5be151d07325.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/5cb2fedbff64.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/5e3ff7ca0834.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/5efa37365e5c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/5f5c50bd270c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/5fc04dc31907.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/619c17819395.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/63914c9d77b2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/649a8bdb0d5c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/64acfa78bc58.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/65d8f707138d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/68743a62cfcb.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/6979d6b6a13d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/6a4e27a1470c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/6aafb9d316ef.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/6acb0132dad6.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/6b0feb3613a4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/6b3fa4aee996.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/6b7edb366bda.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/6bab0a85aa95.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/6c71418cee35.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/6d1de3fb25ac.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/6dcde73a83cb.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/6e2ddb87970f.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/6edd5bfa9697.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/6f8af4184412.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/6fa9f492001d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/6fe5ebbf2702.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/7061515addf0.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/70766fc841a3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/71b15c665289.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/7212de2f3084.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/729de0e6bcc5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/72eb3fe82b70.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/7357856bf321.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/7490ab7045b8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/7492dab1bc20.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/76793246572a.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/76e8491bbe91.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/778cd9dd3366.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/77cf0bc55d30.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/78a0e3e4171a.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/78b33069d72d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/79c27b5cdaac.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/79e1a1211bb2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/7a0dcefdc8a6.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/7b3949dc0642.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/7beef5665729.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/7c7664daac52.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/7d461dc14312.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/7e1c12c396a1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/7e3b2f672345.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/7e4924d3e8b0.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/7e7878a9beaa.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/7ec9b50dcc26.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/7ee90691a05b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/801d6c9d7f18.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/803f90b8ebd1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/814dd7d863d7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/815589bd3138.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/81b4b249ab02.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/821cf4c61bd3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/82ce766c0b15.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/82d7b57958a0.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/83da31f3b07a.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/8418fc469d8b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/841a1846ead3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/84a5bf6b1c9a.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/8525cda8b38d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/854892cea4cb.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/85d5c5a86280.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/8616bc21a342.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/861e8b39ddbe.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/8649121d3aff.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/86892079ae9c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/869ffcdff588.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/86deb736d32d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/87cfb972a64c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/87e0c57e021b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/8a0634c95230.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/8aa66fb6cf99.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/8ab58354e694.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/8b6dad58c971.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/8c2add66d523.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/8c9208ad7daf.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/8c92547e5729.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/8c9398144af7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/8d9379716075.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/8f425f1985ef.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/8fc19490defc.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/8fcd3bd38efa.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/8fe64a6ef6bb.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/90567c6bfd19.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/9114a4cc4466.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/91215007a42e.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/916a7d3e9cef.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/9247783da124.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/92724d92bc08.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/92c498fcab21.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/93a3955663c4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/93e519b756bd.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/94185cac2bbd.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/942a2d9c0287.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/956de080ba44.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/962460b9d3c1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/96b6f167f590.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/96ed88b7fee4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/982c42c505b3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/986d8fd02e9b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/99860b6bec6e.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/99a1432ef607.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/99bf26d6c1a2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/9a2274bcc00d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/9a3ca2de49f9.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/9b13c39625ec.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/9b8699353b00.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/9be2babe788e.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/9c8a2facbcb9.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/9c99f2fd1568.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/9d209c0e5494.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/9d3815bc027b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/9d49765794e4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/9d564a18e574.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/9d6d1b7a9633.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/9ebc562f89fb.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/9eeb991c8f08.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/9f317618ffd1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/9fc8206ca193.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a08ca1695ed7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a0acc4b78877.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a0c1deec29fa.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a1295e11b57d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a12b685ef09c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a1eb28da4a79.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a22d81ac311b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a2d34dbb03e8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a32a0041308d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a3528a1a50d6.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a3dce25a5b84.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a4713f2d9dce.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a47d3cb0320d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a4da8a764b8f.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a517246f3274.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a60cbad4eb1e.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a6578dfd2991.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a6709097c6e1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a67b7e79736b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a72647586d96.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a7a66c842879.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a9226588ece3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/a9fc7f297adc.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/aa15ea907b4a.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/aaa490578118.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/aab0e0b749e0.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/abb578ea1d70.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/abbbb90bca99.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/abd3a5b5c4ea.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ac1da5052695.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ac513b1bc626.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/acdd8cff2077.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/acf61c85d9b9.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ad14ea5a07c1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ae783ac682f8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/afc9e88305df.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/afcf4a6905cd.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/afde064b596a.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b078212ff458.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b07965d47902.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b0fc7c701ffd.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b19a452bf1f9.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b1cc27df2f18.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b3a7b8620959.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b40dc5073fd1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b45a8c6c6bcd.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b4d988f4460a.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b51a2d44c67b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b51d32b2d070.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b5b38c0dac14.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b5b962d02928.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b602b44d9c9e.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b6a44f875077.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b6dde04ad9d8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b703d1c21aeb.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b7359a174a73.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b74949a7ea40.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b7b7b78ded81.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/b834235c6e8f.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ba030ebf70b1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ba2f1b169aa2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/bc3e11f7ad34.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/bd3a887a3f61.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/bd3f62055bea.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/bdcdf3164a9e.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/be247530d138.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/bee1bd6ff111.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/bf3a153fa83b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c01351609232.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c07f31a16fb7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c0d33973466d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c15f5c5c6efe.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c1bfe7ec9482.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c213ab95074d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c21c317c0571.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c272cc256071.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c33162eb29c4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c3b4ea36719d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c3d19ec6c850.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c4ef3b3f02d6.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c54e9a06ec3a.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c5b1e296d289.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c6f2f54275ea.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c6fe52bfb847.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c7b206d7eab8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c7fcf049f635.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c8151bcfc9a2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c8eb569efdd2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/c95e2eedd89b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/cb1a2406a5fd.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/cb770952e621.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/cb94e22766c3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/cba2d565da87.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/cba303b87ab6.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/cbfc86bda95f.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/cc6430069b3d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/cd026270daa6.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ce1816005874.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ce2dbda69bc1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/cf97be801f76.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/d13ab91bafe9.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/d16f92f143f1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/d209172fcec1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/d2402531c609.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/d3c07d606ea2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/d4bca544f220.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/d4dccda37a61.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/d50d45c4f9d1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/d55088ff4893.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/d6314acfa0ca.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/d65a39d1d206.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/d79042030267.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/d80478625cc7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/d805629e6f4f.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/da10d8fb31b0.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/dace90deb24b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/db25d16b2e56.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/db34c3059d51.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/db36e13346d2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/dbad740d3a74.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/dcc7bc698223.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/de17f2bab5ba.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/de7ba44504d0.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/deb8984aa7c8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ded6129cd3e1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ded63bffa97c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/df3e12ea88a8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/df5e842300fd.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/df75f7e653ae.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/df8c24f9816c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/dffa37cbb24b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/e02a888c71c8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/e1278ae76bf3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/e17ec252bc4d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/e355578d7aab.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/e38559057faa.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/e3bada08cd32.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/e3faf97c3060.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/e40019de5972.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/e412a0e5edfe.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/e4af399ce8a4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/e52dea83ee39.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/e5a063376e72.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/e5dc87284d72.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/e828fb314499.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/e833066f0b46.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/e97265fb90fc.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/e9d841b4daa7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ea2e6ca6ca8e.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ea3353059727.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/eae0a24fcc97.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/eb00858d4e48.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/eb08de69d4b5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/eb6400201b8f.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ebc01ae6dccc.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ebf1af465b07.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ec38a44ba29f.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ec77f3bf87b2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ec91b4f2bda8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ec9f930b9fc0.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ed4f020e6d34.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/edc227943c39.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ee02640771cb.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ee1a3d7fb58f.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ef0f2a21ae29.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ef43e0486332.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ef5170770cbe.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/f0bd2bd70676.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/f0f9f2881882.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/f1cabab05684.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/f38e09e34467.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/f4680869188c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/f48856f88ca0.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/f52ce59cf7ef.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/f53133d6f080.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/f533dcee6618.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/f58e8cc2f93c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/f66ecd8e20c4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/f6957000e9dd.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/f729079ce9e1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/f7934158f5e7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/f86a94fb5214.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/f8714c131af0.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/f87e015d646c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/f8acb8f39ad1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/f90ad0280fe2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/f988d9670513.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/fa0ca582202f.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/fa6d995b600d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/fa7846b1900e.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/fb387a982102.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/fc87cf4964bb.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/fd9074565f5f.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/fda02927828e.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/fdcb981c4191.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/fe2d7faf392f.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/febf73dc38aa.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/fef9bbbc336e.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticfiles/CACHE/css/ff7b0eafa5f3.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainerapp/static/base/css/custom.css" afterPath="$PROJECT_DIR$/trainerapp/static/base/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainerapp/templates/session/session_overview.html" afterPath="$PROJECT_DIR$/trainerapp/templates/session/session_overview.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainerapp/urls.py" afterPath="$PROJECT_DIR$/trainerapp/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainerapp/views.py" afterPath="$PROJECT_DIR$/trainerapp/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -548,8 +24,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trainerapp/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="36" selection-end-column="18" />
+            <state relative-caret-position="-540">
+              <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="33" selection-end-line="36" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -558,8 +34,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trainerapp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="63" />
+            <state relative-caret-position="360">
+              <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -571,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/trainerapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="232" column="34" lean-forward="true" selection-start-line="232" selection-start-column="34" selection-end-line="232" selection-end-column="34" />
+              <caret line="120" column="88" lean-forward="false" selection-start-line="120" selection-start-column="88" selection-end-line="120" selection-end-column="88" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -579,11 +55,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="session_overview.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="session_overview.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trainerapp/templates/session/session_overview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="30" column="103" lean-forward="true" selection-start-line="30" selection-start-column="103" selection-end-line="30" selection-end-column="103" />
+            <state relative-caret-position="555">
+              <caret line="37" column="130" lean-forward="false" selection-start-line="37" selection-start-column="130" selection-end-line="37" selection-end-column="130" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="session_archive.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/trainerapp/templates/session/session_archive.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="session_detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trainerapp/templates/session/session_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="82" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -593,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/keepertrainer_app/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="177">
-              <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+              <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
               <folding>
                 <element signature="e#320#359#0" expanded="true" />
               </folding>
@@ -604,8 +100,8 @@
       <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trainerapp/static/base/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="297" column="29" lean-forward="false" selection-start-line="297" selection-start-column="29" selection-end-line="297" selection-end-column="29" />
+            <state relative-caret-position="238">
+              <caret line="343" column="14" lean-forward="false" selection-start-line="343" selection-start-column="9" selection-end-line="343" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -623,8 +119,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>btn-seco</find>
-      <find>dropdown-menu</find>
       <find>account</find>
       <find>deco</find>
       <find>dropdown-menu-right</find>
@@ -653,6 +147,8 @@
       <find>today</find>
       <find>drop</find>
       <find>month</find>
+      <find>center</find>
+      <find>title</find>
     </findStrings>
     <replaceStrings>
       <replace>body-text</replace>
@@ -666,7 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/keepertrainer_app/settings/base.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/keepertrainer_app/settings/production.py" />
         <option value="$PROJECT_DIR$/keepertrainer_app/__init__.py" />
@@ -713,10 +208,11 @@
         <option value="$PROJECT_DIR$/trainerapp/templates/session/session_filter.html" />
         <option value="$PROJECT_DIR$/trainerapp/templates/session/session_pdf.html" />
         <option value="$PROJECT_DIR$/keepertrainer_app/settings.py" />
-        <option value="$PROJECT_DIR$/trainerapp/urls.py" />
-        <option value="$PROJECT_DIR$/trainerapp/views.py" />
         <option value="$PROJECT_DIR$/trainerapp/static/base/css/custom.css" />
         <option value="$PROJECT_DIR$/trainerapp/templates/session/session_overview.html" />
+        <option value="$PROJECT_DIR$/trainerapp/urls.py" />
+        <option value="$PROJECT_DIR$/trainerapp/views.py" />
+        <option value="$PROJECT_DIR$/trainerapp/templates/session/session_archive.html" />
       </list>
     </option>
   </component>
@@ -903,16 +399,16 @@
     <property name="SearchEverywhereHistoryKey" value="utf-8&#9;FILE&#9;file:///Users/matthiashugli/Virtualenvs/keepertrainer-django/venv/lib/python2.7/site-packages/compressor/tests/static/css/utf-8_with-BOM.css&#10;cairo&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/trainerapp/templates/session" />
+      <recent name="$PROJECT_DIR$/trainerapp/templates/team" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/trainerapp/static/base/img" />
       <recent name="$PROJECT_DIR$/trainerapp/static/base/css/emails" />
       <recent name="$PROJECT_DIR$/media/keepers" />
       <recent name="$PROJECT_DIR$/trainerapp/static/base/icon" />
       <recent name="$PROJECT_DIR$/trainerapp/static/base/css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/trainerapp/templates/session" />
-      <recent name="$PROJECT_DIR$/trainerapp/templates/team" />
     </key>
   </component>
   <component name="RunManager">
@@ -1069,9 +565,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20810167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20810167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1098,13 +594,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/trainerapp/templates/registration/activation_complete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trainerapp/templates/registration/activate.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1367,14 +856,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trainerapp/templates/session/session_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../venv/lib/python2.7/site-packages/cairocffi/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -1399,30 +880,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/staticfiles/CACHE/css/0b9e51a9357b.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2789">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/keepertrainer_app/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
-          <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+          <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding>
             <element signature="e#320#359#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trainerapp/urls.py">
+    <entry file="file://$PROJECT_DIR$/trainerapp/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-540">
+          <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="33" selection-end-line="36" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trainerapp/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/trainerapp/static/base/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="36" selection-end-column="18" />
+        <state relative-caret-position="238">
+          <caret line="343" column="14" lean-forward="false" selection-start-line="343" selection-start-column="9" selection-end-line="343" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainerapp/templates/session/session_overview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="130" lean-forward="false" selection-start-line="37" selection-start-column="130" selection-end-line="37" selection-end-column="130" />
           <folding />
         </state>
       </provider>
@@ -1430,33 +925,35 @@
     <entry file="file://$PROJECT_DIR$/trainerapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="232" column="34" lean-forward="true" selection-start-line="232" selection-start-column="34" selection-end-line="232" selection-end-column="34" />
+          <caret line="120" column="88" lean-forward="false" selection-start-line="120" selection-start-column="88" selection-end-line="120" selection-end-column="88" />
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trainerapp/static/base/css/custom.css">
+    <entry file="file://$PROJECT_DIR$/trainerapp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="297" column="29" lean-forward="false" selection-start-line="297" selection-start-column="29" selection-end-line="297" selection-end-column="29" />
+        <state relative-caret-position="360">
+          <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainerapp/templates/session/session_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="82" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="82" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trainerapp/templates/session/session_overview.html">
+    <entry file="file://$PROJECT_DIR$/trainerapp/templates/session/session_archive.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="30" column="103" lean-forward="true" selection-start-line="30" selection-start-column="103" selection-end-line="30" selection-end-column="103" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfiles/CACHE/css/0b9e51a9357b.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2789">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
           <folding />
         </state>
       </provider>
