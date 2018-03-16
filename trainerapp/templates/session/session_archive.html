@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 top-navigation">
+            <a href="{% url 'select_package' team_pk=team.pk package_pk=package.package_id %}">
+                <i class="fas fa-chevron-left"></i>
+                Zu den aktuellen Trainings
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mx-auto">
+            {% regroup sessions by date|date:"Y" as sessions_per_year %}
+            {% for year_sessions in sessions_per_year %}
+            <h2>{{ year_sessions.grouper }}</h2>
+            {% regroup year_sessions.list by date|date:"F" as sessions_per_month %}
+            {% for month_sessions in sessions_per_month %}
+            <span class="caption">{{ month_sessions.grouper }}</span>
+            <ul class="collection">
+                {% for session in month_sessions.list %}
+                <a href="{% url 'session_detail' session_pk=session.pk team_pk=team.pk package_pk=package.package_id %}">
+                    <li class="collection-item">
+                        <span class="regular-2">{{ session.topic }}</span>
+                        <p>{{ session.date|date:"l" }}, {{ session.date|date:"d. F" }} {{ session.time }}</p>
+                    </li>
+                </a>
+                {% endfor %}
+            </ul>
+            {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
