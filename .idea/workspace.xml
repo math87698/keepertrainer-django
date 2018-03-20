@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85a260c2-6e9d-4b49-97eb-92a341a68ae4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainerapp/forms.py" afterPath="$PROJECT_DIR$/trainerapp/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainerapp/static/base/css/custom.css" afterPath="$PROJECT_DIR$/trainerapp/static/base/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainerapp/templates/attendance/attendance_overview.html" afterPath="$PROJECT_DIR$/trainerapp/templates/attendance/attendance_overview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainerapp/templates/base.html" afterPath="$PROJECT_DIR$/trainerapp/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainerapp/templates/keeper/keeper_overview.html" afterPath="$PROJECT_DIR$/trainerapp/templates/keeper/keeper_overview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainerapp/templates/session/session_overview.html" afterPath="$PROJECT_DIR$/trainerapp/templates/session/session_overview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainerapp/urls.py" afterPath="$PROJECT_DIR$/trainerapp/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainerapp/views.py" afterPath="$PROJECT_DIR$/trainerapp/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trainerapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="143" column="25" lean-forward="true" selection-start-line="143" selection-start-column="25" selection-end-line="143" selection-end-column="25" />
+            <state relative-caret-position="273">
+              <caret line="136" column="147" lean-forward="false" selection-start-line="136" selection-start-column="147" selection-end-line="136" selection-end-column="147" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -112,7 +103,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trainerapp/static/base/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="585">
@@ -136,7 +127,6 @@
     <findStrings>
       <find>padding-left</find>
       <find>width</find>
-      <find>print</find>
       <find>team</find>
       <find>bootstrap.css</find>
       <find>decor</find>
@@ -164,6 +154,7 @@
       <find>hov</find>
       <find>auto</find>
       <find>datetime</find>
+      <find>print</find>
     </findStrings>
     <replaceStrings>
       <replace>body-text</replace>
@@ -224,10 +215,10 @@
         <option value="$PROJECT_DIR$/trainerapp/forms.py" />
         <option value="$PROJECT_DIR$/trainerapp/templates/base.html" />
         <option value="$PROJECT_DIR$/trainerapp/templates/session/session_overview.html" />
-        <option value="$PROJECT_DIR$/trainerapp/views.py" />
         <option value="$PROJECT_DIR$/trainerapp/templates/attendance/attendance_overview.html" />
         <option value="$PROJECT_DIR$/trainerapp/templates/keeper/keeper_overview.html" />
         <option value="$PROJECT_DIR$/trainerapp/static/base/css/custom.css" />
+        <option value="$PROJECT_DIR$/trainerapp/views.py" />
       </list>
     </option>
   </component>
@@ -967,16 +958,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trainerapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="143" column="25" lean-forward="true" selection-start-line="143" selection-start-column="25" selection-end-line="143" selection-end-column="25" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trainerapp/templates/session/session_overview.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="613">
@@ -998,6 +979,16 @@
         <state relative-caret-position="585">
           <caret line="431" column="44" lean-forward="false" selection-start-line="431" selection-start-column="44" selection-end-line="431" selection-end-column="44" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainerapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="136" column="147" lean-forward="false" selection-start-line="136" selection-start-column="147" selection-end-line="136" selection-end-column="147" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

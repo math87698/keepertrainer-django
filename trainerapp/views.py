@@ -135,11 +135,6 @@ def select_package(request, team_pk, package_pk):
         count_presence = Attendance.objects.filter(team=team, present=True).values('keeper','session').annotate(presence_count=Count('present', distinct=True))
         count_absence = Attendance.objects.filter(team=team, present=False, absence_reason__isnull=False).values('keeper','session').annotate(absence_count=Count('absence_reason', distinct=True))
         attendance_ratio = Attendance.objects.filter(team=team).values('keeper','session').annotate(presence_count=Count('present', distinct=True))
-        try:
-            for value in count_presence:
-                    print value
-        except:
-            print count_presence[1]
         context = {
             'team': team,
             'package': package,
