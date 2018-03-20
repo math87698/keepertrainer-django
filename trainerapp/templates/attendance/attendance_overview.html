@@ -1,5 +1,50 @@
 {% extends 'base.html' %}
 
+{% block javascript %}
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Mushrooms', 3],
+          ['Onions', 1],
+          ['Olives', 1],
+          ['Zucchini', 1],
+          ['Pepperoni', 2]
+        ]);
+
+        // Set chart options
+        var options = {'title':'How Much Pizza I Ate Last Night',
+                       'width':400,
+                       'height':300};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+
+{% endblock %}
+
+{% block title %}
+        Anwesenheiten - Keepertrainer
+{% endblock %}
+
 {% block body %}
 
 <div class="container">
@@ -19,82 +64,54 @@
             <br>
             {% for session in sessions %}
             {{ session.id }}
+            {{ session.topic }}
             {% endfor %}
         </div>
     </div>
     <div class="row">
         <div class="col-12">
-            {{ count_keeper }}
+            {% for item in count_absence %}
+            {{ item.keeper }}
+            {{ item.absence_count }}
+            {% endfor %}
             <br>
-            {{ count_attendance }}
-            {{ count_attendance|length }}
+            {% for item in count_presence %}
+            {{ item.keeper }}
+            {{ item.presence_count }}
+            {% endfor %}
             <br>
-            {{ count_absence }}
+            {% for item in attendance_ratio %}
+            {{ item.keeper }}
+            {{ item.presence_count }}
+            {% endfor %}
         </div>
     </div>
     Offene nicht erfasste Training
     Prozentuale Übersicht über TH
     <div class="row">
-        <div class="col-6 col-lg-4">
-            <div class="dropdown">
-                <a class="btn alternate-btn dropdown-toggle" type="button" id="dropdownMonth" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    {{ current_month.date|date:"F Y" }}
-                    {{ today.date|date:"F Y" }}
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMonth">
-                    {% regroup monthly_sessions by date|date:"Y" as sessions_per_year %}
-                    {% for year_sessions in sessions_per_year %}
-                    {% regroup year_sessions.list by date|date:"m" as sessions_per_month %}
-                    <li class="dropdown-header">{{ year_sessions.grouper }}</li>
-                    {% for month_sessions in sessions_per_month %}
-                    {% with month_sessions.list|first as first_date %}
-                    <li>
-                        <a class="dropdown-item" href="{% url 'filter_session' team_pk=team.pk package_pk=package.package_id month=month_sessions.grouper %}">
-                            {{ first_date.date|date:'F' }}
-                            <span class="dropdown-item-counter">{{ month_sessions.list|length }}</span>
-                        </a>
-                    </li>
-                    {% endwith %}
-                    {% endfor %}
-                    {% endfor %}
-                    <div class="dropdown-divider"></div>
-                    <li><a class="dropdown-item" href="{% url 'session_archive' team_pk=team.pk package_pk=package.package_id %}">Archiv</a></li>
-                </ul>
-            </div>
+        <div class="col-12">
+            <h2>Anwesenheiten</h2>
         </div>
     </div>
+    <p class="caption">Trainings ohne Anwesenheitsangaben</p>
     <div class="row">
         <div class="col-12 mx-auto">
             <ul class="collection">
                 {% for session in sessions %}
-                <a href="{% url 'session_detail' session_pk=session.pk team_pk=team.pk package_pk=package.package_id %}">
+                <a href="{% url 'new_attendance' package_pk=package.package_id team_pk=team.pk %}">
                     <li class="collection-item">
-                        <span class="regular-2">{{ session.topic }}</span><a href="{% url 'session_pdf' %}"> PDF</a>
+                        <span class="regular-2">{{ session.topic }}</span>
                         <p>{{ session.date|date:"l" }}, {{ session.date|date:"d. F" }} {{ session.time }}</p>
+                        <div class="secondary"><i class="fas fa-edit fa-lg"></i></div>
                     </li>
                 </a>
                 {% endfor %}
-                <a href="{% url 'new_session' team_pk=team.pk package_pk=package.package_id %}">
-                    <li class="collection-item avatar">
-                        <div class="icon"><i class="fas fa-plus-circle fa-lg"></i></div>
-                        Training erstellen
-                    </li>
-                </a>
             </ul>
         </div>
     </div>
+    <p class="caption">Anwesenheitsspiegel</p>
+    <div id="chart_div"></div>
+
 </div>
-
-{% for attedance in attendance %}
-<a href="{% url 'attendance_detail' attendance_pk=attendance.pk %}">Detail</a>
-<div class="chip">{{ attendance.session }}</div>
-{{ attendance.keeper }}
-{{ attendance.present }}
-{{ attendance.absent }}
-{{ attendance.absence_reason }}
-
-{% endfor %}
-
-<a href="{% url 'new_attendance' team_pk=team.pk %}">Abwesenheiten erfassen</a>
 
 {% endblock %}

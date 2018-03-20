@@ -3,6 +3,7 @@
 from django import forms
 from django.contrib.admin.widgets import AdminDateWidget
 from django.contrib.auth.models import User
+from multiselectfield import MultiSelectField
 
 from .models import Team, UserPackage, Keeper, Session, Attendance
 
@@ -162,6 +163,7 @@ class DeleteSession(forms.ModelForm):
 
 # Presence Form
 class AddAttendance(forms.ModelForm):
+    keeper = MultiSelectField(choices=Keeper, max_length=70)
     class Meta:
         model = Attendance
         fields = ('session','keeper','present','absence_reason')

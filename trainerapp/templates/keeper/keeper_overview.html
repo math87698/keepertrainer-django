@@ -9,6 +9,12 @@
                 <i class="fas fa-chevron-left"></i>
                 Zurück zum Dashboard
             </a>
+            <span>{{ team }}</span>
+        </div>
+    </div>
+        <div class="row">
+        <div class="col-12">
+            <h2>Torhüter</h2>
         </div>
     </div>
     <div class="row">
@@ -20,6 +26,13 @@
                         <img src="{{ MEDIA_URL }}{{ keeper.avatar_image }}">
                         <span class="regular-2">{{ keeper.first_name }} {{ keeper.last_name }}</span>
                         <p>{{ keeper.level }}</p>
+                        <div class="secondary dropdown">
+                            <a class="" id="dropdownMore" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMore">
+                                <li class="dropdown-item">PDF</li>
+                                <li class="dropdown-item">Bearbeiten</li>
+                            </ul>
+                        </div>
                     </li>
                 </a>
                 {% endfor %}

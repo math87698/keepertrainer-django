@@ -420,6 +420,25 @@ body {
   border-radius: 0;
 }
 
+.collection .collection-item .secondary {
+    position: absolute;
+    height: 16px;
+    right: 16px;
+    top: 28px;
+    color:#bdbdbd;
+}
+
+@media screen and (min-device-width: 576px) {
+    .collection .collection-item .secondary:hover {
+        border: 1px solid #bdbdbd;
+        height: 32px;
+        width: 32px;
+        right: 8px;
+        top: 20px;
+        border-radius: 4px;
+    }
+}
+
 /*--------------------------------------------------------- END Collection List Styles ------------------------------------------------*/
 
 /*--------------------------------------------------------- Detail Styles ------------------------------------------------*/

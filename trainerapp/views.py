@@ -9,9 +9,9 @@ from django.contrib import messages
 from django.contrib.auth import get_user_model
 from django.core.files.storage import FileSystemStorage
 from django.template.loader import render_to_string
-from django.db.models import Count
+from django.db.models import Count, Sum
 
-import datetime
+from datetime import datetime, timedelta
 from weasyprint import HTML
 
 from .models import Team, UserPackage, Keeper, Session, Attendance
@@ -117,8 +117,9 @@ def select_package(request, team_pk, package_pk):
         }
         return render(request, 'keeper/keeper_overview.html', context)
     elif package.package.pk == 2:
-        today = datetime.datetime.now()
-        monthly_sessions = Session.objects.filter(team=team, status=1).order_by("-date")
+        today = datetime.now()
+        startdate = today - timedelta(days=180)
+        monthly_sessions = Session.objects.filter(team=team, status=1, date__gt=startdate).order_by("-date")
         sessions = Session.objects.filter(team=team, status=1, date__month=today.month)
         context = {
             'team': team,
@@ -130,19 +131,23 @@ def select_package(request, team_pk, package_pk):
         return render(request, 'session/session_overview.html', context)
     elif package.package.pk == 3:
         attendances = Attendance.objects.filter(team=team)
-        sessions = Session.objects.filter(team=team).filter(attendance__isnull=True)
-        count_keeper = Keeper.objects.filter(team=team, status=1).annotate(attendance_count=Count('attendance',distinct=True)).values('id','attendance_count')
-        count_attendance = Attendance.objects.filter(team=team).annotate(
-            presence_count=Count('present')).values('keeper','presence_count')
-        count_absence = Attendance.objects.filter(team=team, present=True).annotate('keeper_id')
+        sessions = Session.objects.filter(team=team, attendance__isnull=True, date__lt=datetime.now())
+        count_presence = Attendance.objects.filter(team=team, present=True).values('keeper','session').annotate(presence_count=Count('present', distinct=True))
+        count_absence = Attendance.objects.filter(team=team, present=False, absence_reason__isnull=False).values('keeper','session').annotate(absence_count=Count('absence_reason', distinct=True))
+        attendance_ratio = Attendance.objects.filter(team=team).values('keeper','session').annotate(presence_count=Count('present', distinct=True))
+        try:
+            for value in count_presence:
+                    print value
+        except:
+            print count_presence[1]
         context = {
             'team': team,
             'package': package,
             'attendances': attendances,
             'sessions': sessions,
-            'count_keeper': count_keeper,
-            'count_attendance': count_attendance,
+            'count_presence': count_presence,
             'count_absence': count_absence,
+            'attendance_ratio': attendance_ratio,
         }
         return render(request, 'attendance/attendance_overview.html', context)
 
@@ -333,7 +338,7 @@ def attendance_detail(request, attendance_pk):
     return render(request, 'attendance/attendance_detail.html', context)
 
 
-def new_attendance(request, team_pk):
+def new_attendance(request, team_pk, package_pk):
     if request.method == "POST":
         form = AddAttendance(request.POST)
         if form.is_valid():
@@ -342,13 +347,13 @@ def new_attendance(request, team_pk):
             attendance.created_date = timezone.now()
             attendance.save()
             messages.success(request, 'Das war ein Erfolg, die Abwesenheiten sind gespeichert!')
-            return redirect('index')
+            return redirect(reverse('select_package', args=[package_pk, team_pk]))
     else:
         form = AddAttendance()
     return render(request, 'attendance/new_attendance.html', {'form': form})
 
 
-def edit_attendance(request, attendance_pk):
+def edit_attendance(request, attendance_pk, package_pk, team_pk):
     attendance = get_object_or_404(Attendance, pk=attendance_pk)
     if request.method == "POST":
         form = EditAttendance(request.POST, instance=attendance)
@@ -363,7 +368,7 @@ def edit_attendance(request, attendance_pk):
     return render(request, 'attendance/edit_attendance.html', {'form': form})
 
 
-def delete_attendance(request, attendance_pk):
+def delete_attendance(request, attendance_pk, package_pk, team_pk):
     attendance = get_object_or_404(Attendance, pk=attendance_pk)
     if request.method == "POST":
         form = DeleteAttendance(request.POST, instance=attendance)

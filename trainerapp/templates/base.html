@@ -28,6 +28,8 @@
     <!-- <link href="{% static 'base/css/open-iconic.css' %}" rel="stylesheet" type="text/css"> -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 
+    {% block javascript %}
+    {% endblock %}
 
 {% endblock %}
 
@@ -66,12 +68,24 @@
     <div class="nav navbar-nav navbar-right">
         <div class="nav-item dropdown">
             <a class="nav-link dropdown-toggle primary-light-grey-text d-none d-sm-block" data-toggle="dropdown" href="#" id="accountDropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-user-circle fa-2x"></i> {{ user.username }}
+                <i class="fas fa-user-circle fa-2x"></i>
+                {% if user.first_name and user.last_name %}
+                {{ user.first_name }} {{ user.last_name }}
+                {% else %}
+                {{ user.username }}
+                {% endif %}
             </a>
             <a class="nav-link dropdown-toggle primary-light-grey-text d-block d-sm-none" data-toggle="dropdown" href="#" id="accountDropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-user-circle fa-2x"></i>
             </a>
             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="accountDropdown">
+                <li class="dropdown-header d-block d-sm-none">
+                    {% if user.first_name and user.last_name %}
+                    {{ user.first_name }} {{ user.last_name }}
+                    {% else %}
+                    {{ user.username }}
+                    {% endif %}
+                </li>
                 <li><a class="dropdown-item" href="{% url 'account_settings' %}">Einstellungen</a></li>
                 <div class="dropdown-divider"></div>
                 <li><a class="dropdown-item" href="{% url 'auth_logout' %}">Abmelden</a></li>

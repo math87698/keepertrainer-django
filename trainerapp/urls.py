@@ -29,10 +29,10 @@ urlpatterns = [
     url(r'^training/duplicate/(?P<package_pk>\d+)/(?P<team_pk>\d+)/(?P<session_pk>\d+)/$', views.copy_session, name='copy_session'),
     url(r'^training/delete/(?P<package_pk>\d+)/(?P<team_pk>\d+)/(?P<session_pk>\d+)/$', views.delete_session, name='delete_session'),
     # Presence URLs
-    url(r'^anwesenheiten/(?P<attendance_pk>\d+)/$', views.attendance_detail, name='attendance_detail'),
-    url(r'^anwesenheiten/new/(?P<team_pk>\d+)/$', views.new_attendance, name='new_attendance'),
-    url(r'^anwesenheiten/edit/(?P<attendance_pk>\d+)/$', views.edit_attendance, name='edit_attendance'),
-    url(r'^anwesenheiten/delete/(?P<attendance_pk>\d+)/$', views.delete_attendance, name='delete_attendance'),
+    url(r'^anwesenheiten/(?P<package_pk>\d+)/(?P<attendance_pk>\d+)/$', views.attendance_detail, name='attendance_detail'),
+    url(r'^anwesenheiten/new/(?P<package_pk>\d+)/(?P<team_pk>\d+)/$', views.new_attendance, name='new_attendance'),
+    url(r'^anwesenheiten/edit/(?P<package_pk>\d+)/(?P<attendance_pk>\d+)/$', views.edit_attendance, name='edit_attendance'),
+    url(r'^anwesenheiten/delete/(?P<package_pk>\d+)/(?P<attendance_pk>\d+)/$', views.delete_attendance, name='delete_attendance'),
     # Print and Export URLs
     url(r'^training/pdf/$', views.session_pdf, name='session_pdf')
 ]
