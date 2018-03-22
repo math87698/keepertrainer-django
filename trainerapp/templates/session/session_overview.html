@@ -57,19 +57,19 @@
         <div class="col-12 mx-auto">
             <ul class="collection">
                 {% for session in sessions %}
-                <a href="{% url 'session_detail' session_pk=session.pk team_pk=team.pk package_pk=package.package_id %}">
-                    <li class="collection-item">
+                <li class="collection-item">
+                    <a href="{% url 'session_detail' session_pk=session.pk team_pk=team.pk package_pk=package.package_id %}">
                         <span class="regular-2">{{ session.topic }}</span><a href="{% url 'session_pdf' %}"> PDF</a>
                         <p>{{ session.date|date:"l" }}, {{ session.date|date:"d. F" }} {{ session.time }}</p>
-                        <div class="secondary dropdown">
-                            <a class="" id="dropdownMore" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h"></i></a>
-                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMore">
-                                <li class="dropdown-item">PDF</li>
-                                <li class="dropdown-item">Bearbeiten</li>
-                            </ul>
-                        </div>
-                    </li>
-                </a>
+                    </a>
+                    <div class="secondary dropdown">
+                        <a class="" id="dropdownMore" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h"></i></a>
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMore">
+                            <li class="dropdown-item">PDF</li>
+                            <li class="dropdown-item">Bearbeiten</li>
+                        </ul>
+                    </div>
+                </li>
                 {% endfor %}
                 <a href="{% url 'new_session' team_pk=team.pk package_pk=package.package_id %}">
                     <li class="collection-item avatar">

@@ -9,7 +9,7 @@ from django.contrib import messages
 from django.contrib.auth import get_user_model
 from django.core.files.storage import FileSystemStorage
 from django.template.loader import render_to_string
-from django.db.models import Count, Sum
+from django.db.models import Q, Count
 
 from datetime import datetime, timedelta
 from weasyprint import HTML
@@ -134,7 +134,8 @@ def select_package(request, team_pk, package_pk):
         sessions = Session.objects.filter(team=team, attendance__isnull=True, date__lt=datetime.now())
         count_presence = Attendance.objects.filter(team=team, present=True).values('keeper','session').annotate(presence_count=Count('present', distinct=True))
         count_absence = Attendance.objects.filter(team=team, present=False, absence_reason__isnull=False).values('keeper','session').annotate(absence_count=Count('absence_reason', distinct=True))
-        attendance_ratio = Attendance.objects.filter(team=team).values('keeper','session').annotate(presence_count=Count('present', distinct=True))
+        attendance_ratio = Attendance.objects.aggregate(pr_count=Count('present', only=Q(present=True),ab_count=Count('present', only=Q(present=False))))
+        print attendance_ratio
         context = {
             'team': team,
             'package': package,
