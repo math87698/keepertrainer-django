@@ -2,14 +2,39 @@
 
 {% block body %}
 
-<div class="chip">{{ attendance.session }}</div>
-{{ attendance.keeper }}
-{{ attendance.present }}
-{{ attendance.absent }}
-{{ attendance.absence_reason }}
-
-<a href="{% url 'edit_attendance' attendance_pk=attendance.pk %}">Anwesenheit editieren</a>
-<a href="{% url 'delete_attendance' attendance_pk=attendance.pk %}">Anwesenheit löschen</a>
+<div class="container">
+    <div class="row">
+        <div class="col-12 top-navigation">
+            <a href="{% url 'select_package' team_pk=team.pk package_pk=package.pk %}">
+                <i class="fas fa-chevron-left"></i>
+                Zurück zur Anwesenheitsübersicht
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mx-auto">
+            <ul class="detail">
+                <li class="detail-top avatar">
+                    <img src="{{ MEDIA_URL }}{{ keeper.avatar_image }}">
+                    <span class="display">{{ keeper.first_name }} {{ keeper.last_name }}</span><br>
+                    <span class="regular-1">{{ keeper.level }}</span><br/>
+                </li>
+            </ul>
+            <ul class="collection">
+                {% for attendance in attendances %}
+                <li class="collection-item">
+                    <span class="regular-2">{{ attendance.session }}</span>
+                    {% if attendance.present == True %}
+                    <p class="teal-green-text"><i class="fas fa-check-circle fa-lg"></i> Anwesend</p>
+                    {% else %}
+                    <p class="alerting-red-text"><i class="fas fa-times-circle fa-lg"></i> Abwesend wegen {{ attendance.get_absence_reason_display }}</p>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
 
 
 {% endblock %}

@@ -9,7 +9,8 @@ from django.contrib import messages
 from django.contrib.auth import get_user_model
 from django.core.files.storage import FileSystemStorage
 from django.template.loader import render_to_string
-from django.db.models import Q, Count
+from django.db.models import Count, Sum, Case, When, FloatField, F, fields, Func, IntegerField
+from itertools import chain
 
 from datetime import datetime, timedelta
 from weasyprint import HTML
@@ -18,6 +19,60 @@ from .models import Team, UserPackage, Keeper, Session, Attendance
 
 from .forms import UserChangeForm, AddTeam, DeleteTeam, AddPackage, AddKeeper, EditKeeper, DeleteKeeper
 from .forms import AddSession, EditSession, DeleteSession, AddAttendance, EditAttendance, DeleteAttendance
+
+
+# Cast Function to convert Counts (Integer) into Floats
+class Cast(Func):
+    """
+    Coerce an expression to a new field type.
+    """
+    function = 'CAST'
+    template = '%(function)s(%(expressions)s AS %(db_type)s)'
+
+    mysql_types = {
+        fields.CharField: 'char',
+        fields.IntegerField: 'signed integer',
+        fields.FloatField: 'signed',
+    }
+
+    def __init__(self, expression, output_field):
+        super(Cast, self).__init__(expression, output_field=output_field)
+
+    def as_sql(self, compiler, connection, function=None, template=None, arg_joiner=None, **extra_context):
+        if 'db_type' not in extra_context:
+            extra_context['db_type'] = self._output_field.db_type(connection)
+        connection.ops.check_expression_support(self)
+        sql_parts = []
+        params = []
+        for arg in self.source_expressions:
+            arg_sql, arg_params = compiler.compile(arg)
+            sql_parts.append(arg_sql)
+            params.extend(arg_params)
+        data = self.extra.copy()
+        data.update(**extra_context)
+        # Use the first supplied value in this order: the parameter to this
+        # method, a value supplied in __init__()'s **extra (the value in
+        # `data`), or the value defined on the class.
+        if function is not None:
+            data['function'] = function
+        else:
+            data.setdefault('function', self.function)
+        template = template or data.get('template', self.template)
+        arg_joiner = arg_joiner or data.get('arg_joiner', self.arg_joiner)
+        data['expressions'] = data['field'] = arg_joiner.join(sql_parts)
+        return template % data, params
+
+
+    def as_mysql(self, compiler, connection):
+        extra_context = {}
+        output_field_class = type(self._output_field)
+        if output_field_class in self.mysql_types:
+            extra_context['db_type'] = self.mysql_types[output_field_class]
+        return self.as_sql(compiler, connection, **extra_context)
+
+    def as_postgresql(self, compiler, connection):
+        # CAST would be valid too, but the :: shortcut syntax is more readable.
+        return self.as_sql(compiler, connection, template='%(expressions)s::%(db_type)s')
 
 
 def heroku(request):
@@ -132,18 +187,16 @@ def select_package(request, team_pk, package_pk):
     elif package.package.pk == 3:
         attendances = Attendance.objects.filter(team=team)
         sessions = Session.objects.filter(team=team, attendance__isnull=True, date__lt=datetime.now())
-        count_presence = Attendance.objects.filter(team=team, present=True).values('keeper','session').annotate(presence_count=Count('present', distinct=True))
-        count_absence = Attendance.objects.filter(team=team, present=False, absence_reason__isnull=False).values('keeper','session').annotate(absence_count=Count('absence_reason', distinct=True))
-        attendance_ratio = Attendance.objects.aggregate(pr_count=Count('present', only=Q(present=True),ab_count=Count('present', only=Q(present=False))))
-        print attendance_ratio
+        count_presence = Attendance.objects.values('keeper', 'keeper__first_name', 'keeper__last_name').annotate(total_count=Count('present'), present_count=Sum(
+            Case(When(present=True, then=1), default=0), output_field=IntegerField()),
+            presence_percentage=Cast(Cast(F('present_count'), FloatField()) / Cast(F('total_count'), FloatField()) * 100, IntegerField()),
+            absent_count=Sum(Case(When(present=False, then=1), default=0), output_field=IntegerField()))
         context = {
             'team': team,
             'package': package,
             'attendances': attendances,
             'sessions': sessions,
             'count_presence': count_presence,
-            'count_absence': count_absence,
-            'attendance_ratio': attendance_ratio,
         }
         return render(request, 'attendance/attendance_overview.html', context)
 
@@ -326,10 +379,16 @@ def delete_session(request, session_pk, team_pk, package_pk):
 
 
 # Presence Views
-def attendance_detail(request, attendance_pk):
-    attendance = get_object_or_404(Attendance, attendance_pk)
+def attendance_detail(request, keeper_pk, team_pk, package_pk):
+    attendances = Attendance.objects.filter(keeper_id=keeper_pk)
+    keeper = get_object_or_404(Keeper, pk=keeper_pk)
+    team = get_object_or_404(Team, pk=team_pk)
+    package = UserPackage(pk=package_pk)
     context = {
-        'attendance': attendance,
+        'attendances': attendances,
+        'keeper': keeper,
+        'team': team,
+        'package': package,
     }
     return render(request, 'attendance/attendance_detail.html', context)
 
@@ -349,7 +408,7 @@ def new_attendance(request, team_pk, package_pk):
     return render(request, 'attendance/new_attendance.html', {'form': form})
 
 
-def edit_attendance(request, attendance_pk, package_pk, team_pk):
+def edit_attendance(request, attendance_pk, package_pk, team_pk, keeper_pk):
     attendance = get_object_or_404(Attendance, pk=attendance_pk)
     if request.method == "POST":
         form = EditAttendance(request.POST, instance=attendance)
@@ -358,7 +417,7 @@ def edit_attendance(request, attendance_pk, package_pk, team_pk):
             attendance.edited_date = timezone.now()
             attendance.save()
             messages.success(request, 'Die Abwesenheiten wurden aktualisiert')
-            return redirect(reverse('session_detail', args=[attendance]))
+            return redirect(reverse('attendance_detail', args=[package_pk, team_pk, keeper_pk]))
     else:
         form = EditAttendance(instance=attendance)
     return render(request, 'attendance/edit_attendance.html', {'form': form})
@@ -374,7 +433,7 @@ def delete_attendance(request, attendance_pk, package_pk, team_pk):
             attendance.status = 0
             attendance.save()
             messages.success(request, 'Die Abwesenheiten wurden gelöscht')
-            return redirect(reverse('session_detail', args=[attendance]))
+            return redirect(reverse('attendance_detail', args=[package_pk, team_pk]))
     else:
         form = DeleteAttendance(instance=attendance)
     return render(request, 'attendance/delete_attendance.html', {'form': form})

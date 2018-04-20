@@ -105,15 +105,22 @@
 <div class="container">
     {% if user.is_authenticated %}
     {% for team in teams %}
-    <div class="row primary-title">
+    <div class="row">
         <div class="col-lg-6">
             <h2>
                 {{ team.name }}
             </h2>
         </div>
         <div class="col-lg-6 text-lg-right">
-            <a class="btn secondary-btn" href="{% url 'edit_team' team_pk=team.pk %}"><i class="fas fa-pencil-alt fa-xs"></i> Bearbeiten</a>
+            <a class="btn secondary-btn" href="{% url 'edit_team' team_pk=team.pk %}"><i class="fas fa-pencil-alt fa-xs"></i><span class="d-none d-sm-block">Bearbeiten</span></a>
             <a class="" href="{% url 'delete_team' team_pk=team.pk %}">Team löschen</a>
+            <div class="dropdown">
+                <a class="btn secondary-btn"  type="button" id="dropdownMainMore" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h fa-lg"></i></a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMainMore">
+                    <li class="dropdown-item">PDF</li>
+                    <li class="dropdown-item">Bearbeiten</li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="row">

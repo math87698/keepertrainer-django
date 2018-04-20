@@ -61,12 +61,16 @@ primary-blue a {
     background-color: #1de9b6;
 }
 
+.teal-green-text {
+    color: #1de9b6;
+}
+
 /*--------------------------------------------------------- Red Colors - For Alerting Purposes ------------------------------------------------*/
-.alterting-red-text {
+.alerting-red-text {
     color: #f44336;
 }
 
-.alterting-red {
+.alerting-red {
     background-color: #f44336;
 }
 
@@ -184,10 +188,6 @@ body {
   width: 100%;
 }
 
-.secondary-btn .secondary-btn-nav {
-    width: 100%;
-}
-
 .secondary-btn:focus, .secondary-btn.focus {
   box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
 }
@@ -271,6 +271,15 @@ body {
     text-decoration: none;
 }
 
+/* Primary More Action on every Page */
+.dropdown-more {
+    position: relative;
+    vertical-align: middle;
+    height: 100%;
+    margin: 4px 0 4px 0;
+    border: solid black;
+}
+
 /* Dropddown Filter */
 .dropdown-filter {
     padding: 8px 0 16px 16px;
@@ -322,6 +331,7 @@ body {
     padding-top: 2em;
     margin-bottom: 1em;
 }
+
 .dashboard-card {
     background-color: #2196f3;
     position: relative;
@@ -441,6 +451,101 @@ body {
 
 /*--------------------------------------------------------- END Collection List Styles ------------------------------------------------*/
 
+/*--------------------------------------------------------- Cards Styles ------------------------------------------------*/
+.card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    list-style: none;
+    flex-direction: column;
+    padding: 0 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    box-shadow: 2px;
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+
+.card .card-item {
+    position: relative;
+    min-height: 72px;
+    padding: 16px 16px 0 16px;
+}
+
+.card .card-item.avatar  {
+    padding-left: 72px;
+}
+
+
+.collection .collection-item.avatar img {
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    vertical-align: middle;
+    left: 16px;
+}
+
+.collection .collection-item.avatar .icon {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    left: 24px;
+}
+
+.card-item:focus, .card-item:hover {
+  z-index: 1;
+  text-decoration: none;
+}
+
+.card-item.disabled, .card-item:disabled {
+  color: #868e96;
+  background-color: #fff;
+}
+
+.card-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.card-flush .card-item {
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+}
+
+.card .card-item .secondary {
+    position: absolute;
+    height: 16px;
+    right: 16px;
+    top: 28px;
+    color:#bdbdbd;
+}
+
+@media screen and (min-device-width: 576px) {
+    .card .card-item .secondary:hover {
+        border: 1px solid #bdbdbd;
+        height: 32px;
+        width: 32px;
+        right: 8px;
+        top: 20px;
+        border-radius: 4px;
+    }
+}
+
+/*--------------------------------------------------------- END Card Styles ------------------------------------------------*/
+
 /*--------------------------------------------------------- Detail Styles ------------------------------------------------*/
 
 .detail {
@@ -553,7 +658,6 @@ body {
 }
 
 /*--------------------------------------------------------- END Detail Styles ------------------------------------------------*/
-
 
 /*--------------------------------------------------------- Footer Styles ------------------------------------------------*/
 
