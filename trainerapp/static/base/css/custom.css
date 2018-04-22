@@ -161,7 +161,6 @@ body {
   margin: 4px 0 4px 0;
   color: #424242;
   background-color: #1de9b6;
-  width: 100%;
 }
 
 .primary-btn:focus, .primary-btn.focus {
@@ -185,7 +184,6 @@ body {
   margin: 4px 0 4px 0;
   color: #424242;
   background-color: #e0e0e0;
-  width: 100%;
 }
 
 .secondary-btn:focus, .secondary-btn.focus {
@@ -208,8 +206,7 @@ body {
   display: inline-block;
   text-align: left;
   margin: 4px 0 4px 0;
-  color: #424242;
-  border: 4px solid #424242;
+  border: 1px solid #424242;
 }
 
 .alternate-btn:focus, .alternate-btn.focus {
@@ -247,21 +244,6 @@ body {
   color: #eeeeee;
   background-color: #f44336;
   box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
-}
-
-@media screen and (min-device-width: 576px) {
-    .primary-btn {
-        width: 32%;
-    }
-    .secondary-btn {
-        width: 32%;
-    }
-    .alternate-btn {
-        width: 32%;
-    }
-    .red-btn {
-        width: 32%;
-    }
 }
 
 /*--------------------------------------------------------- END Buttons ------------------------------------------------*/
@@ -312,7 +294,7 @@ body {
 
 /*--------------------------------------------------------- END Header Navigation Styles ------------------------------------------------*/
 
-/*--------------------------------------------------------- Content Navigation Styles - Back Buttons ------------------------------------------------*/
+/*--------------------------------------------------------- Content Navigation and Title Styles - Back Buttons, Primary Title ------------------------------------------------*/
 
 .top-navigation {
     padding: 16px 0 16px 0;
@@ -323,14 +305,13 @@ body {
     text-decoration: none;
 }
 
-/*--------------------------------------------------------- END Content Navigation Styles ------------------------------------------------*/
+.primary-title {
+    padding: 0 4px 16px 0;
+}
+
+/*--------------------------------------------------------- END Content Navigation and Title Styles ------------------------------------------------*/
 
 /*---------------------------------------------------------- Dashboard Styles - Homepage specific styles ------------------------------------------------*/
-
-.primary-title {
-    padding-top: 2em;
-    margin-bottom: 1em;
-}
 
 .dashboard-card {
     background-color: #2196f3;
@@ -658,6 +639,89 @@ body {
 }
 
 /*--------------------------------------------------------- END Detail Styles ------------------------------------------------*/
+
+/*--------------------------------------------------------- Table Styles ------------------------------------------------*/
+
+.data-table {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    list-style: none;
+    flex-direction: column;
+    padding: 0 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.data-table .top {
+    position: relative;
+    padding: 32px 0 32px 24px;
+    border-radius: 4px;
+    min-height: 224px;
+}
+
+.data-table .top.avatar {
+    padding: 32px 0 32px 0;
+    text-align: center;
+}
+
+.data-table .top.avatar img {
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    width: 144px;
+    height: 144px;
+    overflow: hidden;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.data-table .row {
+    position: relative;
+    line-height: 48px;
+    min-height: 48px;
+    border-bottom: solid 1px #eeeeee;
+    vertical-align: middle;
+}
+
+.data-table .icon {
+    line-height: 48px;
+    min-height: 48px;
+    vertical-align: middle;
+}
+
+.data-table .row .action {
+    height: 48px;
+    line-height: 48px;
+    vertical-align: middle;
+    color:#bdbdbd;
+}
+
+@media screen and (min-device-width: 576px) {
+    .data-table .top.avatar {
+        position: relative;
+        padding: 80px 16px 0 190px;
+        border-radius: 4px;
+        min-height: 224px;
+        text-align: left;
+    }
+    .data-table .top.avatar img {
+        position: absolute;
+        display: inline-block;
+        border-radius: 50%;
+        width: 144px;
+        height: 144px;
+        overflow: hidden;
+        vertical-align: middle;
+        left: 16px;
+        top: 40px;
+    }
+}
+
+/*--------------------------------------------------------- END Table Styles ------------------------------------------------*/
 
 /*--------------------------------------------------------- Footer Styles ------------------------------------------------*/
 

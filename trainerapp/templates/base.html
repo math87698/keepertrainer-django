@@ -79,7 +79,7 @@
                 <i class="fas fa-user-circle fa-2x"></i>
             </a>
             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="accountDropdown">
-                <li class="dropdown-header d-block d-sm-none">
+                <li class="dropdown-header d-none d-sm-block">
                     {% if user.first_name and user.last_name %}
                     {{ user.first_name }} {{ user.last_name }}
                     {% else %}
@@ -106,7 +106,7 @@
     {% if user.is_authenticated %}
     {% for team in teams %}
     <div class="row">
-        <div class="col-lg-6">
+        <div class="primary-title">
             <h2>
                 {{ team.name }}
             </h2>

@@ -13,25 +13,38 @@
     </div>
     <div class="row">
         <div class="col-12 mx-auto">
-            <ul class="detail">
-                <li class="detail-top avatar">
+            <ul class="data-table">
+                <li class="top avatar">
                     <img src="{{ MEDIA_URL }}{{ keeper.avatar_image }}">
                     <span class="display">{{ keeper.first_name }} {{ keeper.last_name }}</span><br>
                     <span class="regular-1">{{ keeper.level }}</span><br/>
                 </li>
             </ul>
-            <ul class="collection">
+            <div class="data-table">
+                <div class="row">
+                    <span class="caption col-3 col-md-2">Datum</span>
+                    <span class="caption d-none d-sm-none d-md-block col-md-5">Thema</span>
+                    <span class="caption col-7 col-md-4">Anwesend</span>
+                </div>
                 {% for attendance in attendances %}
-                <li class="collection-item">
-                    <span class="regular-2">{{ attendance.session }}</span>
+                <div class="row">
+                    <span class="col-3 col-md-2">{{ attendance.session.date|date:"d.m.y" }}</span>
+                    <span class="d-none d-sm-none d-md-block col-md-5">{{ attendance.session }}</span>
                     {% if attendance.present == True %}
-                    <p class="teal-green-text"><i class="fas fa-check-circle fa-lg"></i> Anwesend</p>
+                    <span class="teal-green-text col-7 col-md-4"><i class="fas fa-check-circle fa-lg icon"></i> </span>
                     {% else %}
-                    <p class="alerting-red-text"><i class="fas fa-times-circle fa-lg"></i> Abwesend wegen {{ attendance.get_absence_reason_display }}</p>
+                    <span class="alerting-red-text col-7 col-md-4"><i class="fas fa-times-circle fa-lg"></i> Grund: {{ attendance.get_absence_reason_display }}</span>
                     {% endif %}
-                </li>
+                    <div class="col-2 col-md-1 dropdown">
+                        <a class="" id="dropdownMore" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h action"></i></a>
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMore">
+                            <li class="dropdown-item">Bearbeiten</li>
+                            <li class="dropdown-item">Training löschen</li>
+                        </ul>
+                    </div>
+                </div>
                 {% endfor %}
-            </ul>
+            </div>
         </div>
     </div>
 </div>
