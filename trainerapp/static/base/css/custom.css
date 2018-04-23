@@ -201,6 +201,16 @@ body {
   box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
 }
 
+.secondary-inline-btn {
+    position: relative;
+    display: inline-block;
+    margin: 4px 0 4px 0;
+}
+
+.secondary-inline-btn:hover {
+    border: 1px solid #424242;
+}
+
 .alternate-btn {
   position: relative;
   display: inline-block;
@@ -297,7 +307,7 @@ body {
 /*--------------------------------------------------------- Content Navigation and Title Styles - Back Buttons, Primary Title ------------------------------------------------*/
 
 .top-navigation {
-    padding: 16px 0 16px 0;
+    padding: 16px 0 0 0;
     font-size: 90%;
 }
 
@@ -306,12 +316,27 @@ body {
 }
 
 .page-header {
-    padding: 0 4px 16px 0;
+    position: relative;
+    padding: 16px 0 16px 0;
 }
 
-.title {
+.page-header .title {
     font-size: 32px;
     font-color: #424242;
+    vertical-align: middle;
+}
+
+.page-header .action {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    vertical-align: middle;
+}
+
+@media screen and (max-device-width: 576px) {
+    .btn-label {
+        display: none;
+    }
 }
 
 /*--------------------------------------------------------- END Content Navigation and Title Styles ------------------------------------------------*/
@@ -424,7 +449,7 @@ body {
     color:#bdbdbd;
 }
 
-@media screen and (min-device-width: 576px) {
+/* @media screen and (min-device-width: 576px) {
     .collection .collection-item .secondary:hover {
         border: 1px solid #bdbdbd;
         height: 32px;
@@ -433,7 +458,7 @@ body {
         top: 20px;
         border-radius: 4px;
     }
-}
+} */
 
 /*--------------------------------------------------------- END Collection List Styles ------------------------------------------------*/
 

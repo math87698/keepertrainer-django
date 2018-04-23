@@ -9,12 +9,16 @@
                 <i class="fas fa-chevron-left"></i>
                 Zurück zum Dashboard
             </a>
-            <span>{{ team }}</span>
         </div>
     </div>
-        <div class="row">
-        <div class="col-12">
-            <h2>Torhüter</h2>
+    <div class="page-header">
+        <span class="title">Torhüter</span>
+        <div class="action">
+            <a class="btn primary-btn" href="{% url 'new_keeper' team_pk=team.pk package_pk=package.package_id %}" type="button"><i class="fas fa-plus-circle fa-lg"></i><span class="btn-label"> Torhüter erfassen</span></a>
+            <a class="btn secondary-inline-btn"  type="button" id="dropdownMainMore" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h fa-lg"></i></a>
+            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMainMore">
+                <li class="dropdown-item">Als CSV exportieren</li>
+            </ul>
         </div>
     </div>
     <div class="row">
@@ -26,22 +30,14 @@
                         <img src="{{ MEDIA_URL }}{{ keeper.avatar_image }}">
                         <span class="regular-2">{{ keeper.first_name }} {{ keeper.last_name }}</span>
                         <p>{{ keeper.level }}</p>
-                        <div class="secondary dropdown">
-                            <a class="" id="dropdownMore" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h"></i></a>
+                            <a class="secondary dropdown" id="dropdownMore" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h"></i></a>
                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMore">
                                 <li class="dropdown-item">PDF</li>
                                 <li class="dropdown-item">Bearbeiten</li>
                             </ul>
-                        </div>
                     </li>
                 </a>
                 {% endfor %}
-                <a href="{% url 'new_keeper' team_pk=team.pk package_pk=package.package_id %}">
-                    <li class="collection-item avatar">
-                        <div class="icon"><i class="fas fa-plus-circle fa-lg"></i></div>
-                        Torhüter erfassen
-                    </li>
-                </a>
             </ul>
         </div>
     </div>
