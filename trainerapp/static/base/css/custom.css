@@ -305,8 +305,13 @@ body {
     text-decoration: none;
 }
 
-.primary-title {
+.page-header {
     padding: 0 4px 16px 0;
+}
+
+.title {
+    font-size: 32px;
+    font-color: #424242;
 }
 
 /*--------------------------------------------------------- END Content Navigation and Title Styles ------------------------------------------------*/
