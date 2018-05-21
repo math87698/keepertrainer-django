@@ -2,19 +2,44 @@
 
 {% load crispy_forms_tags %}
 
+{% crispy form form.helper %}
+
 {% load bootstrap4 %}
 
 {% block body %}
 <div class="container">
     <div class="row">
         <div class="col-lg-4 col-md-6 mx-auto">
-            <form method="post" action=".">
+            <div class="page-header">
+                <span class="title">Training erstellen</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mx-auto">
+            <form method="post" action="." novalidate>
                 {% csrf_token %}
-                {{ form|crispy }}
-                {% bootstrap_button "Training erfassen" button_type="submit" button_class="teal-green btn-block" %}
+                {% crispy form %}
             </form>
         </div>
     </div>
 </div>
 
+{% endblock %}
+
+{% block javascript_forms %}
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#datepicker').datepicker();
+    });
+
+    $('#timepicker2').timepicker({
+        minuteStep: 5,
+        template: 'dropdown',
+        appendWidgetTo: 'body',
+        showSeconds: false,
+        showMeridian: false,
+        defaultTime: 'current',
+    });
+</script>
 {% endblock %}

@@ -10,7 +10,7 @@
         <div class="col-lg-4 col-md-6 mx-auto">
             <form method="post" action=".">
                 {% csrf_token %}
-                {{ form|crispy }}
+                {{ form }}
                 {% bootstrap_button "Abwesenheit erfassen" button_type="submit" button_class="teal-green btn-block" %}
             </form>
         </div>

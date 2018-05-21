@@ -8,7 +8,14 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-4 col-md-6 mx-auto">
-            <form method="post" action="." enctype="multipart/form-data">
+            <div class="page-header">
+                <span class="title">Torhüter erfassen</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mx-auto">
+            <form method="post" action="." enctype="multipart/form-data" novalidate>
                 {% csrf_token %}
                 {{ form|crispy }}
                 {% bootstrap_button "Team erstellen" button_type="submit" button_class="teal-green btn-block" %}

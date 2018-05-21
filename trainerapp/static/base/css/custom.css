@@ -753,6 +753,50 @@ body {
 
 /*--------------------------------------------------------- END Table Styles ------------------------------------------------*/
 
+/*--------------------------------------------------------- Form Styles ------------------------------------------------*/
+
+.form-avatar {
+    padding: 32px 0 32px 0;
+}
+
+.form-avatar img {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+    vertical-align: middle;
+    left: 16px;
+}
+
+.radio {
+    background-color: #eeeeee;
+    padding: 4px 4px 0 4px;
+    margin: 0 0 4px 0;
+    border-radius: 4px;
+}
+
+.checkbox {
+    background-color: #eeeeee;
+    padding: 4px 4px 0 4px;
+    margin: 0 0 4px 0;
+    border-radius: 4px;
+}
+
+#div_id_duration .radio-inline {
+    background-color: #eeeeee;
+    width: 24%;
+    padding: 8px 8px 8px 8px;
+    border-radius: 4px;
+}
+
+/*.radio-inline > input[type=radio] {
+    visibility: hidden;
+} */
+
+/*--------------------------------------------------------- END Form Styles ------------------------------------------------*/
+
 /*--------------------------------------------------------- Footer Styles ------------------------------------------------*/
 
 .footer {

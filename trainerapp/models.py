@@ -63,8 +63,8 @@ class Keeper(models.Model):
         ('other', 'Andere'),
     }
     FOOT_CHOICES = {
-        ('1', 'rechts'),
-        ('2', 'links'),
+        ('1', ' Rechts'),
+        ('2', ' Links'),
     }
     trainer = models.ForeignKey(User)
     last_name = models.CharField(max_length=70)
@@ -137,7 +137,7 @@ class Session(models.Model):
     time = models.TimeField(default=timezone.now)
     duration = models.DurationField(default=timedelta(minutes=90))
     coordination = MultiSelectField(max_choices=2, max_length=70, choices=COORDINATION_CHOICES, blank=True)
-    type = models.CharField(max_length=70, choices=TYPE_CHOICES, blank=True)
+    type = models.CharField(max_length=70, choices=TYPE_CHOICES, blank=True, default="special")
     goal = models.TextField(max_length=70, blank=True)
     technique = models.TextField(max_length=500, blank=True)
     tactic = models.TextField(max_length=500, blank=True)

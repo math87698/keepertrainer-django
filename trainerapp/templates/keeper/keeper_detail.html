@@ -35,15 +35,15 @@
                 <li class="detail-content">
                     <div class="group">
                         <span class="caption">Nationalität</span>
-                        {% if keeper.nationality %}<p class="regular-1">{{ keeper.nationality }}</p>{% else %}<p class="regular-1">keine Angabe</p>{% endif %}
+                        {% if keeper.nationality %}<p class="regular-1">{{ keeper.get_nationality_display }}</p>{% else %}<p class="regular-1">keine Angabe</p>{% endif %}
                         <span class="caption">Tätigkeit</span>
-                        {% if keeper.occupation %}<p class="regular-1">{{ keeper.occupation }}</p>{% else %}<p class="regular-1">keine Angabe</p>{% endif %}
+                        {% if keeper.occupation %}<p class="regular-1">{{ keeper.get_occupation_display }}</p>{% else %}<p class="regular-1">keine Angabe</p>{% endif %}
                     </div>
                     <div class="group">
                         <span class="caption">Trikotnummer</span>
                         {% if keeper.shirtnumber %}<p class="regular-1">{{ keeper.shirtnumber }}</p>{% else %}<p class="regular-1">keine Angabe</p>{% endif %}
                         <span class="caption">Starker Fuss</span>
-                        {% if keeper.foot %}<p class="regular-1">{{ keeper.foot }}</p>{% else %}<p class="regular-1">keine Angabe</p>{% endif %}
+                        {% if keeper.foot %}<p class="regular-1">{{ keeper.get_foot_display }}</p>{% else %}<p class="regular-1">keine Angabe</p>{% endif %}
                     </div>
                     <div class="group">
                         <span class="caption">Grösse</span>
